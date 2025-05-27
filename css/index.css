@@ -1,0 +1,74 @@
+hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    height: 70vh;
+}
+
+#welcome {
+    font-size: 2rem;
+    width: 100%;
+}
+
+.hero-container {
+    width: 90%;
+    height: 50%;
+    padding: 20px;
+}
+
+.image-collection {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-collection img {
+    width: 50%;
+    position: absolute;
+    border-radius: 10px;
+    top: 25%;
+    left: 25%;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+    hero {
+        flex-direction: row;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-container {
+        padding-top: 100px;
+        width: 40%;
+        height: 80%;
+    }
+
+    .image-collection {
+        position: relative;
+        height: 100%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .paragraph {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 40%;
+        height: 100%;
+        background-color: white;
+        padding-left: 50px;
+        font-size: 2vw;
+    }
+}
