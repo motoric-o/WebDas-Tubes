@@ -18,7 +18,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: sticky;
+    background-color: white;
     top: 0;
     gap: 30px;
     padding: 0;
