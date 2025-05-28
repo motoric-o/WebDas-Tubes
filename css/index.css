@@ -1,42 +1,51 @@
 hero {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    gap: 20px;
+    height: 500px;
     background-color: lightgray;
     width: 100%;
 }
 
 #welcome {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     width: 100%;
-    padding-right: 15px;
+}
+
+#hero-paragraph {
+    width: min(500px, 100%);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-container {
     text-align: center;
-    height: 50%;
+    height: 45%;
     padding: 20px;
 }
 
 .image-collection {
+    width: 100%;
+    height: min(60%, 300px);
+    background-color: beige;
+}
+
+.image-collection-content {
     position: relative;
     height: 100%;
-    width: 100%;
+    width: min(500px, 100%);
     margin-left: auto;
     margin-right: auto;
 }
 
-.image-collection img {
-    width: 50%;
+.image-collection-content img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     border-radius: 10px;
     top: 25%;
-    left: 25%;
-}
-
-.hero-paragraph {
-    font-size: 1.5rem;
-    padding-right: 15px;
+    left: 15%;
 }
 
 #intro {
@@ -44,12 +53,11 @@ hero {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 250px;
+    margin-bottom: 300px;
 }
 
 .container {
-    background-color: white;
     width: 100%;
 }
 
@@ -60,11 +68,21 @@ hero {
 #foods {
     height: 100px;
     background-color: white;
+    margin-bottom: 400px;
 }
 
 #foods-container {
     display: flex;
+    flex-direction: column;
     margin: 20px;
+}
+
+#foods-container h2 {
+    margin-bottom: 5px;
+}
+
+.paragraph {
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -72,31 +90,41 @@ hero {
         flex-direction: row;
         margin-left: auto;
         margin-right: auto;
-        height: min(60vh, 40vw);
-        gap: 50px;
+        height: 400px;
     }
 
     .hero-container {
-        padding-top: min(5vw, 100px);
-        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: end;
+        padding-top: min(25%, 100px);
+        width: 50%;
         height: 80%;
-        text-align: right;
+        text-align: right;   
+    }
+
+    #hero-paragraph {
+        width: min(600px, 90%);
+        margin: 0;
     }
 
     .image-collection {
-        position: relative;
         height: 100%;
-        width: 60%;
+        position: relative;
+        width: 50%;
+        background-color: beige;
+    }
+
+    .image-collection-content {
+        width: min(100%, 500px);
         margin-left: auto;
         margin-right: auto;
     }
 
     .image-collection img {
-        width: 40%;
-    }
-
-    #welcome {
-        font-size: 1.75rem;
+        width: min(350px, 50%);
+        top: 32.5%;
     }
 
     .paragraph {
@@ -115,7 +143,13 @@ hero {
 
 @media (min-width: 1024px) {
     .hero-container {
-        width: 40%;
+        padding-top: 65px;
+        width: 50%;
+        height: 550px;
+    }
+
+    .paragraph {
+        font-size: 1.25rem;
     }
 
     #welcome {
