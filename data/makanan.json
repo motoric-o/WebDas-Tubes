@@ -1,7 +1,7 @@
 [
     {
         "nama": "Sushi",
-        "foto":"",
+        "foto":"img/makanan/Sushi.jpg",
         "deskripsi": "Sushi adalah hidangan Jepang berupa nasi cuka (shari) yang dipadukan dengan berbagai lauk seperti ikan mentah, seafood, telur, atau sayuran. Disajikan dengan wasabi, kecap asin (shoyu), dan acar jahe (gari). Jenisnya beragam: nigiri (nasi kepal dengan ikan di atasnya), maki (sushi gulung), uramaki (gulungan dengan nasi di luar), temaki (kerucut sushi), hingga chirashi (nasi dengan topping sashimi). Selain lezat, sushi terkenal karena presentasi artistiknya dan penggunaan bahan berkualitas tinggi.",
         "sejarah": "Sushi berasal dari metode pengawetan ikan di Asia Tenggara abad ke-2 M, bernama narezushi, di mana ikan difermentasi dalam nasi. Abad ke-15 di Jepang muncul namarezushi, lalu revolusi terbesar terjadi awal abad ke-19 di Edo saat Hanaya Yohei menciptakan nigiri sushi: nasi cuka dengan potongan ikan segar di atasnya. Sushi cepat populer karena praktis, bisa dibuat langsung tanpa fermentasi lama. Kini sushi jadi ikon kuliner Jepang yang mendunia dengan banyak variasi modern.",
         "resep": {
@@ -29,7 +29,7 @@
     },
     {
         "nama": "Sashimi",
-        "foto":"",
+        "foto":"img/makanan/Sashimi.jpg",
         "deskripsi": "Sashimi adalah potongan ikan atau seafood mentah berkualitas tinggi yang disajikan tanpa nasi. Biasanya dinikmati dengan kecap asin (shoyu), wasabi, dan irisan lobak putih (daikon). Jenis sashimi populer termasuk tuna (maguro), salmon, yellowtail (hamachi), dan cumi (ika). Hidangan ini menonjolkan kesegaran dan tekstur alami ikan, sehingga pemilihan bahan yang segar sangat penting.",
         "sejarah": "Tradisi makan ikan mentah di Jepang sudah ada sejak zaman kuno, tetapi istilah sashimi baru populer pada periode Muromachi (1336–1573). Awalnya, potongan ikan dihidangkan dengan tusuk bambu agar mudah dipegang. Sashimi berkembang menjadi simbol kemewahan karena hanya disajikan dengan bahan segar berkualitas tinggi, terutama di restoran kelas atas seperti sushi bar. Kini sashimi dinikmati di seluruh dunia sebagai simbol cita rasa Jepang yang murni.",
         "resep": {
@@ -50,7 +50,7 @@
     },
     {
         "nama": "Ramen",
-        "foto":"",
+        "foto":"img/makanan/Ramen.jpg",
         "deskripsi": "Ramen adalah mie kuah khas Jepang dengan berbagai varian kaldu, seperti shoyu (kecap asin), miso, tonkotsu (kaldu tulang babi), dan shio (garam). Disajikan dengan topping seperti irisan daging (chashu), telur rebus setengah matang (ajitsuke tamago), daun bawang, nori, dan rebung (menma). Ramen terkenal karena rasa kaldunya yang kaya dan mie kenyal yang memuaskan.",
         "sejarah": "Ramen awalnya diperkenalkan ke Jepang oleh imigran Tiongkok pada abad ke-19, dikenal sebagai 'chuka soba'. Setelah Perang Dunia II, ramen berkembang pesat sebagai makanan murah dan cepat. Pada 1958, muncul ramen instan yang semakin mendongkrak popularitasnya. Kini ramen memiliki banyak gaya regional, seperti Sapporo ramen (miso) dan Hakata ramen (tonkotsu), serta diakui sebagai salah satu comfort food paling terkenal dari Jepang.",
         "resep": {
