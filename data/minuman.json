@@ -1,0 +1,133 @@
+[
+    {
+        "nama": "Ocha",
+        "foto":"",
+        "deskripsi": "Ocha adalah teh hijau Jepang yang biasanya disajikan panas tanpa gula. Disajikan gratis di banyak restoran dan sering diminum sehari-hari. Jenisnya meliputi sencha, genmaicha (dengan beras panggang), dan hojicha (teh panggang).",
+        "sejarah": "Teh diperkenalkan ke Jepang dari Tiongkok pada abad ke-8. Pada abad ke-12, biksu Eisai membawa bubuk matcha dan budaya minum teh berkembang melalui upacara chanoyu. Kini, teh hijau adalah bagian penting dari budaya Jepang, dari rumah tangga sehari-hari hingga acara formal.",
+        "resep": {
+            "bahan": [
+                "1 sdt daun teh hijau (sencha/genmaicha/hojicha)",
+                "150 ml air panas (sekitar 80°C)"
+            ],
+            "cara_membuat": [
+                "Masukkan daun teh ke teko kecil.",
+                "Tuang air panas, diamkan 1–2 menit.",
+                "Saring dan sajikan."
+            ]
+        }
+    },
+    {
+        "nama": "Matcha",
+        "foto":"",
+        "deskripsi": "Matcha adalah bubuk teh hijau berkualitas tinggi yang diseduh dengan air panas dan diaduk dengan chasen (pengocok bambu) hingga berbusa. Matcha juga banyak digunakan untuk membuat dessert seperti es krim, kue, dan latte.",
+        "sejarah": "Matcha diperkenalkan oleh biksu Eisai dari Tiongkok pada abad ke-12 dan menjadi pusat budaya upacara teh Jepang (chanoyu). Matcha melambangkan kesederhanaan, keharmonisan, dan fokus. Kini, selain untuk upacara, matcha juga populer dalam makanan dan minuman modern di seluruh dunia.",
+        "resep": {
+            "bahan": [
+                "1 sdt bubuk matcha",
+                "60 ml air panas (sekitar 80°C)"
+            ],
+            "cara_membuat": [
+                "Ayak matcha ke mangkuk.",
+                "Tuang air panas, aduk cepat dengan chasen membentuk gerakan M atau W hingga berbusa.",
+                "Sajikan segera."
+            ]
+        }
+    },
+    {
+        "nama": "Sake",
+        "foto":"",
+        "deskripsi": "Sake adalah minuman beralkohol Jepang yang dibuat dari fermentasi beras. Disajikan panas atau dingin, tergantung jenis dan musim. Rasanya bisa manis, kering, atau umami, dengan aroma khas beras.",
+        "sejarah": "Sake telah ada di Jepang lebih dari 1.000 tahun, awalnya dibuat di kuil-kuil Shinto. Proses pembuatan modern berkembang abad ke-16 dengan penggunaan ragi khusus (koji). Sake jadi bagian penting dari ritual keagamaan hingga perayaan, dan kini juga populer di restoran Jepang di seluruh dunia.",
+        "resep": {
+            "bahan": [
+                "Tidak dibuat di rumah; sake memerlukan proses fermentasi beras khusus di pabrik sake."
+            ],
+            "cara_membuat": [
+                "Disarankan membeli sake jadi dari toko untuk dinikmati.",
+                "Hangatkan (jika diinginkan) atau sajikan dingin sesuai jenis sake."
+            ]
+        }
+    },
+    {
+        "nama": "Umeshu",
+        "foto":"",
+        "deskripsi": "Umeshu adalah minuman beralkohol manis khas Jepang yang dibuat dari fermentasi buah ume (plum Jepang) dengan gula dan shochu atau sake. Rasanya manis dan menyegarkan, sering disajikan dingin atau dengan es.",
+        "sejarah": "Umeshu mulai dibuat di Jepang sejak abad ke-17, awalnya sebagai minuman rumahan. Rasanya yang manis membuatnya populer di kalangan wanita dan peminum ringan. Kini banyak produsen sake memproduksi umeshu botolan dengan berbagai varian rasa.",
+        "resep": {
+            "bahan": [
+                "500 g buah ume",
+                "250 g gula batu",
+                "1 liter shochu atau sake"
+            ],
+            "cara_membuat": [
+                "Cuci dan keringkan ume, tusuk-tusuk dengan garpu.",
+                "Susun ume dan gula bergantian dalam toples.",
+                "Tuang shochu, tutup rapat, simpan di tempat sejuk minimal 3 bulan.",
+                "Saring dan sajikan dingin atau dengan es."
+            ]
+        }
+    },
+    {
+        "nama": "Ramune",
+        "foto":"",
+        "deskripsi": "Ramune adalah minuman bersoda khas Jepang dengan botol unik bertutup kelereng. Rasanya ringan, biasanya lemon-lime, tapi ada juga varian buah lain. Identik dengan musim panas dan festival Jepang.",
+        "sejarah": "Ramune diperkenalkan pada abad ke-19 oleh pedagang Inggris di pelabuhan Kobe. Nama 'ramune' berasal dari 'lemonade'. Botol kaca khasnya dengan kelereng sebagai penutup jadi ciri ikonik. Hingga kini, ramune tetap populer terutama di kalangan anak-anak dan saat festival musim panas.",
+        "resep": {
+            "bahan": [
+                "Biasanya dibeli jadi; membuat ramune rumahan cukup sulit."
+            ],
+            "cara_membuat": [
+                "Buka botol ramune dengan mendorong kelereng ke dalam leher botol.",
+                "Nikmati selagi dingin."
+            ]
+        }
+    },
+    {
+        "nama": "Calpis",
+        "foto":"",
+        "deskripsi": "Calpis adalah minuman fermentasi susu dengan rasa asam manis mirip yogurt cair. Biasanya disajikan dengan air dingin atau soda. Rasanya ringan dan menyegarkan.",
+        "sejarah": "Calpis diperkenalkan pada tahun 1919 oleh Kaiun Mishima, terinspirasi dari yogurt Mongolia. Produk ini menjadi populer sebagai minuman musim panas. Kini Calpis hadir dalam bentuk konsentrat, botol siap minum, dan berbagai rasa varian buah.",
+        "resep": {
+            "bahan": [
+                "Calpis konsentrat",
+                "Air dingin atau soda"
+            ],
+            "cara_membuat": [
+                "Campur 1 bagian Calpis konsentrat dengan 4–5 bagian air atau soda.",
+                "Aduk rata, sajikan dingin."
+            ]
+        }
+    },
+    {
+        "nama": "Mugicha",
+        "foto":"",
+        "deskripsi": "Mugicha adalah teh barley panggang tanpa kafein, biasanya disajikan dingin di musim panas. Rasanya ringan, agak pahit, dan menyegarkan. Populer sebagai minuman keluarga di Jepang.",
+        "sejarah": "Mugicha sudah diminum sejak periode Heian, awalnya sebagai minuman herbal. Di era modern, mugicha menjadi populer sebagai pengganti minuman berkafein di musim panas. Dijual dalam bentuk kantong teh siap seduh di supermarket Jepang.",
+        "resep": {
+            "bahan": [
+                "1 kantong teh mugicha",
+                "1 liter air"
+            ],
+            "cara_membuat": [
+                "Seduh kantong teh dalam air dingin selama 1–2 jam, atau rebus dalam air panas lalu dinginkan.",
+                "Simpan di kulkas, sajikan dingin."
+            ]
+        }
+    },
+    {
+        "nama": "Canned Coffee",
+        "foto":"",
+        "deskripsi": "Canned coffee adalah kopi siap minum dalam kaleng yang dijual di vending machine di Jepang. Ada yang panas, ada yang dingin, dengan berbagai rasa: kopi hitam, kopi susu, kopi manis. Praktis untuk dinikmati kapan saja.",
+        "sejarah": "Canned coffee diperkenalkan pertama kali oleh UCC pada tahun 1969. Sejak itu, minuman ini merevolusi pasar kopi Jepang. Dengan vending machine di mana-mana, canned coffee menjadi teman harian pekerja Jepang, terutama di pagi hari atau saat istirahat kerja.",
+        "resep": {
+            "bahan": [
+                "Biasanya dibeli jadi; jika ingin membuat di rumah, siapkan kopi hitam, susu, dan gula sesuai selera."
+            ],
+            "cara_membuat": [
+                "Seduh kopi, campur dengan susu dan gula (jika diinginkan).",
+                "Dinginkan atau hangatkan sesuai selera, masukkan ke botol atau kaleng tertutup.",
+                "Sajikan seperti canned coffee."
+            ]
+        }
+    }
+]
