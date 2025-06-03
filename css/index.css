@@ -1,8 +1,8 @@
 hero {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: 500px;
+    gap: 10px;
+    height: 550px;
     width: 100%;
 }
 
@@ -19,34 +19,56 @@ hero {
 
 #hero-container {
     text-align: center;
-    height: 45%;
+    height: 290px;
     padding: 20px;
     background-color: lightgray;
 }
 
-.image-collection {
+#img-collection-hero {
     width: 100%;
-    height: min(60%, 300px);
+    height: 100%;
     background-color: white;
 }
 
-.image-collection-content {
-    position: relative;
+#img-collection-content-hero {
+    display: grid;
+    grid-template-areas:
+        ". hero2 ."
+        "hero1 hero2 hero3"
+        ". hero2 ."
+    ;
+    gap: 10px;
     height: 100%;
     max-width: 500px;
-    width: 100%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
 }
 
-.image-collection-content img {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
+.img-collection-content div {
     border-radius: 10px;
-    top: 25%;
-    left: 15%;
+}
+
+#img-hero-1 {
+    grid-area: hero1;
+    background-image: url('../img/index/hero.jpg');
+    background-size: auto 100%;
+    grid-row: 1 / 3;
+}
+
+#img-hero-2 {
+    grid-area: hero2;
+    background-image: url('../img/index/hero2.jpg');
+    background-size: auto 100%;
+    background-position: 47% 0;
+}
+
+#img-hero-3 {
+    grid-area: hero3;
+    background-image: url('../img/index/hero1.jpg');
+    background-size: auto 105%;
+    grid-row: 2 / -1;
 }
 
 #intro {
@@ -57,47 +79,114 @@ hero {
     margin-top: 250px;
 }
 
+#culinary {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+
+#culinary-scroll {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 50px;
+}
+
+#img-collection-culinary {
+    min-height: 350px;
+    height: 60vw;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-collection-content-culinary {
+    display: grid;
+    grid-template-areas:
+        ". cul3 ."
+        "cul1 cul4 cul6"
+        "cul2 cul5 ."
+    ;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    gap: 10px;
+    height: 100%;
+
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-culinary-1 {
+    grid-area: cul1;
+    background-image: url('../img/index/culinary.jpg');
+    background-size: cover;
+    background-position: -45px 0;
+    margin-bottom: 50px;
+    margin-top: -70px;
+}
+
+#img-culinary-2 {
+    grid-area: cul2;
+    background-image: url('../img/index/culinary1.avif');
+    background-size: cover;
+    background-position: -30px 0;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+
+#img-culinary-3 {
+    background-image: url('../img/index/culinary3.jpeg');
+    background-size: cover;
+    background-position: 50% 0;
+    grid-area: cul3;
+}
+
+#img-culinary-4 {
+    background-image: url('../img/index/culinary2.jpg');
+    background-size: cover;
+    background-position: -30px 0;
+    grid-area: cul4;
+}
+
+#img-culinary-5 {
+    grid-area: cul5;
+    background-image: url('../img/index/culinary5.webp');
+    background-size: cover;
+    background-position: 80%;
+}
+
+#img-culinary-6 {
+    grid-area: cul6;
+    grid-row: 1/4;
+    background-image: url('../img/index/culinary4.webp');
+    background-position: 80%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#culinary-container {
+    background-color: lightgray;
+}
+
+#culinary-header {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: red;
+    font-family: Futura-Medium;
+}
+
+#culinary-paragraph {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .container {
     width: 100%;
 }
 
 .center {
     text-align: center;
-}
-
-#foods {
-    min-width: 300px;
-    height: 300px;
-    background: url("../img/index/culinary.jpg") no-repeat;
-    background-position: 0px 0px;
-    background-size: auto 100vw;
-    margin-bottom: 500px;
-    width: 100%;
-}
-
-#foods-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    backdrop-filter: blur(10px);
-}
-
-#foods-container h2 {
-    margin-top: 20px;
-    margin-bottom: 0;
-    font-family: Futura-Medium;
-    color: white;
-    text-align: center;
-}
-
-#foods-paragraph {
-    margin-top: 50px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: white;
-    font-size: 0.9rem;
 }
 
 .paragraph {
@@ -110,7 +199,7 @@ hero {
         margin-left: auto;
         margin-right: auto;
         height: 400px;
-        gap: 0;
+        gap: 10px;
     }
 
     #hero-container {
@@ -129,7 +218,7 @@ hero {
     }
 
     #welcome {
-        margin-top: min(25%, 100px);
+        margin-top: clamp(25px, 10%, 80px);
         font-size: 3rem;
     }
 
@@ -138,23 +227,17 @@ hero {
         margin: 0;
     }
 
-    .image-collection {
+    #img-collection-hero {
         height: 100%;
         width: 50%;
+        margin-right: 10px;
     }
 
-    .image-collection-content {
+    #img-collection-content-hero {
         width: 100%;
         max-width: 500px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .image-collection img {
-        width: 60%;
-        max-width: 400px;
-        left: 10%;
-        top: 25%;
     }
 
     .paragraph {
@@ -170,29 +253,56 @@ hero {
         font-size: 3rem;
     }
 
-    #foods {
-        display: flex;
+    #culinary {
         flex-direction: row;
-        background-size: 100% auto;
-        width: 100%;
-        height: 450px;
-    }
-
-    #foods-paragraph {
-        margin-top: 50px;
-        text-align: center;
-        width: 55%;
+        justify-content: right;
+        align-items: center;
+        gap: 10px;
+        height: min(40vw, 700px);
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.25rem;
     }
 
-    #foods-container {
+    #img-collection-culinary {
+        width: 50%;
+        margin-left: 10px;
+        margin-right: 12px;
+        min-height: 450px;
+        max-height: 100%;
+    }
+
+    #img-collection-content-culinary {
+        min-width: 400px;
+        max-width: 600px;
+        width: 50%;
         height: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    #foods-container h2 {
-        margin-top: 90px;
+    #culinary-container {
+        margin: 0;
+        width: 50%;
+        height: 400px;
+        max-height: 100%;
+        background-color: lightgray;
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    #culinary-header {
+        margin-top: clamp(35px, 10%, 80px);
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 2vw;
+    }
+
+    #culinary-paragraph {
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 300px;
+        width: 70%;
     }
 }
 
