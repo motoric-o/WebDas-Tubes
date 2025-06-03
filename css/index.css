@@ -3,7 +3,6 @@ hero {
     flex-direction: column;
     gap: 20px;
     height: 500px;
-    background-color: lightgray;
     width: 100%;
 }
 
@@ -18,22 +17,24 @@ hero {
     margin-left: auto;
 }
 
-.hero-container {
+#hero-container {
     text-align: center;
     height: 45%;
     padding: 20px;
+    background-color: lightgray;
 }
 
 .image-collection {
     width: 100%;
     height: min(60%, 300px);
-    background-color: beige;
+    background-color: white;
 }
 
 .image-collection-content {
     position: relative;
     height: 100%;
-    width: min(500px, 100%);
+    max-width: 500px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -54,7 +55,6 @@ hero {
     margin-left: auto;
     margin-right: auto;
     margin-top: 250px;
-    margin-bottom: 300px;
 }
 
 .container {
@@ -66,19 +66,38 @@ hero {
 }
 
 #foods {
-    height: 100px;
-    background-color: white;
-    margin-bottom: 400px;
+    min-width: 300px;
+    height: 300px;
+    background: url("../img/index/culinary.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: auto 100vw;
+    margin-bottom: 500px;
+    width: 100%;
 }
 
 #foods-container {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    height: 100%;
+    backdrop-filter: blur(10px);
 }
 
 #foods-container h2 {
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: Futura-Medium;
+    color: white;
+    text-align: center;
+}
+
+#foods-paragraph {
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
 }
 
 .paragraph {
@@ -91,17 +110,27 @@ hero {
         margin-left: auto;
         margin-right: auto;
         height: 400px;
+        gap: 0;
     }
 
-    .hero-container {
+    #hero-container {
         display: flex;
         flex-direction: column;
         justify-content: right;
         align-items: end;
-        padding-top: min(25%, 100px);
+        padding: 0;
+        padding-right: 30px;
+        padding-left: 30px;
         width: 50%;
-        height: 80%;
-        text-align: right;   
+        height: 100%;
+        text-align: right;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #welcome {
+        margin-top: min(25%, 100px);
+        font-size: 3rem;
     }
 
     #hero-paragraph {
@@ -111,20 +140,21 @@ hero {
 
     .image-collection {
         height: 100%;
-        position: relative;
         width: 50%;
-        background-color: beige;
     }
 
     .image-collection-content {
-        width: min(100%, 500px);
+        width: 100%;
+        max-width: 500px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .image-collection img {
-        width: min(350px, 50%);
-        top: 32.5%;
+        width: 60%;
+        max-width: 400px;
+        left: 10%;
+        top: 25%;
     }
 
     .paragraph {
@@ -139,21 +169,41 @@ hero {
         width: 100%;
         font-size: 3rem;
     }
+
+    #foods {
+        display: flex;
+        flex-direction: row;
+        background-position: -50px 0px;
+        background-size: auto auto;
+        width: 100%;
+        height: 450px;
+    }
+
+    #foods-paragraph {
+        margin-top: 50px;
+        text-align: center;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.25rem;
+    }
+
+    #foods-container {
+        height: 100%;
+    }
+
+    #foods-container h2 {
+        margin-top: 90px;
+    }
 }
 
 @media (min-width: 1024px) {
-    .hero-container {
-        padding-top: 65px;
+    #hero-container {
         width: 50%;
-        height: 550px;
     }
 
     .paragraph {
         font-size: 1.25rem;
-    }
-
-    #welcome {
-        font-size: 2.5rem;
     }
 
     #intro {
