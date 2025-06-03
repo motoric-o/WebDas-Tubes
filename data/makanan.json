@@ -74,7 +74,7 @@
     },
     {
         "nama": "Tempura",
-        "foto":"",
+        "foto":"img/makanan/Tempura.jpg",
         "deskripsi": "Tempura adalah makanan Jepang berupa udang, ikan, atau sayuran yang dicelup adonan tepung ringan lalu digoreng hingga renyah. Adonan tempura dibuat dari campuran tepung, air dingin, dan telur. Disajikan dengan saus tentsuyu (campuran dashi, shoyu, mirin) dan parutan lobak (daikon oroshi). Kerenyahan dan kelembutan dalam satu gigitan membuat tempura digemari di seluruh dunia.",
         "sejarah": "Tempura diperkenalkan ke Jepang oleh misionaris Portugis pada abad ke-16. Nama 'tempura' berasal dari kata Latin 'tempora' yang merujuk pada hari-hari pantang daging, sehingga mereka menggoreng seafood dan sayuran. Orang Jepang kemudian mengembangkan tekniknya hingga menjadi khas, termasuk penggunaan minyak wijen dan penyajian bersama saus tentsuyu. Kini tempura adalah salah satu makanan Jepang paling ikonik.",
         "resep": {
@@ -97,7 +97,7 @@
     },
     {
         "nama": "Okonomiyaki",
-        "foto":"",
+        "foto":"img/makanan/Ramen.jpg",
         "deskripsi": "Okonomiyaki adalah pancake gurih khas Jepang yang dibuat dari campuran adonan tepung, telur, kol, dan isian seperti daging, seafood, atau keju. Dimasak di atas teppan (plat besi) lalu diberi topping saus okonomiyaki, mayones, aonori (rumput laut bubuk), dan katsuobushi (serutan ikan bonito). Nama 'okonomiyaki' berarti 'dipanggang sesuai selera', karena isinya bisa bervariasi sesuai keinginan.",
         "sejarah": "Akar okonomiyaki bisa dilacak ke abad ke-16 lewat hidangan tipis bernama funoyaki, tapi bentuk modernnya berkembang setelah Perang Dunia II di Osaka dan Hiroshima. Karena beras langka, warga menggunakan tepung untuk membuat makanan mengenyangkan. Versi Osaka dicampur semua bahan, sedangkan versi Hiroshima dilapis per bahan dengan tambahan mie goreng. Sekarang okonomiyaki populer di seluruh Jepang dengan banyak variasi lokal.",
         "resep": {
@@ -123,7 +123,7 @@
     },
     {
         "nama": "Takoyaki",
-        "foto":"",
+        "foto":"img/makanan/Ramen.jpg",
         "deskripsi": "Takoyaki adalah bola-bola adonan tepung berisi potongan gurita, dimasak dalam cetakan khusus berbentuk setengah bola. Bagian luarnya renyah, dalamnya lembut, dan biasanya disajikan dengan saus takoyaki, mayones, aonori, dan katsuobushi. Takoyaki sering dijual di festival atau gerobak kaki lima di Jepang.",
         "sejarah": "Takoyaki ditemukan pada tahun 1935 oleh Tomekichi Endo di Osaka. Terinspirasi dari akashiyaki (bola adonan telur dari Akashi), takoyaki cepat populer sebagai makanan kaki lima murah meriah. Osaka kemudian dikenal sebagai kota takoyaki, bahkan punya museum takoyaki. Saat ini, takoyaki juga populer di luar Jepang dengan berbagai inovasi rasa.",
         "resep": {
@@ -151,7 +151,7 @@
     },
     {
         "nama": "Katsu",
-        "foto":"",
+        "foto":"img/makanan/Ramen.jpg",
         "deskripsi": "Katsu adalah potongan daging ayam (chicken katsu) atau babi (tonkatsu) yang dilapisi tepung roti (panko) lalu digoreng hingga renyah. Biasanya disajikan dengan kubis iris tipis, nasi, dan saus tonkatsu (saus kental manis gurih). Hidangan ini populer di restoran, bento, maupun sebagai topping di kari Jepang.",
         "sejarah": "Ton-katsu (babi goreng) pertama kali dibuat pada akhir abad ke-19 sebagai adaptasi dari schnitzel Eropa. Chicken katsu muncul sebagai variasi lebih ringan. Awalnya dianggap makanan mewah, kini katsu sangat umum di rumah makan dan supermarket Jepang. Kata 'katsu' juga berarti 'menang', sehingga katsu sering dimakan siswa sebelum ujian atau pertandingan untuk keberuntungan.",
         "resep": {
@@ -174,7 +174,7 @@
     },
     {
         "nama": "Onigiri",
-        "foto":"",
+        "foto":"img/makanan/Ramen.jpg",
         "deskripsi": "Onigiri adalah nasi kepal berbentuk segitiga atau bulat, berisi isian seperti tuna mayo, salmon, umeboshi (plum asin), atau kombu. Kadang dibungkus nori (rumput laut kering). Praktis, mengenyangkan, dan sering dibawa sebagai bekal atau dijual di konbini (minimarket Jepang).",
         "sejarah": "Onigiri sudah ada sejak periode Heian (794–1185) sebagai bekal praktis para pejuang dan petani. Bentuk modernnya mulai populer abad ke-20, apalagi setelah konbini menjual onigiri berbungkus plastik yang menjaga nori tetap renyah. Kini ada banyak variasi rasa dan bentuk onigiri di Jepang.",
         "resep": {
@@ -194,7 +194,7 @@
     },
         {
         "nama": "Gyudon",
-        "foto":"",
+        "foto":"img/makanan/Ramen.jpg",
         "deskripsi": "Gyudon adalah mangkuk nasi (donburi) dengan topping irisan tipis daging sapi yang dimasak manis-asin dengan bawang bombay, kecap asin, mirin, dan gula. Biasanya disajikan dengan acar jahe merah (beni shoga) dan telur mentah atau setengah matang. Gyudon adalah salah satu makanan cepat saji populer di Jepang.",
         "sejarah": "Gyudon mulai populer di Jepang akhir abad ke-19 saat westernisasi mulai masuk, menggantikan penggunaan ikan dengan daging sapi. Restoran gyudon pertama didirikan oleh Eikichi Matsuda, pendiri Yoshinoya, pada tahun 1899. Kini, gyudon jadi ikon makanan cepat saji Jepang yang murah, cepat, dan mengenyangkan.",
         "resep": {
@@ -219,7 +219,7 @@
     },
     {
         "nama": "Yakisoba",
-        "foto":"",
+        "foto":"img/makanan/Ramen.jpg",
         "deskripsi": "Yakisoba adalah mie goreng khas Jepang yang dimasak dengan sayuran seperti kubis, wortel, tauge, ditambah daging atau seafood, lalu dibumbui dengan saus yakisoba yang manis-gurih. Biasanya disajikan dengan taburan aonori dan beni shoga. Yakisoba sering ditemukan di festival Jepang (matsuri).",
         "sejarah": "Yakisoba muncul di Jepang pada awal abad ke-20 sebagai adaptasi dari chow mein Tiongkok. Saus khasnya, mirip saus Worcestershire, dikembangkan oleh produsen lokal untuk mencocokkan lidah Jepang. Kini yakisoba menjadi favorit di festival, food court, dan juga dijual dalam bentuk instan.",
         "resep": {
@@ -243,7 +243,7 @@
     },
     {
         "nama": "Kaiseki",
-        "foto":"",
+        "foto":"img/makanan/Ramen.jpg",
         "deskripsi": "Kaiseki adalah hidangan fine dining tradisional Jepang yang terdiri dari banyak menu kecil yang disusun dengan indah, mencakup appetizer, sashimi, sup, hidangan panggang, rebusan, nasi, acar, dan dessert. Kaiseki menekankan kesegaran musiman, teknik memasak presisi, dan presentasi artistik.",
         "sejarah": "Kaiseki berawal dari menu ringan di upacara minum teh (kaiseki cha), lalu berkembang menjadi hidangan mewah (kaiseki ryori) di abad ke-17 di kalangan bangsawan dan samurai. Kaiseki menjadi simbol keramahtamahan Jepang, menyajikan makanan seirama musim. Sampai sekarang, kaiseki masih jadi puncak pengalaman kuliner Jepang di ryotei (restoran tradisional) atau ryokan (penginapan Jepang).",
         "resep": {
