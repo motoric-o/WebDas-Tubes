@@ -27,7 +27,7 @@ function onScroll(selector, idx) {
         let width = window.innerWidth;
         var scrollOffset = scrollOffsetSmall[idx];
 
-        if (width > 768) {
+        if (width >= 768) {
             scrollOffset = scrollOffsetBig[idx];
         }
 
