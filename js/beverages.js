@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $.getJSON('data/makanan.json', function (data) {
+    $.getJSON('data/minuman.json', function (data) {
         let add = 0
         for (let i = 0; i < data.length; i++) {
             $('#konten').append(
@@ -16,6 +16,7 @@ $(document).ready(function () {
         $('.konten_isi').click(function () {
             const clickedId = $(this).attr('id');
             document.body.style.overflow = 'hidden'
+            $('#dropdown').val('deskripsi');
             for (let i = 0; i < data.length; i++) {
                 if (clickedId === data[i].nama) {
                     add = i

@@ -3,12 +3,11 @@
     justify-content: space-around;
     row-gap: 50px;
     grid-template-columns: [col1]30% [col2]30% [col3]30%;
-    grid-template-rows: [row1]300px [row2]300px [row3]300px [row4]300px;
-    grid-template-areas:
-        "Sushi Sashimi Ramen"
-        "Tempura Okonomiyaki Takoyaki"
-        "Katsu Onigiri Gyudon"
-        "Yakisoba Kaiseki none";
+    grid-template-rows: [row1]300px [row2]300px [row3]300px;
+    grid-template-areas: 
+    "Ocha Matcha sake"
+    "Umsehu Ramune Calpis"
+    "Mugicha Canned-Coffee none";
 }
 
 .konten_isi {

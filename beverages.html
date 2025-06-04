@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beverages</title>
     <link rel="stylesheet" href="css/global.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/minuman.css">
 </head>
+
 <body>
     <header>
         <div onclick="toggleMenu()" id="three-bar">
@@ -20,9 +24,41 @@
             <li><a class="header-list-content" href="beverages.html">BEVERAGES</a></li>
             <li><a class="header-list-content" href="snacks.html">SNACKS</a></li>
             <li><a class="header-list-content" href="aboutus.html">ABOUT US</a></li>
-            <li id="header-list-close" onclick="toggleMenu()"><div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px" alt=""></div></li>
+            <li id="header-list-close" onclick="toggleMenu()">
+                <div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px" alt="">
+                </div>
+            </li>
         </ul>
     </header>
+
+    <div id="background">
+
+    </div>
+
+    <div id="popup">
+        <table>
+            <tr>
+            <td id="popup_img"></td>
+            <td>
+                <h1 id="popup_title"></h1>
+                <select name="" id="dropdown">
+                    <option value="deskripsi">Deskripsi</option>
+                    <option value="sejarah">Sejarah</option>
+                    <option value="resep">Resep</option>
+                </select>
+                <div id="popup_text"></div>
+            </td>
+            </tr>
+        </table>
+        <div id="cancel">
+            <h1>X</h1>
+        </div>
+    </div>
+
+    <main id="konten">
+
+    </main>
 </body>
 <script src="js/header.js"></script>
+<script src="js/beverages.js"></script>
 </html>
