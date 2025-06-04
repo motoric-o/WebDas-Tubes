@@ -82,28 +82,24 @@
         </div>
     </div>
 
-    <div class="container">
-
-        &nbsp;
+    <div id="explore" class="container">
+        <h1 id="explore-title">Eksplor!</h1>
+        <div id="explore-scroll"></div>
+        <div id="explore-inner">
+            <div id="to-foods">
+                <div><a class="to-links">Makanan</a></div>
+            </div>
+            <div id="to-beverages">
+                <div><a class="to-links">Minuman</a></div>
+            </div>
+            <div id="to-snacks">
+                <div><a class="to-links">Camilan</a></div>
+            </div>
+        </div>
     </div>
 
     <footer>
-        <div id="footer-nav">
-            <h1>Japan</h1>
-            <ul type="none" id="header-list">
-                <li><a class="header-list-content" href="index.html">BERANDA</a></li>
-                <li><a class="header-list-content" href="foods.html">MAKANAN</a></li>
-                <li><a class="header-list-content" href="beverages.html">MINUMAN</a></li>
-                <li><a class="header-list-content" href="snacks.html">CAMILAN</a></li>
-                <li><a class="header-list-content" href="aboutus.html">TENTANG KAMI</a></li>
-                <li id="header-list-close" onclick="toggleMenu()">
-                    <div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px"
-                            alt="">
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div id="footer-flex">
+        <div id="footer-grid">
             <div id="web-desc">
                 <h2>What is this website about?</h2>
                 <p>This website is built just for those who are culinary enthusiasts. Specifically Japanese
@@ -117,11 +113,16 @@
                 </p>
             </div>
             <div id="social-media">
-                <h2>Social Media</h2>
+                <h2>Social Medias</h2>
+                <div id="social-media-inner">
+                    <a href=""><img src="img/footer/instagram.png" alt=""></a>
+                    <a href=""><img src="img/footer/yt.png" alt=""></a>
+                    <a href=""><img src="img/footer/x.png" alt=""></a>
+                </div>
             </div>
             <div id="contacts">
                 <h2>Contacts</h2>
-                <div class="contacts-inner">
+                <div id="contacts-inner">
                     <div>
                         <p>Email:</p>
                         <ul type="none">
@@ -130,6 +131,7 @@
                             <li>2472060@maranatha.ac.id</li>
                         </ul>
                     </div>
+                    <br>
                     <div>
                         <p>Phones:</p>
                         <ul type="none">
@@ -139,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <p></p>
+        <p id="creator">Created by Japan Team. 2025 All rights reserved.</p>
     </footer>
 </body>
 <script src="js/header.js"></script>

@@ -1,10 +1,30 @@
 var subintro_viewed = [false, false, false];
-var scrollFade = ['#sub-intro', '#culinary-scroll'];
-var scrollOffsetSmall = ['130px', '50px'];
-var scrollOffsetBig = ['65px', '180px'];
+var scrollFade = ['#sub-intro', '#culinary-scroll', '#explore-scroll'];
 
 function scrollSubIntro() {
-    $('#intro').animate({ "margin-top": "0", "opacity": "0%", "height": "0" }, 1000);
+    $('#intro').css({ "transform": "translateY(-20px)", "margin-top": "0px", "opacity": "0%", "height": "0" });
+}
+
+function scrollExplore() {
+    setTimeout(() => {
+        $('#to-foods').css({ "transform": "translateY(0px)", "opacity": "100%" });
+    }, 200);
+    setTimeout(() => {
+        $('#to-beverages').css({ "transform": "translateY(0px)", "opacity": "100%" });
+    }, 400);
+    setTimeout(() => {
+        $('#to-snacks').css({ "transform": "translateY(0px)", "opacity": "100%" });
+    }, 600);
+
+    setTimeout(() => {
+        $('#to-foods').css({ "transition": "all 0.25s ease-in-out" });
+        $('#to-beverages').css({ "transition": "all 0.25s ease-in-out" });
+        $('#to-snacks').css({ "transition": "all 0.25s ease-in-out" });
+    }, 700);
+}
+
+function scrollCulinary() {
+    $('#img-collection-culinary').css({ "transition": "all 2s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
 }
 
 function onScroll(selector, idx) {
@@ -16,23 +36,21 @@ function onScroll(selector, idx) {
     if (wS > (hT + hH - wH) && subintro_viewed[idx] == false) {
         subintro_viewed[idx] = true;
 
-        if (idx == 0) {
+        if (selector == '#sub-intro') {
             scrollSubIntro();
+        } else if (selector == '#culinary-scroll') {
+            scrollCulinary();
+        } else if (selector == '#explore-scroll') {
+            scrollExplore();
         }
 
-        if (idx == 1) {
-            selector = "#culinary";
-        }
-        
-        let width = window.innerWidth;
-        var scrollOffset = scrollOffsetSmall[idx];
-
-        if (width >= 768) {
-            scrollOffset = scrollOffsetBig[idx];
+        if (selector == '#culinary-scroll') {
+            selector = "#culinary-container";
+        } else if (selector == '#explore-scroll') {
+            selector = '#explore'
         }
 
-
-        $(selector).animate({ "opacity": "100%", "margin-top": scrollOffset }, 1000);
+        $(selector).css({ "transition": "all 1s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
     }
 }
 
@@ -42,26 +60,34 @@ $(window).scroll(function () {
     }
 });
 
+
+$('body').css({ "overflow-y": "hidden" });
+$('#sub-intro').css({ "opacity": "0%" });
+$('#explore').css({ "opacity": "0%", "transform": "translateY(50px)" });
+$('#intro').css({ "opacity": "0%", "transform": "translateY(100px)" });
+$('#hero-container').css({ "opacity": "0%", "transform": "translateY(80px)" });
+$('#culinary-container').css({ "opacity": "0%", "transform": "translateY(80px)" });
+$('#img-collection-hero').css({ "opacity": "0%", "transform": "translateY(-80px)" });
+$('#img-collection-culinary').css({ "opacity": "0%", "transform": "translateY(-80px)" });
 $(document).ready(function () {
-    let width = window.innerWidth;
-
-    var heroMargin = 65;
-    var introMargin = 130;
-    var culinaryMargin = 100;
-
-    if (width > 768) {
-        heroMargin = 100;
-        culinaryMargin = 200;
-    }
-
-    $('#sub-intro').css({ "opacity": "0%", "margin-top": "100px" });
-    $('#culinary').css({ "opacity": "0%", "margin-top": `${culinaryMargin + 50}px` });
-    $('#intro').css({ "opacity": "0%", "margin-top": `${introMargin + 50}px` });
-    $('hero').css({ "opacity": "0%", "margin-top": `${heroMargin + 100}px` });
-    $('hero').animate({ "opacity": "100%", "margin-top": `${heroMargin}px` }, 1500);
+    $('#hero-container').css({ "transition": "all 1s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
+    $('#img-collection-hero').css({ "transition": "all 2s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
     setTimeout(() => {
-        if (subintro_viewed[0] == false) {
-            $('#intro').animate({ "opacity": "100%", "margin-top": `${introMargin}px` }, "slow");
-        }
+        $('#intro').css({ "transition": "all 1s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
     }, 1200);
+    setTimeout(() => {
+        $('body').css({ "overflow-y": "auto" });
+    }, 2000);
+
+    $('#to-foods').click(function() {
+        window.location = "foods.html";
+    });
+
+    $('#to-beverages').click(function() {
+        window.location = "beverages.html";
+    });
+
+    $('#to-snacks').click(function() {
+        window.location = "snacks.html";
+    });
 });

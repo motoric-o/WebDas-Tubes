@@ -8,10 +8,27 @@
     src: local('futura medium bt');
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 9999px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Futura-Light;
+    overflow-x: hidden;
 }
 
 header {
@@ -89,12 +106,64 @@ a {
 }
 
 footer {
-    height: 200px;
+    height: auto;
     background-color: lightgray;
+    padding-bottom: 10px;
 }
 
-.footer-flex {
+#footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+#web-desc {
+    text-align: center;
+}
+
+#contacts {
+    text-align: center;
+}
+
+#contacts p {
+    margin: 0;
+}
+
+#contacts ul {
+    margin: 0;
+    padding: 0;
+}
+
+#social-media {
+    text-align: center;
+}
+
+#social-media-inner {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#social-media-inner img {
+    width: 50px;
+    transition: scale 0.25s ease-in-out;
+}
+
+#social-media-inner img:hover {
+    scale: 110%;
+}
+
+#creator {
+    margin-top: 50px;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -141,51 +210,41 @@ footer {
     }
 
     footer {
-        height: 300px;
-        padding: 20px;
+        height: auto;
     }
 
-    #footer-flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-between;
-        gap: 100px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    #footer-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
-    #social-media {
-        text-align: center;
+    #web-desc {
+        text-align: left;
     }
 
     #contacts {
+        grid-column: 1/-1;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        min-height: 350px;
+        height: auto;
+    }
+
+    #footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 100px;
+    }
+
+    #web-desc {
+        text-align: left;
+    }
+
+    #contacts {
+        grid-column: 3;
         text-align: right;
-    }
-
-    .contacts-inner {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #contacts p {
-        margin: 0;
-    }
-
-    #contacts ul {
-        margin: 0;
-    }
-
-    #footer-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #footer-nav #header-list {
-        width: auto;
-        margin-left: 20px;
-        margin-top: 8px;
     }
 }
