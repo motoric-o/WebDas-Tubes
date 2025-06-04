@@ -55,11 +55,14 @@ $(document).ready(function () {
 
         $('#cancel').click(function () {
             $('#popup').css({ "top": "-100%" });
-            $('#background').css({ "top": "-1000%" });
-            $('#popup_img').empty();
-            $('#popup_text').empty();
-            $('#popup_title').empty();
-            document.body.style.overflow = ''
+            $('#background').css({ "top": "-100%" });
+            setTimeout(() => {
+                $('#popup_img').empty();
+                $('#popup_text').empty();
+                $('#popup_title').empty();
+                document.body.style.overflow = ''
+            }, 500)
+
         });
     });
 });
