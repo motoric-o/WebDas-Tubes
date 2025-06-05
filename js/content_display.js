@@ -1,16 +1,57 @@
 $(document).ready(function () {
-    $.getJSON('data/makanan.json', function (data) {
+    var dataPath = 'data/makanan.json'
+
+    if (window.location.pathname == '/beverages.html') {
+        dataPath = 'data/minuman.json'
+    }
+    $.getJSON(dataPath, function (data) {
         let add = 0
+
         for (let i = 0; i < data.length; i++) {
             $('#konten').append(
                 `<div id="${data[i].nama}" class="konten_isi">
-                    <img src="${data[i].foto}" alt="">
                     <div class="konten_nama">
                         <h2>${data[i].nama}</h2>
                     </div>
                 </div>`
             )
-            $(`#${data[i].nama}`).css({ "grid-area": `${data[i].nama}` });
+            $(`#${data[i].nama}`).css({
+                "grid-area": `${data[i].nama}`,
+                "background-image": `url(${data[i].foto})`,
+                "background-size": "cover",
+                "background-position": "center",
+                "background-repeat": "no-repeat",
+                "text-align":"center"
+            });
+
+            s = ""
+
+            for (let i = 0; i < data.length; i += 3) {
+                s += `"`
+                for (let j = i; j < i + 3; j++) {
+
+                    if (data[j] != undefined) {
+                        s += `${data[j].nama}`
+                    } else if (data[j] == undefined) {
+                        s += "none"
+                    }
+
+                    if (j != i + 2) {
+                        s += " "
+                    }
+
+                }
+                s += `"`
+
+                if (i != data.length - (data.length % 3)) {
+                    s += " "
+                }
+            }
+
+            $('#konten').css({
+                "grid-template-areas": s,
+                "grid-template-rows": `repeat(${Math.ceil(data.length / 3)}, 300px)`
+            });
         }
 
         $('.konten_isi').click(function () {
@@ -21,9 +62,12 @@ $(document).ready(function () {
                     add = i
                     $('#background').css({ "top": "0" });
                     $('#popup').css({ "top": "15%" });
-                    $('#popup_img').empty().append(
-                        `<img src="${data[i].foto}" alt="">`
-                    )
+                    $('#popup_img').css({
+                        "background-image": `url(${data[i].foto})`,
+                        "background-size": "cover",
+                        "background-position": "center",
+                        "background-repeat": "no-repeat"
+                    })
                     $('#popup_title').text(data[i].nama)
                     $("#popup_text").text(data[i].deskripsi);
                     break
@@ -60,7 +104,7 @@ $(document).ready(function () {
                 $('#popup_text').empty();
                 $('#popup_title').empty();
                 document.body.style.overflow = ''
-            }, 500)
+            }, 200)
 
         });
     });

@@ -2,12 +2,7 @@
     display: grid;
     justify-content: space-around;
     row-gap: 50px;
-    grid-template-columns: [col1]30% [col2]30% [col3]30%;
-    grid-template-rows: [row1]300px [row2]300px [row3]300px;
-    grid-template-areas: 
-    "Ocha Matcha sake"
-    "Umsehu Ramune Calpis"
-    "Mugicha Canned-Coffee none";
+    grid-template-columns: repeat(3,30%);
 }
 
 .konten_isi {
@@ -25,21 +20,16 @@
 
 .konten_nama {
     text-align: center;
-    width: 250px;
-    height: 50px;
-    margin-top: -74px;
+    width: 30%;
+    height:7%;
     background-color: black;
-    opacity: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: absolute;
+    position: absolute;
     color: white;
-    border-radius: 15px;
 }
 
 .konten_nama h2 {
     font-weight: bolder;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 #popup {
@@ -48,12 +38,18 @@
     position: fixed;
     border-radius: 5px;
     border: none;
-    height: 500px;
-    width: 1000px;
+    height: 75%;
+    width: 75%;
     left: 15%;
     z-index: 2;
     transition: top 0.5s ease-in-out;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 47%;
+    grid-template-rows: 100%;
+    column-gap: 1%;
+    grid-template-areas: 
+    "popup_img popup_konten"
+    ;
 }
 
 #tulisan {
@@ -89,16 +85,25 @@ td {
     border-radius: 10px;
 }
 
+#popup_konten{
+    text-align: center;
+}
+
 #popup_title{
     font-size: 50px;
     font-weight: bold;
 }
 
+#popup_judul{
+    display: flex;
+    justify-content: space-between;
+}
+
 #dropdown{
     margin: 0;
     padding: 0;
-    width: 250px;
-    height: 25px;
+    width: 80%;
+    height: 10%;
     border-radius: 10px;
     border:2px solid red;
     text-align: center;
@@ -118,13 +123,6 @@ td {
     text-align: center;
 }
 
-#cancel {
-    position: fixed;
-    margin-top: -500px;
-    margin-left: 950px;
-    cursor: pointer;
-}
-
-.konten_isi {
+#cancel, .konten_isi{
     cursor: pointer;
 }
