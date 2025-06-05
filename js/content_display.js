@@ -21,37 +21,49 @@ $(document).ready(function () {
                 "background-size": "cover",
                 "background-position": "center",
                 "background-repeat": "no-repeat",
-                "text-align":"center"
+                "text-align": "center"
             });
 
-            s = ""
+            if (window.innerWidth < 768) {
+                s = ""
 
-            for (let i = 0; i < data.length; i += 3) {
-                s += `"`
-                for (let j = i; j < i + 3; j++) {
 
-                    if (data[j] != undefined) {
-                        s += `${data[j].nama}`
-                    } else if (data[j] == undefined) {
-                        s += "none"
+                for (let i = 0; i < data.length; i++) {
+                    s += `"${data[i].nama}"`
+                }
+                $('#konten').css({
+                    "grid-template-areas": s.trim(),
+                    "grid-template-rows": `repeat(${data.length}, 300px)`
+                });
+            } else {
+                s = ""
+                for (let i = 0; i < data.length; i += 3) {
+                    s += `"`
+                    for (let j = i; j < i + 3; j++) {
+
+                        if (data[j] != undefined) {
+                            s += `${data[j].nama}`
+                        } else if (data[j] == undefined) {
+                            s += "none"
+                        }
+
+                        if (j != i + 2) {
+                            s += " "
+                        }
+
                     }
+                    s += `"`
 
-                    if (j != i + 2) {
+                    if (i != data.length - (data.length % 3)) {
                         s += " "
                     }
-
                 }
-                s += `"`
-
-                if (i != data.length - (data.length % 3)) {
-                    s += " "
-                }
+                console.log(s)
+                $('#konten').css({
+                    "grid-template-areas": s,
+                    "grid-template-rows": `repeat(${Math.ceil(data.length / 3)}, 450px)`
+                });
             }
-
-            $('#konten').css({
-                "grid-template-areas": s,
-                "grid-template-rows": `repeat(${Math.ceil(data.length / 3)}, 300px)`
-            });
         }
 
         $('.konten_isi').click(function () {
@@ -104,8 +116,51 @@ $(document).ready(function () {
                 $('#popup_text').empty();
                 $('#popup_title').empty();
                 document.body.style.overflow = ''
+                $('#dropdown').val('deskripsi');
             }, 200)
-
         });
+
+        $(window).on("resize", function () {
+            if (window.innerWidth < 768) {
+                s = ""
+
+
+                for (let i = 0; i < data.length; i++) {
+                    s += `"${data[i].nama}"`
+                }
+                $('#konten').css({
+                    "grid-template-areas": s.trim(),
+                    "grid-template-rows": `repeat(${data.length}, 300px)`
+                });
+            } else {
+                s = ""
+                for (let i = 0; i < data.length; i += 3) {
+                    s += `"`
+                    for (let j = i; j < i + 3; j++) {
+
+                        if (data[j] != undefined) {
+                            s += `${data[j].nama}`
+                        } else if (data[j] == undefined) {
+                            s += "none"
+                        }
+
+                        if (j != i + 2) {
+                            s += " "
+                        }
+
+                    }
+                    s += `"`
+
+                    if (i != data.length - (data.length % 3)) {
+                        s += " "
+                    }
+                }
+                console.log(s)
+                $('#konten').css({
+                    "grid-template-areas": s,
+                    "grid-template-rows": `repeat(${Math.ceil(data.length / 3)}, 450px)`
+                });
+            }
+        })
     });
 });
