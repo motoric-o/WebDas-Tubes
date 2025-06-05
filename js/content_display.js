@@ -15,6 +15,7 @@ $(document).ready(function () {
                     </div>
                 </div>`
             )
+
             $(`#${data[i].nama}`).css({
                 "grid-area": `${data[i].nama}`,
                 "background-image": `url(${data[i].foto})`,
@@ -58,7 +59,6 @@ $(document).ready(function () {
                         s += " "
                     }
                 }
-                console.log(s)
                 $('#konten').css({
                     "grid-template-areas": s,
                     "grid-template-rows": `repeat(${Math.ceil(data.length / 3)}, 450px)`
@@ -124,7 +124,6 @@ $(document).ready(function () {
             if (window.innerWidth < 768) {
                 s = ""
 
-
                 for (let i = 0; i < data.length; i++) {
                     s += `"${data[i].nama}"`
                 }
@@ -162,5 +161,50 @@ $(document).ready(function () {
                 });
             }
         })
+        $('#search_content').on('input', function () {
+            const query = $(this).val().toLowerCase().trim();
+            const words = query.split();
+            let visibleCount = 0;
+
+            $('.konten_isi').each(function () {
+                const name = $(this).attr('id').toLowerCase();
+                const isMatch = words.every(word => name.includes(word));
+                $(this).toggle(isMatch);
+                if (isMatch) visibleCount++;
+            });
+
+            if (window.innerWidth >= 768) {
+                const rows = Math.ceil(visibleCount / 3);
+                let s = '';
+                const visibleItems = $('.konten_isi:visible');
+
+                for (let i = 0; i < visibleItems.length; i += 3) {
+                    s += '"';
+                    for (let j = i; j < i + 3; j++) {
+                        if (visibleItems[j]) {
+                            s += $(visibleItems[j]).attr('id');
+                        } else {
+                            s += 'none';
+                        }
+                        if (j < i + 2) s += ' ';
+                    }
+                    s += '" ';
+                }
+
+                $('#konten').css({
+                    "grid-template-areas": s.trim(),
+                    "grid-template-rows": `repeat(${rows}, 450px)`
+                });
+            } else {
+                const areas = $('.konten_isi:visible').map(function () {
+                    return `"${$(this).attr('id')}"`;
+                }).get().join(' ');
+
+                $('#konten').css({
+                    "grid-template-areas": areas.trim(),
+                    "grid-template-rows": `repeat(${visibleCount}, 300px)`
+                });
+            }
+        });
     });
 });
