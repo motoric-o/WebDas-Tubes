@@ -1,0 +1,212 @@
+[
+    {
+        "nama": "Senbei",
+        "foto": "img/snack/Senbei.jpg",
+        "deskripsi": "Senbei adalah kerupuk beras tradisional Jepang yang biasanya dipanggang atau dibakar, dan sering dibumbui dengan kecap asin, gula, atau rumput laut. Teksturnya renyah dan rasanya bervariasi dari manis hingga asin.",
+        "sejarah": "Senbei berasal dari Tiongkok dan diperkenalkan ke Jepang sekitar abad ke-8. Pada zaman Edo, senbei mulai diproduksi secara massal di Tokyo dan berkembang menjadi berbagai varian regional di seluruh Jepang.",
+        "resep": {
+            "bahan": [
+                "200 g tepung beras",
+                "2 sdm kecap asin",
+                "1 sdt gula",
+                "Air secukupnya"
+            ],
+            "cara_membuat": [
+                "Campur tepung beras dan air hingga menjadi adonan kalis.",
+                "Bentuk pipih bulat, panggang di oven atau di atas api.",
+                "Olesi kecap dan gula, panggang kembali sebentar hingga harum."
+            ]
+        }
+    },
+    {
+        "nama": "Pocky",
+        "foto": "img/snack/Pocky.jpg",
+        "deskripsi": "Pocky adalah biskuit stik yang dilapisi cokelat atau rasa lain seperti stroberi, matcha, dan almond. Populer di kalangan anak muda dan sering dijadikan cemilan ringan atau hadiah.",
+        "sejarah": "Pocky pertama kali diperkenalkan oleh Glico pada tahun 1966 di Jepang. Nama 'Pocky' berasal dari suara renyah 'pokkin' saat digigit. Kini tersedia di banyak negara dengan rasa lokal yang unik.",
+        "resep": {
+            "bahan": [
+                "100 g biskuit stik (pretzel stick)",
+                "100 g cokelat batang (atau rasa sesuai selera)"
+            ],
+            "cara_membuat": [
+                "Lelehkan cokelat dalam wadah tahan panas.",
+                "Celupkan bagian atas stik ke dalam cokelat.",
+                "Letakkan di atas kertas roti, diamkan hingga mengeras."
+            ]
+        }
+    },
+    {
+        "nama": "Taiyaki",
+        "foto": "img/snack/Taiyaki.jpg",
+        "deskripsi": "Taiyaki adalah kue berbentuk ikan berisi pasta kacang merah, custard, cokelat, atau keju. Renyah di luar, lembut di dalam. Nama dan bentuknya diambil dari ikan tai (ikan kakap).",
+        "sejarah": "Taiyaki mulai populer di Tokyo pada awal abad ke-20 sebagai variasi dari imagawayaki (kue bulat berisi kacang merah). Bentuk ikan dianggap membawa keberuntungan dan menjadi daya tarik utama.",
+        "resep": {
+            "bahan": [
+                "100 g tepung terigu",
+                "1 butir telur",
+                "150 ml susu",
+                "2 sdm gula",
+                "Isian: pasta kacang merah atau custard"
+            ],
+            "cara_membuat": [
+                "Campur semua bahan adonan hingga rata.",
+                "Panaskan cetakan taiyaki, tuang adonan, beri isian, tutup dengan adonan lagi.",
+                "Panggang kedua sisi hingga kecokelatan dan matang."
+            ]
+        }
+    },
+    {
+        "nama": "Kaki-no-Tane",
+        "foto": "img/snack/Kaki-no-tane.jpg",
+        "deskripsi": "Kaki no Tane adalah campuran kerupuk berbentuk biji kesemek dan kacang, biasanya pedas atau asin. Umum dijadikan camilan pendamping bir di Jepang.",
+        "sejarah": "Snack ini diciptakan oleh produsen makanan Jepang pada awal abad ke-20. Bentuknya yang unik dan rasa gurihnya membuatnya cepat populer, terutama sebagai camilan dewasa.",
+        "resep": {
+            "bahan": [
+                "Kerupuk beras kecil (pedas atau asin)",
+                "Kacang tanah panggang"
+            ],
+            "cara_membuat": [
+                "Campurkan kerupuk dan kacang sesuai perbandingan 2:1.",
+                "Simpan dalam wadah kedap udara dan sajikan sebagai camilan."
+            ]
+        }
+    },
+    {
+        "nama": "Mochi",
+        "foto": "img/snack/Mochi.jpg",
+        "deskripsi": "Mochi adalah kue kenyal dari beras ketan tumbuk, bisa diisi pasta kacang merah, es krim, atau rasa lain. Disajikan sebagai kudapan atau hidangan perayaan seperti Tahun Baru Jepang.",
+        "sejarah": "Mochi telah dikonsumsi di Jepang sejak zaman Jomon, awalnya sebagai makanan persembahan spiritual. Tradisi membuat mochi (mochitsuki) menjadi bagian penting dari budaya keluarga Jepang.",
+        "resep": {
+            "bahan": [
+                "200 g tepung ketan",
+                "150 ml air",
+                "Gula secukupnya",
+                "Isian: pasta kacang merah (anko) atau es krim"
+            ],
+            "cara_membuat": [
+                "Campur tepung ketan, gula, dan air, kukus hingga matang dan kenyal.",
+                "Bulatkan dan isi dengan anko atau es krim, taburi tepung maizena agar tidak lengket.",
+                "Sajikan dingin atau suhu ruang."
+            ]
+        }
+    },
+    {
+        "nama": "Jagariko",
+        "foto": "img/snack/JAgariko.jpg",
+        "deskripsi": "Jagariko adalah stik kentang kering renyah yang disukai anak muda Jepang. Tersedia dalam berbagai rasa seperti keju, salad, mentega, dan edamame. Dikemas dalam cup kecil praktis.",
+        "sejarah": "Diluncurkan oleh Calbee pada tahun 1995, Jagariko cepat menjadi favorit karena tekstur renyah dan rasa uniknya. Banyak orang Jepang juga mencampurnya dengan air panas untuk membuat kentang tumbuk instan.",
+        "resep": {
+            "bahan": [
+                "Kentang rebus",
+                "Tepung maizena",
+                "Keju bubuk atau bumbu rasa sesuai selera"
+            ],
+            "cara_membuat": [
+                "Haluskan kentang, campur tepung dan bumbu.",
+                "Bentuk memanjang kecil, panggang hingga kering dan renyah.",
+                "Simpan dalam toples dan nikmati."
+            ]
+        }
+    },
+    {
+        "nama": "Dorayaki",
+        "foto": "img/snack/Dorayaki.jpg",
+        "deskripsi": "Dorayaki adalah kue berbentuk bulat pipih mirip pancake, biasanya berisi pasta kacang merah manis (anko). Teksturnya lembut dan rasanya manis, cocok sebagai camilan atau sarapan ringan.",
+        "sejarah": "Dorayaki konon berasal dari zaman feodal Jepang, tetapi bentuk modernnya yang terdiri dari dua lapis 'pancake' dipopulerkan oleh toko Ueno Usagiya pada tahun 1914. Tokoh kartun Doraemon turut membuat dorayaki semakin terkenal.",
+        "resep": {
+            "bahan": [
+                "2 butir telur",
+                "100 g gula",
+                "1 sdm madu",
+                "130 g tepung terigu",
+                "1/2 sdt baking soda",
+                "2 sdm air",
+                "Pasta kacang merah (anko)"
+            ],
+            "cara_membuat": [
+                "Kocok telur, gula, dan madu. Tambahkan tepung dan baking soda, lalu air.",
+                "Panaskan wajan anti lengket, tuang adonan seperti pancake kecil.",
+                "Setelah matang, tempelkan dua bagian dengan isian anko di tengahnya."
+            ]
+        }
+    },
+    {
+        "nama": "Manju",
+        "foto": "img/snack/Manju.jpg",
+        "deskripsi": "Manju adalah kue kukus berisi pasta kacang merah, terbuat dari adonan tepung dan gula. Ada banyak variasi manju, seperti yang dibungkus daun kastanye (kashiwa manju) atau dibakar (yaki manju).",
+        "sejarah": "Manju berasal dari Tiongkok dan dibawa ke Jepang pada abad ke-14 oleh biksu Zen. Manju menjadi kue khas upacara minum teh dan oleh-oleh dari berbagai daerah di Jepang.",
+        "resep": {
+            "bahan": [
+                "100 g tepung terigu",
+                "1/2 sdt baking powder",
+                "2 sdm gula",
+                "50 ml air",
+                "Isian: pasta kacang merah (anko)"
+            ],
+            "cara_membuat": [
+                "Campur bahan kering, tambahkan air, uleni hingga kalis.",
+                "Bagi adonan, isi dengan anko, bentuk bulat.",
+                "Kukus selama 10–15 menit hingga matang."
+            ]
+        }
+    },
+    {
+        "nama": "Karinto",
+        "foto": "img/snack/Karinto.jpg",
+        "deskripsi": "Karinto adalah camilan manis berupa adonan tepung yang digoreng dan dilapisi gula karamel. Teksturnya renyah dan rasanya manis legit.",
+        "sejarah": "Karinto sudah ada sejak zaman Edo dan awalnya dibuat sebagai camilan murah meriah. Dulu dijual oleh pedagang keliling. Kini banyak toko wagashi (manisan tradisional Jepang) yang menjual varian modern karinto.",
+        "resep": {
+            "bahan": [
+                "150 g tepung terigu",
+                "2 sdm gula",
+                "1 sdm minyak",
+                "Air secukupnya",
+                "Gula merah untuk lapisan"
+            ],
+            "cara_membuat": [
+                "Buat adonan dari tepung, gula, dan air, bentuk batang kecil.",
+                "Goreng hingga kecokelatan, tiriskan.",
+                "Lelehkan gula merah, masukkan karinto, aduk hingga terlapisi rata."
+            ]
+        }
+    },
+    {
+        "nama": "Arare",
+        "foto": "img/snack/Arare.jpg",
+        "deskripsi": "Arare adalah kerupuk kecil dari tepung beras, sering dibumbui dengan kecap asin dan terkadang dibalut rumput laut. Biasanya disajikan saat Tahun Baru atau sebagai camilan sehari-hari.",
+        "sejarah": "Arare berasal dari Kyoto dan awalnya disajikan dalam upacara atau perayaan. Nama 'arare' berarti 'hujan es kecil', merujuk pada bentuknya yang mungil dan keras.",
+        "resep": {
+            "bahan": [
+                "Tepung beras",
+                "Kecap asin",
+                "Gula (opsional)",
+                "Nori (rumput laut kering), potong kecil"
+            ],
+            "cara_membuat": [
+                "Buat adonan tepung beras, bentuk kecil, panggang hingga kering.",
+                "Celupkan ke campuran kecap dan gula, lalu keringkan kembali.",
+                "Balut sebagian dengan potongan nori."
+            ]
+        }
+    },
+    {
+        "nama": "Yatsuhashi",
+        "foto": "img/snack/Yatsuhashi.jpg",
+        "deskripsi": "Yatsuhashi adalah kue khas Kyoto yang terbuat dari tepung beras, gula, dan kayu manis. Ada dua jenis: panggang (keras) dan nama yatsuhashi (lembut, biasanya diisi anko).",
+        "sejarah": "Dinamai dari musisi Yatsuhashi Kengyō, kue ini menjadi oleh-oleh terkenal dari Kyoto sejak abad ke-17. Nama yatsuhashi dikenal luas di kalangan wisatawan lokal dan mancanegara.",
+        "resep": {
+            "bahan": [
+                "100 g tepung beras ketan",
+                "50 g gula",
+                "1/2 sdt kayu manis",
+                "Air secukupnya",
+                "Pasta kacang merah (untuk versi lembut)"
+            ],
+            "cara_membuat": [
+                "Campur bahan, kukus hingga kalis.",
+                "Gilas tipis, potong segitiga, beri isian anko jika diinginkan.",
+                "Untuk versi panggang, oven hingga kering dan renyah."
+            ]
+        }
+    }
+]

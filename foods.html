@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foods</title>
     <link rel="stylesheet" href="css/global.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/content_display.css">
 </head>
+
 <body>
     <header>
         <div onclick="toggleMenu()" id="three-bar">
@@ -27,6 +31,113 @@
             </li>
         </ul>
     </header>
+
+    <hero>
+        <div id="hero_container" style="background-image: url('/img/makanan/hero.jpg');">
+            <div id="hero-blur"></div>
+            <div id="hero_background">
+            </div>
+            <div id="hero-content">
+                <h1 id="welcome">Makanan Jepang!</h1>
+                <p id="hero-paragraph" class="paragraph">
+                    Nikmati kelezatan autentik Jepang dalam setiap gigitan—dari sushi yang segar, ramen berkuah gurih,
+                    hingga tempura yang renyah. Makanan Jepang tidak hanya memanjakan lidah, tapi juga menyuguhkan seni
+                    dalam penyajian dan keseimbangan rasa yang menenangkan jiwa. Temukan cita rasa khas Negeri Sakura
+                    yang
+                    kaya tradisi dan penuh kehangatan.
+                </p>
+            </div>
+        </div>
+    </hero>
+
+    <div id="background">
+        
+    </div>
+
+    <div id="popup">
+        <div id="popup_img" grid-area="popup_img">
+
+        </div>
+        <div grid-area="popup_konten">
+            <div id="popup_judul">
+                <h1 id="popup_title"></h1>
+                <div id="popup_sub">
+                    <button id="button-favorite">Favorite ♡</button>
+                    <div id="cancel">
+                    <h1>X</h1>
+                </div>
+                </div>
+                
+            </div>
+            <div id="popup_konten">
+                <select name="" id="dropdown">
+                    <option value="deskripsi">Deskripsi</option>
+                    <option value="sejarah">Sejarah</option>
+                    <option value="resep">Resep</option>
+                </select>
+                <div id="popup_text">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="intro">Cari makanan Jepang</h1>
+
+    <div id="search">
+        <input type="text" id="search_content" placeholder="Search Japanese foods..." />
+    </div>
+
+    <main id="konten">
+
+    </main>
+
+    <footer>
+        <div id="footer-grid">
+            <div id="web-desc">
+                <h2>What is this website about?</h2>
+                <p>This website is built just for those who are culinary enthusiasts. Specifically Japanese
+                    Culinaries.
+                    We want the world to know what's special and what's unique about Japanese Culinary. This website
+                    can
+                    also
+                    be a good source for those who are trying to find a good recipe to cook Japanese cuisine. We
+                    tell
+                    backstories about the food too, for those who are intrigued towards food history.
+                </p>
+            </div>
+            <div id="social-media">
+                <h2>Social Medias</h2>
+                <div id="social-media-inner">
+                    <a href=""><img src="img/footer/instagram.png" alt=""></a>
+                    <a href=""><img src="img/footer/yt.png" alt=""></a>
+                    <a href=""><img src="img/footer/x.png" alt=""></a>
+                </div>
+            </div>
+            <div id="contacts">
+                <h2>Contacts</h2>
+                <div id="contacts-inner">
+                    <div>
+                        <p>Email:</p>
+                        <ul type="none">
+                            <li>2472013@maranatha.ac.id</li>
+                            <li>2472041@maranatha.ac.id</li>
+                            <li>2472060@maranatha.ac.id</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Phones:</p>
+                        <ul type="none">
+                            <li>085559630210</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="creator">Created by Japan Team. 2025 All rights reserved.</p>
+    </footer>
 </body>
 <script src="js/header.js"></script>
+<script src="js/content_display.js"></script>
+
 </html>
