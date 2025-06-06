@@ -3,7 +3,10 @@ $(document).ready(function () {
 
     if (window.location.pathname == '/beverages.html') {
         dataPath = 'data/minuman.json'
+    } else if (window.location.pathname == '/snacks.html') {
+        dataPath = 'data/snack.json'
     }
+    
     $.getJSON(dataPath, function (data) {
         let add = 0
         var timeout = 100
