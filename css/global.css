@@ -61,7 +61,7 @@ a {
 #header-list {
     display: block;
     position: absolute;
-    top: -240px;
+    top: -320px;
     left: 0;
     margin: 0;
     padding: 0;
@@ -69,7 +69,7 @@ a {
     background-color: #ff3838;
     color: white;
     transition: top 0.75s ease-in-out;
-
+    z-index: 2;
     &.open {
         top: 0;
     }
@@ -79,7 +79,9 @@ a {
     margin: 0;
     padding: 0;
     height: 40px;
+    min-width: 100px;
     width: auto;
+    margin-top: 5px;
 }
 
 #header-list #header-list-close {

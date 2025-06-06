@@ -1,0 +1,91 @@
+.welcome {
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#favorites {
+    width: 50%;
+}
+
+#favorites tr th {
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+
+.favorites-action {
+    width: 5%;
+    text-align: center;
+    position: relative;
+}
+
+.favorites-action:hover .remove {
+    opacity: 100%;
+}
+
+.favorites-item {
+    width: 40%;
+    text-align: left;
+}
+
+.favorites-item p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.favorites-category {
+    width: 20%;
+    text-align: left;
+}
+
+.favorites-category p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#favorites-content tr td {
+    padding: 10px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.remove {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    font-family: Futura-Medium;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    padding: 5px;
+    width: 35px;
+    opacity: 0%;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.remove:active {
+    background-color: #880000;
+}
+
+footer {
+    position: absolute;
+    top: 950px
+}
+
+@media (min-width: 768px) {
+    .welcome {
+        font-size: 3rem;
+    }
+}
