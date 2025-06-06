@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beverages</title>
+    <title>Favorit</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/favorite.css">
     <script src="js/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/content_display.css">
 </head>
 
 <body>
@@ -32,65 +32,20 @@
         </ul>
     </header>
 
-    <hero>
-        <div id="hero_container" style="background-image: url('/img/minuman/hero.jpg');">
-            <div id="hero-blur"></div>
-            <div id="hero_background">
-            </div>
-            <div id="hero-content">
-                <h1 id="welcome">Minuman Jepang!</h1>
-                <p id="hero-paragraph" class="paragraph">
-                    Segarkan harimu dengan cita rasa khas Jepang—dari teh hijau matcha yang menenangkan, sake
-                    tradisional
-                    yang hangat, hingga ramuan modern seperti ramune dan milk tea yang menyegarkan. Setiap tegukan
-                    membawa
-                    cerita budaya, kesederhanaan, dan keindahan yang menjadi bagian tak terpisahkan dari gaya hidup
-                    Jepang.
-                </p>
-            </div>
-        </div>
-    </hero>
+    <h1 class="welcome">Menu Favorit Kamu</h1>
+    <div class="container">
+        <table id="favorites" cellspacing="0">
+            <tr>
+                <th class="favorites-action" id="favorites-action-th">#</th>
+                <th class="favorites-item" id="favorites-item-th">Item</th>
+                <th class="favorites-category" id="favorites-category-th">Category</th>
+            </tr>
 
-    <div id="background">
+            <tbody id="favorites-content">
 
+            </tbody>
+        </table>
     </div>
-
-    <div id="popup">
-        <div id="popup_img" grid-area="popup_img">
-
-        </div>
-        <div grid-area="popup_konten">
-            <div id="popup_judul">
-                <h1 id="popup_title"></h1>
-                <div id="popup_sub">
-                    <button id="button-favorite">Favorite ♡</button>
-                    <div id="cancel">
-                    <h1>X</h1>
-                </div>
-                </div>
-                
-            </div>
-            <div id="popup_konten">
-                <select name="" id="dropdown">
-                    <option value="deskripsi">Deskripsi</option>
-                    <option value="sejarah">Sejarah</option>
-                    <option value="resep">Resep</option>
-                </select>
-                <div id="popup_text">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h1 id="intro">Cari minuman Jepang</h1>
-
-    <div id="search">
-        <input type="text" id="search_content" placeholder="Search Japanese beverages..." />
-    </div>
-
-    <main id="konten">
-
-    </main>
 
     <footer>
         <div id="footer-grid">
@@ -139,6 +94,6 @@
     </footer>
 </body>
 <script src="js/header.js"></script>
-<script src="js/content_display.js"></script>
+<script src="js/favorites.js"></script>
 
 </html>

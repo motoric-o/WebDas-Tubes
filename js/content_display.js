@@ -1,11 +1,12 @@
 $(document).ready(function () {
-    var dataPath = 'data/makanan.json'
+    var dataPath = 'data/makanan.json';
 
     if (window.location.pathname == '/beverages.html') {
         dataPath = 'data/minuman.json'
     }
     $.getJSON(dataPath, function (data) {
         let add = 0
+        var timeout = 100
 
         for (let i = 0; i < data.length; i++) {
             $('#konten').append(
@@ -22,19 +23,20 @@ $(document).ready(function () {
                 "background-size": "cover",
                 "background-position": "center",
                 "background-repeat": "no-repeat",
-                "text-align": "center"
+                "text-align": "center",
+                "opacity": "0%",
+                "transform": "translateY(-50px)",
+                "transition": "all 0.75s ease-in-out"
             });
 
-            if (window.innerWidth < 768) {
+            if (screen.width < 768 || window.innerWidth < 768) {
                 s = ""
-
 
                 for (let i = 0; i < data.length; i++) {
                     s += `"${data[i].nama}"`
                 }
                 $('#konten').css({
-                    "grid-template-areas": s.trim(),
-                    "grid-template-rows": `repeat(${data.length}, 300px)`
+                    "grid-template-areas": s
                 });
             } else {
                 s = ""
@@ -60,10 +62,24 @@ $(document).ready(function () {
                     }
                 }
                 $('#konten').css({
-                    "grid-template-areas": s,
-                    "grid-template-rows": `repeat(${Math.ceil(data.length / 3)}, 450px)`
+                    "grid-template-areas": s
                 });
             }
+
+            setTimeout(() => {
+                $(`#${data[i].nama}`).css({
+                    "opacity": "100%",
+                    "transform": "translateY(0px)"
+                });
+            }, timeout);
+
+            setTimeout(() => {
+                $(`#${data[i].nama}`).css({
+                    "transition": "all 0.25s ease-in-out"
+                });
+            }, timeout + 750);
+
+            timeout += 200;
         }
 
         $('.konten_isi').click(function () {
@@ -72,7 +88,7 @@ $(document).ready(function () {
             for (let i = 0; i < data.length; i++) {
                 if (clickedId === data[i].nama) {
                     add = i
-                    $('#background').css({ "top": "0" });
+                    $('#background').css({ "opacity": "60%", "z-index": "2" });
                     $('#popup').css({ "top": "15%" });
                     $('#popup_img').css({
                         "background-image": `url(${data[i].foto})`,
@@ -110,7 +126,7 @@ $(document).ready(function () {
 
         $('#cancel').click(function () {
             $('#popup').css({ "top": "-100%" });
-            $('#background').css({ "top": "-100%" });
+            $('#background').css({ "opacity": "0%", "z-index": "-1" });
             setTimeout(() => {
                 $('#popup_img').empty();
                 $('#popup_text').empty();
@@ -121,25 +137,25 @@ $(document).ready(function () {
         });
 
         $(window).on("resize", function () {
-            if (window.innerWidth < 768) {
-                s = ""
+            if (screen.width < 768 || window.innerWidth < 768) {
+                let s = '';
 
-                for (let i = 0; i < data.length; i++) {
-                    s += `"${data[i].nama}"`
+                for (let i = 0; i < $('.konten_isi:visible').length; i++) {
+                    s += `"${$('.konten_isi:visible')[i].id}"`;
                 }
+
                 $('#konten').css({
-                    "grid-template-areas": s.trim(),
-                    "grid-template-rows": `repeat(${data.length}, 300px)`
+                    "grid-template-areas": s
                 });
             } else {
                 s = ""
-                for (let i = 0; i < data.length; i += 3) {
+                for (let i = 0; i < $('.konten_isi:visible').length; i += 3) {
                     s += `"`
                     for (let j = i; j < i + 3; j++) {
 
-                        if (data[j] != undefined) {
-                            s += `${data[j].nama}`
-                        } else if (data[j] == undefined) {
+                        if ($('.konten_isi:visible')[j] != undefined) {
+                            s += `${$('.konten_isi:visible')[j].id}`
+                        } else if ($('.konten_isi:visible')[j] == undefined) {
                             s += "none"
                         }
 
@@ -150,14 +166,13 @@ $(document).ready(function () {
                     }
                     s += `"`
 
-                    if (i != data.length - (data.length % 3)) {
+                    if (i != $('.konten_isi:visible').length - ($('.konten_isi:visible').length % 3)) {
                         s += " "
                     }
                 }
-                console.log(s)
+
                 $('#konten').css({
-                    "grid-template-areas": s,
-                    "grid-template-rows": `repeat(${Math.ceil(data.length / 3)}, 450px)`
+                    "grid-template-areas": s
                 });
             }
         })
@@ -173,8 +188,7 @@ $(document).ready(function () {
                 if (isMatch) visibleCount++;
             });
 
-            if (window.innerWidth >= 768) {
-                const rows = Math.ceil(visibleCount / 3);
+            if (screen.width >= 768 || window.innerWidth >= 768) {
                 let s = '';
                 const visibleItems = $('.konten_isi:visible');
 
@@ -192,17 +206,17 @@ $(document).ready(function () {
                 }
 
                 $('#konten').css({
-                    "grid-template-areas": s.trim(),
-                    "grid-template-rows": `repeat(${rows}, 450px)`
+                    "grid-template-areas": s
                 });
             } else {
-                const areas = $('.konten_isi:visible').map(function () {
-                    return `"${$(this).attr('id')}"`;
-                }).get().join(' ');
+                let s = '';
+
+                for (let i = 0; i < $('.konten_isi:visible').length; i++) {
+                    s += `"${$('.konten_isi:visible')[i].id}"`;
+                }
 
                 $('#konten').css({
-                    "grid-template-areas": areas.trim(),
-                    "grid-template-rows": `repeat(${visibleCount}, 300px)`
+                    "grid-template-areas": s
                 });
             }
         });

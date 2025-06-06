@@ -19,11 +19,12 @@
         </div>
         <h1>Japan</h1>
         <ul type="none" id="header-list">
-            <li><a class="header-list-content" href="index.html">HOME</a></li>
-            <li><a class="header-list-content" href="foods.html">FOOD</a></li>
-            <li><a class="header-list-content" href="beverages.html">BEVERAGES</a></li>
-            <li><a class="header-list-content" href="snacks.html">SNACKS</a></li>
-            <li><a class="header-list-content" href="aboutus.html">ABOUT US</a></li>
+            <li><a class="header-list-content" href="index.html">BERANDA</a></li>
+            <li><a class="header-list-content" href="foods.html">MAKANAN</a></li>
+            <li><a class="header-list-content" href="beverages.html">MINUMAN</a></li>
+            <li><a class="header-list-content" href="snacks.html">CAMILAN</a></li>
+            <li><a class="header-list-content" href="favorite.html">FAVORIT</a></li>
+            <li><a class="header-list-content" href="aboutus.html">KONTAK</a></li>
             <li id="header-list-close" onclick="toggleMenu()">
                 <div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px" alt="">
                 </div>
@@ -32,13 +33,20 @@
     </header>
 
     <hero>
-        <div class="hero-container">
+        <div id="hero-container">
             <h1 id="welcome">Welcome to Japan!</h1>
-            <p class="hero-paragraph">aaa</p>
+            <p id="hero-paragraph" class="paragraph">
+                Selamat datang di Jepang — negeri matahari terbit yang memadukan tradisi kuno dan
+                teknologi modern dalam harmoni yang memukau. Jelajahi keindahan alamnya, nikmati kelezatan kulinernya,
+                dan temukan budaya yang kaya dan penuh pesona. Siap untuk petualangan tak terlupakan? Mari mulai
+                perjalanan Anda sekarang.</p>
         </div>
-        <div class="image-collection">
-            <img src="img/index/hero.jpg" alt="">
-            <img src="img/index/hero1.avif" alt="">
+        <div id="img-collection-hero">
+            <div id="img-collection-content-hero" class="img-collection-content">
+                <div id="img-hero-1"></div>
+                <div id="img-hero-2"></div>
+                <div id="img-hero-3"></div>
+            </div>
         </div>
     </hero>
 
@@ -47,15 +55,97 @@
     <div id="sub-intro" class="container">
         <h1 class="center">Kuliner!</h1>
         <p class="center">
-            Mari explore kuliner yang luar biasa di Jepang!
+            Mari eksplor kuliner yang luar biasa di Jepang!
         </p>
     </div>
 
-    <div id="foods" class="container">
-        <div id="foods-container">
-            <h2>boi</h2>
+    <div id="culinary" class="container">
+        <div id="culinary-scroll"></div>
+        <div id="img-collection-culinary" class="img-collection-content">
+            <div id="img-collection-content-culinary" class="img-collection-content">
+                <div id="img-culinary-1"></div>
+                <div id="img-culinary-2"></div>
+                <div id="img-culinary-3"></div>
+                <div id="img-culinary-4"></div>
+                <div id="img-culinary-5"></div>
+                <div id="img-culinary-6"></div>
+            </div>
+        </div>
+        <div id="culinary-container">
+            <h2 id="culinary-header">Kenapa kuliner <u>Jepang</u>?</h2>
+            <p id="culinary-paragraph" class="paragraph">
+                Kuliner Jepang adalah perpaduan rasa, estetika, dan tradisi yang telah diwariskan selama
+                berabad-abad.
+                Dari kelezatan sushi yang segar hingga semangkuk ramen hangat yang menggugah selera, setiap hidangan
+                mencerminkan filosofi hidup dan kedekatan masyarakat Jepang dengan alam. Siapkan diri Anda untuk
+                menjelajahi dunia rasa yang unik, penuh kejutan, dan tentunya menggoda lidah.
+            </p>
         </div>
     </div>
+
+    <div id="explore" class="container">
+        <h1 id="explore-title">Eksplor!</h1>
+        <div id="explore-scroll"></div>
+        <div id="explore-inner">
+            <div id="to-foods">
+                <div><a class="to-links">Makanan</a></div>
+            </div>
+            <div id="to-beverages">
+                <div><a class="to-links">Minuman</a></div>
+            </div>
+            <div id="to-snacks">
+                <div><a class="to-links">Camilan</a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-grid">
+            <div id="web-desc">
+                <h2>What is this website about?</h2>
+                <p>This website is built just for those who are culinary enthusiasts. Specifically Japanese
+                    Culinaries.
+                    We want the world to know what's special and what's unique about Japanese Culinary. This website
+                    can
+                    also
+                    be a good source for those who are trying to find a good recipe to cook Japanese cuisine. We
+                    tell
+                    backstories about the food too, for those who are intrigued towards food history.
+                </p>
+            </div>
+            <div id="social-media">
+                <h2>Social Medias</h2>
+                <div id="social-media-inner">
+                    <a href=""><img src="img/footer/instagram.png" alt=""></a>
+                    <a href=""><img src="img/footer/yt.png" alt=""></a>
+                    <a href=""><img src="img/footer/x.png" alt=""></a>
+                </div>
+            </div>
+            <div id="contacts">
+                <h2>Contacts</h2>
+                <div id="contacts-inner">
+                    <div>
+                        <p>Email:</p>
+                        <ul type="none">
+                            <li>2472013@maranatha.ac.id</li>
+                            <li>2472041@maranatha.ac.id</li>
+                            <li>2472060@maranatha.ac.id</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Phones:</p>
+                        <ul type="none">
+                            <li>085559630210</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="creator">Created by Japan Team. 2025 All rights reserved.</p>
+    </footer>
 </body>
 <script src="js/header.js"></script>
+<script src="js/index.js"></script>
+
 </html>

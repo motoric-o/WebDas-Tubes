@@ -19,11 +19,12 @@
         </div>
         <h1>Japan</h1>
         <ul type="none" id="header-list">
-            <li><a class="header-list-content" href="index.html">HOME</a></li>
-            <li><a class="header-list-content" href="foods.html">FOOD</a></li>
-            <li><a class="header-list-content" href="beverages.html">BEVERAGES</a></li>
-            <li><a class="header-list-content" href="snacks.html">SNACKS</a></li>
-            <li><a class="header-list-content" href="aboutus.html">ABOUT US</a></li>
+            <li><a class="header-list-content" href="index.html">BERANDA</a></li>
+            <li><a class="header-list-content" href="foods.html">MAKANAN</a></li>
+            <li><a class="header-list-content" href="beverages.html">MINUMAN</a></li>
+            <li><a class="header-list-content" href="snacks.html">CAMILAN</a></li>
+            <li><a class="header-list-content" href="favorite.html">FAVORIT</a></li>
+            <li><a class="header-list-content" href="aboutus.html">KONTAK</a></li>
             <li id="header-list-close" onclick="toggleMenu()">
                 <div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px" alt="">
                 </div>
@@ -33,21 +34,24 @@
 
     <hero>
         <div id="hero_container" style="background-image: url('/img/makanan/hero.jpg');">
+            <div id="hero-blur"></div>
             <div id="hero_background">
             </div>
-            <h1 id="welcome">Welcome to Japanese Foods!</h1>
-            <p id="hero-paragraph" class="paragraph">
-                Nikmati kelezatan autentik Jepang dalam setiap gigitan—dari sushi yang segar, ramen berkuah gurih,
-                hingga tempura yang renyah. Makanan Jepang tidak hanya memanjakan lidah, tapi juga menyuguhkan seni
-                dalam penyajian dan keseimbangan rasa yang menenangkan jiwa. Temukan cita rasa khas Negeri Sakura
-                yang
-                kaya tradisi dan penuh kehangatan.
-            </p>
+            <div id="hero-content">
+                <h1 id="welcome">Makanan Jepang!</h1>
+                <p id="hero-paragraph" class="paragraph">
+                    Nikmati kelezatan autentik Jepang dalam setiap gigitan—dari sushi yang segar, ramen berkuah gurih,
+                    hingga tempura yang renyah. Makanan Jepang tidak hanya memanjakan lidah, tapi juga menyuguhkan seni
+                    dalam penyajian dan keseimbangan rasa yang menenangkan jiwa. Temukan cita rasa khas Negeri Sakura
+                    yang
+                    kaya tradisi dan penuh kehangatan.
+                </p>
+            </div>
         </div>
     </hero>
 
     <div id="background">
-
+        
     </div>
 
     <div id="popup">
@@ -56,13 +60,14 @@
         </div>
         <div grid-area="popup_konten">
             <div id="popup_judul">
-                <div>
-                    <h1 id="popup_title"></h1>
-                </div>
-                <button id="button-favorite">Favorite ♡</button>
-                <div id="cancel">
+                <h1 id="popup_title"></h1>
+                <div id="popup_sub">
+                    <button id="button-favorite">Favorite ♡</button>
+                    <div id="cancel">
                     <h1>X</h1>
                 </div>
+                </div>
+                
             </div>
             <div id="popup_konten">
                 <select name="" id="dropdown">
@@ -75,6 +80,8 @@
             </div>
         </div>
     </div>
+
+    <h1 id="intro">Cari makanan Jepang</h1>
 
     <div id="search">
         <input type="text" id="search_content" placeholder="Search Japanese foods..." />
