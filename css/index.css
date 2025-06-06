@@ -1,9 +1,8 @@
 hero {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: 500px;
-    background-color: lightgray;
+    gap: 10px;
+    height: 550px;
     width: 100%;
 }
 
@@ -18,34 +17,59 @@ hero {
     margin-left: auto;
 }
 
-.hero-container {
+#hero-container {
     text-align: center;
-    height: 45%;
+    height: auto;
+    max-height: 100%;
     padding: 20px;
+    background-color: lightgray;
 }
 
-.image-collection {
+#img-collection-hero {
     width: 100%;
-    height: min(60%, 300px);
-    background-color: beige;
-}
-
-.image-collection-content {
-    position: relative;
     height: 100%;
-    width: min(500px, 100%);
-    margin-left: auto;
-    margin-right: auto;
+    background-color: white;
 }
 
-.image-collection-content img {
-    width: 40%;
+#img-collection-content-hero {
+    display: grid;
+    grid-template-areas:
+        ". hero2 ."
+        "hero1 hero2 hero3"
+        ". hero2 ."
+    ;
+    gap: 10px;
+    height: 100%;
+    max-width: 500px;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
+    background-color: white;
+}
+
+.img-collection-content div {
     border-radius: 10px;
-    top: 25%;
-    left: 15%;
+}
+
+#img-hero-1 {
+    grid-area: hero1;
+    background-image: url('../img/index/hero.jpg');
+    background-size: auto 100%;
+    grid-row: 1 / 3;
+}
+
+#img-hero-2 {
+    grid-area: hero2;
+    background-image: url('../img/index/hero2.jpg');
+    background-size: auto 100%;
+    background-position: 47% 0;
+}
+
+#img-hero-3 {
+    grid-area: hero3;
+    background-image: url('../img/index/hero1.jpg');
+    background-size: auto 105%;
+    grid-row: 2 / -1;
 }
 
 #intro {
@@ -53,8 +77,120 @@ hero {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 250px;
-    margin-bottom: 300px;
+    margin-top: 110px;
+}
+
+#sub-intro {
+    margin-top: 120px;
+}
+
+#culinary {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#culinary-scroll {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 50px;
+}
+
+#img-collection-culinary {
+    min-height: 350px;
+    height: 60vw;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-collection-content-culinary {
+    display: grid;
+    grid-template-areas:
+        ". cul3 ."
+        "cul1 cul4 cul6"
+        "cul2 cul5 ."
+    ;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    gap: 10px;
+    height: 100%;
+
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-culinary-1 {
+    grid-area: cul1;
+    grid-row: 1/3;
+    background-image: url('../img/index/culinary.jpg');
+    background-size: cover;
+    background-position: -45px 0;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+#img-culinary-2 {
+    grid-area: cul2;
+    background-image: url('../img/index/culinary1.avif');
+    background-size: cover;
+    background-position: -30px 0;
+    margin-top: -100px;
+    margin-bottom: 40px;
+}
+
+#img-culinary-3 {
+    background-image: url('../img/index/culinary3.jpeg');
+    background-size: cover;
+    background-position: 50% 0;
+    grid-area: cul3;
+}
+
+#img-culinary-4 {
+    background-image: url('../img/index/culinary2.jpg');
+    background-size: cover;
+    background-position: -30px 0;
+    grid-area: cul4;
+}
+
+#img-culinary-5 {
+    grid-area: cul5;
+    background-image: url('../img/index/culinary5.webp');
+    background-size: cover;
+    background-position: 80%;
+}
+
+#img-culinary-6 {
+    grid-area: cul6;
+    grid-row: 1/4;
+    background-image: url('../img/index/culinary4.webp');
+    background-position: 80%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#culinary-container {
+    background-color: lightgray;
+}
+
+#culinary-container h2 {
+    margin-top: 50px;
+}
+
+#culinary-header {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: red;
+    font-family: Futura-Medium;
+}
+
+#culinary-paragraph {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -65,66 +201,175 @@ hero {
     text-align: center;
 }
 
-#foods {
-    height: 100px;
-    background-color: white;
-    margin-bottom: 400px;
-}
-
-#foods-container {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-#foods-container h2 {
-    margin-bottom: 5px;
-}
-
 .paragraph {
     font-size: 1rem;
+}
+
+#explore {
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+#explore-title {
+    text-align: center;
+}
+
+#explore-inner {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 300px);
+    gap: 30px;
+}
+
+#explore-scroll {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+}
+
+#to-foods {
+    border-radius: 20px;
+    background-image: url('../img/index/culinary4.webp');
+    background-size: auto 100%;
+    background-position: 50% 0;
+    transition: all 1s ease-in-out;
+    transform: translateY(50px);
+    position: relative;
+}
+
+#to-foods:hover {
+    scale: 102.5%;
+    background-size: auto 110%;
+    background-position: 50% 0;
+}
+
+#to-foods div {
+    width: 100%;
+    height: 80px;
+    backdrop-filter: blur(5px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+#to-beverages {
+    border-radius: 20px;
+    background-image: url('../img/index/culinary2.jpg');
+    background-size: auto 100%;
+    background-position: 50% 0;
+    transition: all 1s ease-in-out;
+    transform: translateY(50px);
+    position: relative;
+}
+
+#to-beverages:hover {
+    scale: 102.5%;
+    background-size: auto 110%;
+    background-position: 50% 0;
+}
+
+#to-beverages div {
+    width: 100%;
+    height: 80px;
+    backdrop-filter: blur(5px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+#to-snacks {
+    border-radius: 20px;
+    background-image: url('../img/index/culinary5.webp');
+    background-size: auto 100%;
+    background-position: 50% 0;
+    transition: all 1s ease-in-out;
+    transform: translateY(50px);
+    position: relative;
+}
+
+#to-snacks:hover {
+    scale: 102.5%;
+    background-size: auto 110%;
+    background-position: 50% 0;
+}
+
+#to-snacks div {
+    width: 100%;
+    height: 80px;
+    backdrop-filter: blur(5px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.to-links {
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+    margin-left: 20px;
+    vertical-align: middle;
 }
 
 @media (min-width: 768px) {
     hero {
         flex-direction: row;
+        align-items: center;
         margin-left: auto;
         margin-right: auto;
         height: 400px;
+        gap: 10px;
+        margin-top: 120px;
     }
 
-    .hero-container {
+    #hero-container {
         display: flex;
         flex-direction: column;
         justify-content: right;
         align-items: end;
-        padding-top: min(25%, 100px);
+        padding: 0;
         width: 50%;
-        height: 80%;
-        text-align: right;   
+        height: auto;
+        text-align: right;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #welcome {
+        margin-top: 50px;
+        font-size: 3rem;
+        margin-right: 50px;
     }
 
     #hero-paragraph {
-        width: min(600px, 90%);
+        width: 85%;
+        max-width: 600px;
         margin: 0;
+        margin-right: 50px;
+        margin-bottom: 50px;
     }
 
-    .image-collection {
+    #img-collection-hero {
         height: 100%;
-        position: relative;
         width: 50%;
-        background-color: beige;
+        margin-right: 10px;
     }
 
-    .image-collection-content {
-        width: min(100%, 500px);
+    #img-collection-content-hero {
+        width: 100%;
+        max-width: 500px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .image-collection img {
-        width: min(350px, 50%);
-        top: 32.5%;
     }
 
     .paragraph {
@@ -139,24 +384,98 @@ hero {
         width: 100%;
         font-size: 3rem;
     }
+
+    #sub-intro {
+        margin-top: 45px;
+    }
+
+    #culinary {
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        gap: 10px;
+        height: min(40vw, 700px);
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+
+    #img-collection-culinary {
+        width: 50%;
+        margin-left: 10px;
+        margin-right: 12px;
+        min-height: 450px;
+        max-height: 100%;
+    }
+
+    #img-collection-content-culinary {
+        min-width: 400px;
+        max-width: 600px;
+        width: 50%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #culinary-container {
+        margin: 0;
+        width: 50%;
+        height: auto;
+        max-height: 100%;
+        background-color: lightgray;
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    #culinary-header {
+        margin-top: clamp(35px, 10%, 80px);
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 2vw;
+    }
+
+    #culinary-paragraph {
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 300px;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    #explore {
+        margin-top: 130px;
+        max-width: 1100px;
+        width: auto;
+    }
+
+    #explore-inner {
+        margin: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px;
+    }
 }
 
 @media (min-width: 1024px) {
-    .hero-container {
-        padding-top: 65px;
+    #hero-container {
         width: 50%;
-        height: 550px;
     }
 
     .paragraph {
         font-size: 1.25rem;
     }
 
-    #welcome {
-        font-size: 2.5rem;
-    }
-
     #intro {
         font-size: 4rem;
+    }
+
+    #culinary-header {
+        margin-left: 50px;
+    }
+
+    #culinary-paragraph {
+        margin-left: 50px;
+        width: 80%;
     }
 }

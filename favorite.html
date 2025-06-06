@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Favorit</title>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/favorite.css">
     <script src="js/jquery.min.js"></script>
 </head>
 
@@ -32,71 +32,19 @@
         </ul>
     </header>
 
-    <hero>
-        <div id="hero-container">
-            <h1 id="welcome">Welcome to Japan!</h1>
-            <p id="hero-paragraph" class="paragraph">
-                Selamat datang di Jepang — negeri matahari terbit yang memadukan tradisi kuno dan
-                teknologi modern dalam harmoni yang memukau. Jelajahi keindahan alamnya, nikmati kelezatan kulinernya,
-                dan temukan budaya yang kaya dan penuh pesona. Siap untuk petualangan tak terlupakan? Mari mulai
-                perjalanan Anda sekarang.</p>
-        </div>
-        <div id="img-collection-hero">
-            <div id="img-collection-content-hero" class="img-collection-content">
-                <div id="img-hero-1"></div>
-                <div id="img-hero-2"></div>
-                <div id="img-hero-3"></div>
-            </div>
-        </div>
-    </hero>
+    <h1 class="welcome">Menu Favorit Kamu</h1>
+    <div class="container">
+        <table id="favorites" cellspacing="0">
+            <tr>
+                <th class="favorites-action" id="favorites-action-th">#</th>
+                <th class="favorites-item" id="favorites-item-th">Item</th>
+                <th class="favorites-category" id="favorites-category-th">Category</th>
+            </tr>
 
-    <h1 id="intro">Apa yang ada di Jepang?</h1>
+            <tbody id="favorites-content">
 
-    <div id="sub-intro" class="container">
-        <h1 class="center">Kuliner!</h1>
-        <p class="center">
-            Mari eksplor kuliner yang luar biasa di Jepang!
-        </p>
-    </div>
-
-    <div id="culinary" class="container">
-        <div id="culinary-scroll"></div>
-        <div id="img-collection-culinary" class="img-collection-content">
-            <div id="img-collection-content-culinary" class="img-collection-content">
-                <div id="img-culinary-1"></div>
-                <div id="img-culinary-2"></div>
-                <div id="img-culinary-3"></div>
-                <div id="img-culinary-4"></div>
-                <div id="img-culinary-5"></div>
-                <div id="img-culinary-6"></div>
-            </div>
-        </div>
-        <div id="culinary-container">
-            <h2 id="culinary-header">Kenapa kuliner <u>Jepang</u>?</h2>
-            <p id="culinary-paragraph" class="paragraph">
-                Kuliner Jepang adalah perpaduan rasa, estetika, dan tradisi yang telah diwariskan selama
-                berabad-abad.
-                Dari kelezatan sushi yang segar hingga semangkuk ramen hangat yang menggugah selera, setiap hidangan
-                mencerminkan filosofi hidup dan kedekatan masyarakat Jepang dengan alam. Siapkan diri Anda untuk
-                menjelajahi dunia rasa yang unik, penuh kejutan, dan tentunya menggoda lidah.
-            </p>
-        </div>
-    </div>
-
-    <div id="explore" class="container">
-        <h1 id="explore-title">Eksplor!</h1>
-        <div id="explore-scroll"></div>
-        <div id="explore-inner">
-            <div id="to-foods">
-                <div><a class="to-links">Makanan</a></div>
-            </div>
-            <div id="to-beverages">
-                <div><a class="to-links">Minuman</a></div>
-            </div>
-            <div id="to-snacks">
-                <div><a class="to-links">Camilan</a></div>
-            </div>
-        </div>
+            </tbody>
+        </table>
     </div>
 
     <footer>
@@ -146,6 +94,6 @@
     </footer>
 </body>
 <script src="js/header.js"></script>
-<script src="js/index.js"></script>
+<script src="js/favorites.js"></script>
 
 </html>

@@ -1,82 +1,93 @@
 var subintro_viewed = [false, false, false];
-var scrollFade = ['#sub-intro', '#foods'];
-var scrollOffset = ['100px', '0']
+var scrollFade = ['#sub-intro', '#culinary-scroll', '#explore-scroll'];
 
 function scrollSubIntro() {
-    $('#intro').animate({"margin-bottom": "0", "margin-top": "0", "opacity": "0%", "height": "0"}, 1000);
+    $('#intro').css({ "transform": "translateY(-20px)", "margin-top": "0px", "opacity": "0%", "height": "0" });
+}
+
+function scrollExplore() {
+    setTimeout(() => {
+        $('#to-foods').css({ "transform": "translateY(0px)", "opacity": "100%" });
+    }, 200);
+    setTimeout(() => {
+        $('#to-beverages').css({ "transform": "translateY(0px)", "opacity": "100%" });
+    }, 400);
+    setTimeout(() => {
+        $('#to-snacks').css({ "transform": "translateY(0px)", "opacity": "100%" });
+    }, 600);
+
+    setTimeout(() => {
+        $('#to-foods').css({ "transition": "all 0.25s ease-in-out" });
+        $('#to-beverages').css({ "transition": "all 0.25s ease-in-out" });
+        $('#to-snacks').css({ "transition": "all 0.25s ease-in-out" });
+    }, 700);
+}
+
+function scrollCulinary() {
+    $('#img-collection-culinary').css({ "transition": "all 2s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
 }
 
 function onScroll(selector, idx) {
     var hT = $(selector).offset().top;
     var hH = $(selector).outerHeight();
     var wH = $(window).height();
-    var wS = $(window).scrollTop();
-
-    if (idx == 0) {
-        scrollSubIntro();
-    }
+    var wS = $(this).scrollTop();
 
     if (wS > (hT + hH - wH) && subintro_viewed[idx] == false) {
         subintro_viewed[idx] = true;
 
-        $(selector).animate({ "opacity": "100%", "margin-top": scrollOffset[idx] }, 1000);
-    }
+        if (selector == '#sub-intro') {
+            scrollSubIntro();
+        } else if (selector == '#culinary-scroll') {
+            scrollCulinary();
+        } else if (selector == '#explore-scroll') {
+            scrollExplore();
+        }
 
-    
+        if (selector == '#culinary-scroll') {
+            selector = "#culinary-container";
+        } else if (selector == '#explore-scroll') {
+            selector = '#explore'
+        }
+
+        $(selector).css({ "transition": "all 1s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
+    }
 }
 
 $(window).scroll(function () {
-    for (let i=0; i < scrollFade.length; i++) {
+    for (let i = 0; i < scrollFade.length; i++) {
         onScroll(scrollFade[i], i);
     }
 });
 
+
+$('body').css({ "overflow-y": "hidden" });
+$('#sub-intro').css({ "opacity": "0%" });
+$('#explore').css({ "opacity": "0%", "transform": "translateY(50px)" });
+$('#intro').css({ "opacity": "0%", "transform": "translateY(100px)" });
+$('#hero-container').css({ "opacity": "0%", "transform": "translateY(80px)" });
+$('#culinary-container').css({ "opacity": "0%", "transform": "translateY(80px)" });
+$('#img-collection-hero').css({ "opacity": "0%", "transform": "translateY(-80px)" });
+$('#img-collection-culinary').css({ "opacity": "0%", "transform": "translateY(-80px)" });
 $(document).ready(function () {
-    let width = window.innerWidth;
-
-    var heroMargin = 0;
-
-    if (width > 768) {
-        heroMargin = 100;
-    }
-
-    $('#sub-intro').css({ "opacity": "0%", "margin-top": "100px" });
-    $('#foods').css({ "opacity": "0%" });
-    $('#intro').css({ "opacity": "0%", "margin-top": "250px" });
-    $('hero').css({ "opacity": "0%", "margin-top": `${heroMargin+100}px` });
-    $('hero').animate({ "opacity": "100%", "margin-top": `${heroMargin}px` }, 1500);
+    $('#hero-container').css({ "transition": "all 1s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
+    $('#img-collection-hero').css({ "transition": "all 2s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
     setTimeout(() => {
-        $('#intro').animate({ "opacity": "100%", "margin-top": "200px" }, "slow");
+        $('#intro').css({ "transition": "all 1s ease-in-out", "transform": "translateY(0px)", "opacity": "100%" });
     }, 1200);
+    setTimeout(() => {
+        $('body').css({ "overflow-y": "auto" });
+    }, 2000);
 
-    for (let i = 0; i < $('.image-collection-content').length; i++) {
-        let item = $('.image-collection-content')[i];
-        item.id = `image-collection-content${i}`;
-
-        for (let j = 0; j < item.children.length; j++) {
-            let image = item.children[j];
-            image.id = `${item.id}-${j}`;
-            image.class = "image-collection-content-image";
-        }
-    }
-
-    $('.image-collection-content').ready(function () {
-        let item = $('.image-collection-content');
-
-        for (let i = 0; i < item.length; i++) {
-            let collection = $('.image-collection-content')[i];
-            var rotation = -15;
-            var pos = 15;
-
-            for (let j = 0; j < collection.children.length; j++) {
-                let select = collection.children[j].id;
-                $(`#${select}`).css({ "rotate": `${rotation}deg`, "left": `${pos}%` });
-                if (j + 1 == collection.children.length - 1) {
-                    rotation = 15;
-                    pos = 45;
-                }
-            }
-        }
+    $('#to-foods').click(function() {
+        window.location = "foods.html";
     });
 
+    $('#to-beverages').click(function() {
+        window.location = "beverages.html";
+    });
+
+    $('#to-snacks').click(function() {
+        window.location = "snacks.html";
+    });
 });

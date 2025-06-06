@@ -8,10 +8,20 @@
     src: local('futura medium bt');
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 9999px;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Futura-Light;
+    overflow-x: hidden;
 }
 
 header {
@@ -51,7 +61,7 @@ a {
 #header-list {
     display: block;
     position: absolute;
-    top: -240px;
+    top: -320px;
     left: 0;
     margin: 0;
     padding: 0;
@@ -59,7 +69,7 @@ a {
     background-color: #ff3838;
     color: white;
     transition: top 0.75s ease-in-out;
-
+    z-index: 2;
     &.open {
         top: 0;
     }
@@ -69,7 +79,9 @@ a {
     margin: 0;
     padding: 0;
     height: 40px;
+    min-width: 100px;
     width: auto;
+    margin-top: 5px;
 }
 
 #header-list #header-list-close {
@@ -86,6 +98,67 @@ a {
     align-items: center;
     height: 100%;
     color: white;
+}
+
+footer {
+    height: auto;
+    background-color: lightgray;
+    padding-bottom: 10px;
+}
+
+#footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+#web-desc {
+    text-align: center;
+}
+
+#contacts {
+    text-align: center;
+}
+
+#contacts p {
+    margin: 0;
+}
+
+#contacts ul {
+    margin: 0;
+    padding: 0;
+}
+
+#social-media {
+    text-align: center;
+}
+
+#social-media-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#social-media-inner img {
+    width: 50px;
+    transition: scale 0.25s ease-in-out;
+}
+
+#social-media-inner img:hover {
+    scale: 110%;
+}
+
+#creator {
+    margin-top: 50px;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -114,7 +187,7 @@ a {
 
     #header-list li {
         display: inline-block;
-        width: 120px;
+        width: 130px;
         color: black;
     }
 
@@ -129,5 +202,44 @@ a {
 
     #header-list #header-list-close {
         display: none;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    #footer-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #web-desc {
+        text-align: left;
+    }
+
+    #contacts {
+        grid-column: 1/-1;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        min-height: 350px;
+        height: auto;
+    }
+
+    #footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 100px;
+    }
+
+    #web-desc {
+        text-align: left;
+    }
+
+    #contacts {
+        grid-column: 3;
+        text-align: right;
     }
 }
