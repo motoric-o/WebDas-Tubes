@@ -25,12 +25,6 @@
     border-radius: 10px;
 }
 
-#tidak_ditemukan{
-    display: none;
-    color: red;
-    margin-top: 10px;
-}
-
 #hero_container p {
     width: 80%;
     margin: auto;
@@ -235,10 +229,11 @@
         height: 100%;
         margin-bottom: 50px;
         text-align: center;
+        transition: all 0.2s ease;
     }
 
     .konten_isi:hover{
-        scale: 1.05;
+        transform: scale(1.05);
         box-shadow: 0 10px 20px;
     }
 
