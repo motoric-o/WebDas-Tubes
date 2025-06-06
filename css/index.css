@@ -249,6 +249,7 @@ hero {
     scale: 102.5%;
     background-size: auto 110%;
     background-position: 50% 0;
+    box-shadow: 0 10px 20px;
 }
 
 #to-foods div {
@@ -275,6 +276,7 @@ hero {
     scale: 102.5%;
     background-size: auto 110%;
     background-position: 50% 0;
+    box-shadow: 0 10px 20px;
 }
 
 #to-beverages div {
@@ -301,6 +303,7 @@ hero {
     scale: 102.5%;
     background-size: auto 110%;
     background-position: 50% 0;
+    box-shadow: 0 10px 20px;
 }
 
 #to-snacks div {

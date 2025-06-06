@@ -388,7 +388,7 @@
     }
 
     #popup_text {
-        max-height: 300px;
+        max-height: 400px;
         font-size: 14px;
         word-wrap: break-word;
         overflow-wrap: break-word;

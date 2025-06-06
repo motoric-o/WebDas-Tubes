@@ -1,7 +1,7 @@
 [
     {
         "nama": "Sushi",
-        "foto":"img/makanan/Sushi.jpg",
+        "foto": "img/makanan/Sushi.jpg",
         "deskripsi": "Sushi adalah hidangan Jepang berupa nasi cuka (shari) yang dipadukan dengan berbagai lauk seperti ikan mentah, seafood, telur, atau sayuran. Disajikan dengan wasabi, kecap asin (shoyu), dan acar jahe (gari). Jenisnya beragam: nigiri (nasi kepal dengan ikan di atasnya), maki (sushi gulung), uramaki (gulungan dengan nasi di luar), temaki (kerucut sushi), hingga chirashi (nasi dengan topping sashimi). Selain lezat, sushi terkenal karena presentasi artistiknya dan penggunaan bahan berkualitas tinggi.",
         "sejarah": "Sushi berasal dari metode pengawetan ikan di Asia Tenggara abad ke-2 M, bernama narezushi, di mana ikan difermentasi dalam nasi. Abad ke-15 di Jepang muncul namarezushi, lalu revolusi terbesar terjadi awal abad ke-19 di Edo saat Hanaya Yohei menciptakan nigiri sushi: nasi cuka dengan potongan ikan segar di atasnya. Sushi cepat populer karena praktis, bisa dibuat langsung tanpa fermentasi lama. Kini sushi jadi ikon kuliner Jepang yang mendunia dengan banyak variasi modern.",
         "resep": {
@@ -29,7 +29,7 @@
     },
     {
         "nama": "Sashimi",
-        "foto":"img/makanan/Sashimi.jpg",
+        "foto": "img/makanan/Sashimi.jpg",
         "deskripsi": "Sashimi adalah potongan ikan atau seafood mentah berkualitas tinggi yang disajikan tanpa nasi. Biasanya dinikmati dengan kecap asin (shoyu), wasabi, dan irisan lobak putih (daikon). Jenis sashimi populer termasuk tuna (maguro), salmon, yellowtail (hamachi), dan cumi (ika). Hidangan ini menonjolkan kesegaran dan tekstur alami ikan, sehingga pemilihan bahan yang segar sangat penting.",
         "sejarah": "Tradisi makan ikan mentah di Jepang sudah ada sejak zaman kuno, tetapi istilah sashimi baru populer pada periode Muromachi (1336–1573). Awalnya, potongan ikan dihidangkan dengan tusuk bambu agar mudah dipegang. Sashimi berkembang menjadi simbol kemewahan karena hanya disajikan dengan bahan segar berkualitas tinggi, terutama di restoran kelas atas seperti sushi bar. Kini sashimi dinikmati di seluruh dunia sebagai simbol cita rasa Jepang yang murni.",
         "resep": {
@@ -50,7 +50,7 @@
     },
     {
         "nama": "Ramen",
-        "foto":"img/makanan/Ramen.jpg",
+        "foto": "img/makanan/Ramen.jpg",
         "deskripsi": "Ramen adalah mie kuah khas Jepang dengan berbagai varian kaldu, seperti shoyu (kecap asin), miso, tonkotsu (kaldu tulang babi), dan shio (garam). Disajikan dengan topping seperti irisan daging (chashu), telur rebus setengah matang (ajitsuke tamago), daun bawang, nori, dan rebung (menma). Ramen terkenal karena rasa kaldunya yang kaya dan mie kenyal yang memuaskan.",
         "sejarah": "Ramen awalnya diperkenalkan ke Jepang oleh imigran Tiongkok pada abad ke-19, dikenal sebagai 'chuka soba'. Setelah Perang Dunia II, ramen berkembang pesat sebagai makanan murah dan cepat. Pada 1958, muncul ramen instan yang semakin mendongkrak popularitasnya. Kini ramen memiliki banyak gaya regional, seperti Sapporo ramen (miso) dan Hakata ramen (tonkotsu), serta diakui sebagai salah satu comfort food paling terkenal dari Jepang.",
         "resep": {
@@ -74,7 +74,7 @@
     },
     {
         "nama": "Tempura",
-        "foto":"img/makanan/Tempura.jpg",
+        "foto": "img/makanan/Tempura.jpg",
         "deskripsi": "Tempura adalah makanan Jepang berupa udang, ikan, atau sayuran yang dicelup adonan tepung ringan lalu digoreng hingga renyah. Adonan tempura dibuat dari campuran tepung, air dingin, dan telur. Disajikan dengan saus tentsuyu (campuran dashi, shoyu, mirin) dan parutan lobak (daikon oroshi). Kerenyahan dan kelembutan dalam satu gigitan membuat tempura digemari di seluruh dunia.",
         "sejarah": "Tempura diperkenalkan ke Jepang oleh misionaris Portugis pada abad ke-16. Nama 'tempura' berasal dari kata Latin 'tempora' yang merujuk pada hari-hari pantang daging, sehingga mereka menggoreng seafood dan sayuran. Orang Jepang kemudian mengembangkan tekniknya hingga menjadi khas, termasuk penggunaan minyak wijen dan penyajian bersama saus tentsuyu. Kini tempura adalah salah satu makanan Jepang paling ikonik.",
         "resep": {
@@ -97,7 +97,7 @@
     },
     {
         "nama": "Okonomiyaki",
-        "foto":"img/makanan/Okonomiyaki.jpg",
+        "foto": "img/makanan/Okonomiyaki.jpg",
         "deskripsi": "Okonomiyaki adalah pancake gurih khas Jepang yang dibuat dari campuran adonan tepung, telur, kol, dan isian seperti daging, seafood, atau keju. Dimasak di atas teppan (plat besi) lalu diberi topping saus okonomiyaki, mayones, aonori (rumput laut bubuk), dan katsuobushi (serutan ikan bonito). Nama 'okonomiyaki' berarti 'dipanggang sesuai selera', karena isinya bisa bervariasi sesuai keinginan.",
         "sejarah": "Akar okonomiyaki bisa dilacak ke abad ke-16 lewat hidangan tipis bernama funoyaki, tapi bentuk modernnya berkembang setelah Perang Dunia II di Osaka dan Hiroshima. Karena beras langka, warga menggunakan tepung untuk membuat makanan mengenyangkan. Versi Osaka dicampur semua bahan, sedangkan versi Hiroshima dilapis per bahan dengan tambahan mie goreng. Sekarang okonomiyaki populer di seluruh Jepang dengan banyak variasi lokal.",
         "resep": {
@@ -123,7 +123,7 @@
     },
     {
         "nama": "Takoyaki",
-        "foto":"img/makanan/Takoyaki.jpg",
+        "foto": "img/makanan/Takoyaki.jpg",
         "deskripsi": "Takoyaki adalah bola-bola adonan tepung berisi potongan gurita, dimasak dalam cetakan khusus berbentuk setengah bola. Bagian luarnya renyah, dalamnya lembut, dan biasanya disajikan dengan saus takoyaki, mayones, aonori, dan katsuobushi. Takoyaki sering dijual di festival atau gerobak kaki lima di Jepang.",
         "sejarah": "Takoyaki ditemukan pada tahun 1935 oleh Tomekichi Endo di Osaka. Terinspirasi dari akashiyaki (bola adonan telur dari Akashi), takoyaki cepat populer sebagai makanan kaki lima murah meriah. Osaka kemudian dikenal sebagai kota takoyaki, bahkan punya museum takoyaki. Saat ini, takoyaki juga populer di luar Jepang dengan berbagai inovasi rasa.",
         "resep": {
@@ -151,7 +151,7 @@
     },
     {
         "nama": "Katsu",
-        "foto":"img/makanan/Katsu.jpg",
+        "foto": "img/makanan/Katsu.jpg",
         "deskripsi": "Katsu adalah potongan daging ayam (chicken katsu) atau babi (tonkatsu) yang dilapisi tepung roti (panko) lalu digoreng hingga renyah. Biasanya disajikan dengan kubis iris tipis, nasi, dan saus tonkatsu (saus kental manis gurih). Hidangan ini populer di restoran, bento, maupun sebagai topping di kari Jepang.",
         "sejarah": "Ton-katsu (babi goreng) pertama kali dibuat pada akhir abad ke-19 sebagai adaptasi dari schnitzel Eropa. Chicken katsu muncul sebagai variasi lebih ringan. Awalnya dianggap makanan mewah, kini katsu sangat umum di rumah makan dan supermarket Jepang. Kata 'katsu' juga berarti 'menang', sehingga katsu sering dimakan siswa sebelum ujian atau pertandingan untuk keberuntungan.",
         "resep": {
@@ -174,7 +174,7 @@
     },
     {
         "nama": "Onigiri",
-        "foto":"img/makanan/Onigiri.jpg",
+        "foto": "img/makanan/Onigiri.jpg",
         "deskripsi": "Onigiri adalah nasi kepal berbentuk segitiga atau bulat, berisi isian seperti tuna mayo, salmon, umeboshi (plum asin), atau kombu. Kadang dibungkus nori (rumput laut kering). Praktis, mengenyangkan, dan sering dibawa sebagai bekal atau dijual di konbini (minimarket Jepang).",
         "sejarah": "Onigiri sudah ada sejak periode Heian (794–1185) sebagai bekal praktis para pejuang dan petani. Bentuk modernnya mulai populer abad ke-20, apalagi setelah konbini menjual onigiri berbungkus plastik yang menjaga nori tetap renyah. Kini ada banyak variasi rasa dan bentuk onigiri di Jepang.",
         "resep": {
@@ -192,9 +192,9 @@
             ]
         }
     },
-        {
+    {
         "nama": "Gyudon",
-        "foto":"img/makanan/Gyudon.jpg",
+        "foto": "img/makanan/Gyudon.jpg",
         "deskripsi": "Gyudon adalah mangkuk nasi (donburi) dengan topping irisan tipis daging sapi yang dimasak manis-asin dengan bawang bombay, kecap asin, mirin, dan gula. Biasanya disajikan dengan acar jahe merah (beni shoga) dan telur mentah atau setengah matang. Gyudon adalah salah satu makanan cepat saji populer di Jepang.",
         "sejarah": "Gyudon mulai populer di Jepang akhir abad ke-19 saat westernisasi mulai masuk, menggantikan penggunaan ikan dengan daging sapi. Restoran gyudon pertama didirikan oleh Eikichi Matsuda, pendiri Yoshinoya, pada tahun 1899. Kini, gyudon jadi ikon makanan cepat saji Jepang yang murah, cepat, dan mengenyangkan.",
         "resep": {
@@ -219,7 +219,7 @@
     },
     {
         "nama": "Yakisoba",
-        "foto":"img/makanan/Yakisoba.jpg",
+        "foto": "img/makanan/Yakisoba.jpg",
         "deskripsi": "Yakisoba adalah mie goreng khas Jepang yang dimasak dengan sayuran seperti kubis, wortel, tauge, ditambah daging atau seafood, lalu dibumbui dengan saus yakisoba yang manis-gurih. Biasanya disajikan dengan taburan aonori dan beni shoga. Yakisoba sering ditemukan di festival Jepang (matsuri).",
         "sejarah": "Yakisoba muncul di Jepang pada awal abad ke-20 sebagai adaptasi dari chow mein Tiongkok. Saus khasnya, mirip saus Worcestershire, dikembangkan oleh produsen lokal untuk mencocokkan lidah Jepang. Kini yakisoba menjadi favorit di festival, food court, dan juga dijual dalam bentuk instan.",
         "resep": {
@@ -243,7 +243,7 @@
     },
     {
         "nama": "Kaiseki",
-        "foto":"img/makanan/Kaiseki.jpg",
+        "foto": "img/makanan/Kaiseki.jpg",
         "deskripsi": "Kaiseki adalah hidangan fine dining tradisional Jepang yang terdiri dari banyak menu kecil yang disusun dengan indah, mencakup appetizer, sashimi, sup, hidangan panggang, rebusan, nasi, acar, dan dessert. Kaiseki menekankan kesegaran musiman, teknik memasak presisi, dan presentasi artistik.",
         "sejarah": "Kaiseki berawal dari menu ringan di upacara minum teh (kaiseki cha), lalu berkembang menjadi hidangan mewah (kaiseki ryori) di abad ke-17 di kalangan bangsawan dan samurai. Kaiseki menjadi simbol keramahtamahan Jepang, menyajikan makanan seirama musim. Sampai sekarang, kaiseki masih jadi puncak pengalaman kuliner Jepang di ryotei (restoran tradisional) atau ryokan (penginapan Jepang).",
         "resep": {
@@ -255,5 +255,180 @@
                 "Setiap hidangan dibuat dengan teknik khusus, sesuai tema musim, dan disajikan berurutan dari appetizer ke dessert."
             ]
         }
+    },
+    {
+        "nama": "Shabu-shabu",
+        "foto": "img/makanan/ShabuShabu.jpg",
+        "deskripsi": "Shabu-shabu adalah hidangan hot pot Jepang yang terdiri dari irisan tipis daging sapi atau seafood yang dicelupkan ke dalam kuah panas bersama sayuran, tahu, dan jamur. Dinikmati dengan saus ponzu (asam) atau goma (wijen). Masakan ini disiapkan langsung di meja makan dan disantap saat masih hangat.",
+        "sejarah": "Shabu-shabu mulai dikenal di Jepang pada pertengahan abad ke-20, terinspirasi dari hidangan hot pot Tiongkok bernama 'shuàn yáng ròu'. Nama 'shabu-shabu' berasal dari bunyi cipratan daging saat dicelupkan ke dalam air panas. Hidangan ini berkembang di Osaka pada 1950-an dan kini populer di seluruh Jepang sebagai makanan keluarga atau santapan musim dingin.",
+        "resep": {
+            "bahan": [
+                "200 g irisan tipis daging sapi (sirloin atau ribeye)",
+                "Kubis, bayam, wortel, jamur shiitake/enoki",
+                "Tahu potong dadu",
+                "Mi udon (opsional)",
+                "Kaldu kombu",
+                "Saus ponzu",
+                "Saus goma (wijen)"
+            ],
+            "cara_membuat": [
+                "Siapkan kaldu kombu, panaskan di panci hot pot di atas meja.",
+                "Susun semua bahan di piring saji.",
+                "Celupkan daging atau sayuran ke dalam kuah panas selama beberapa detik.",
+                "Celupkan ke dalam saus ponzu atau goma sebelum dimakan."
+            ]
+        }
+    },
+    {
+    "nama": "Sukiyaki",
+    "foto": "img/makanan/Sukiyaki.jpg",
+    "deskripsi": "Sukiyaki adalah hot pot Jepang yang dimasak bersama di meja makan. Daging sapi tipis dimasak dalam campuran kecap, mirin, gula, dan sake, bersama sayuran, tahu, jamur, dan bihun. Biasanya dicelup ke telur mentah sebelum dinikmati.",
+    "sejarah": "Berasal dari akhir abad ke‑19 saat westernisasi Jepang. Masakan ini menjadi favorit karena kaya rasa dan bersifat ramah keluarga.",
+    "resep": {
+      "bahan": [
+        "200 g daging sapi tipis",
+        "Daun bawang, jamur shiitake, enoki",
+        "Kubis, tahu sutra, bihun",
+        "2 sdm kecap asin, 2 sdm mirin, 1 sdm sake, 1 sdm gula",
+        "Telur mentah (untuk cocolan)"
+      ],
+      "cara_membuat": [
+        "Panaskan wajan datar, masukkan bahan kuah (kecap, mirin, sake, gula).",
+        "Masukkan daging dan sayuran, masak hingga matang.",
+        "Sajikan dengan telur mentah sebagai cocolan."
+      ]
     }
+  },
+  {
+    "nama": "Katsudon",
+    "foto": "img/makanan/Katsudon.jpg",
+    "deskripsi": "Katsudon adalah mangkuk nasi dengan topping tonkatsu (daging babi goreng tepung roti) yang direbus bersama telur dan bawang bombay dengan kuah manis asin khas donburi.",
+    "sejarah": "Dipopulerkan pada awal abad ke‑20 sebagai variasi donburi; namanya berasal dari gabungan kata katsu (daging goreng) dan donburi (mangkuk nasi).",
+    "resep": {
+      "bahan": [
+        "1 potong tonkatsu",
+        "1/2 bawang bombay iris tipis",
+        "2 telur",
+        "2 sdm kecap asin, 2 sdm mirin, 1 sdm gula, 100 ml dashi",
+        "2 mangkuk nasi hangat"
+      ],
+      "cara_membuat": [
+        "Rebus bawang bombay dalam dashi, kecap, mirin, gula.",
+        "Masukkan tonkatsu, tuang telur, tutup hingga telur setengah matang.",
+        "Angkat dan letakkan di atas nasi hangat."
+      ]
+    }
+  },
+  {
+    "nama": "Oyakodon",
+    "foto": "img/makanan/Oyakodon.jpg",
+    "deskripsi": "Oyakodon adalah mangkuk nasi dengan topping irisan ayam dan telur yang dimasak bersama dalam kaldu manis asin (kombinasi kecap, mirin, dashi), biasanya ditutup rapat ringan.",
+    "sejarah": "Nama 'oyako' berarti 'ibu dan anak' (ayam dan telur); berasal dari awal abad ke‑20 sebagai comfort food Jepang.",
+    "resep": {
+      "bahan": [
+        "150 g daging ayam potong kecil",
+        "1/2 bawang bombay iris tipis",
+        "2 telur kocok lepas",
+        "2 sdm kecap asin, 2 sdm mirin, 200 ml dashi",
+        "2 mangkuk nasi"
+      ],
+      "cara_membuat": [
+        "Rebus bawang dan ayam di dalam dashi, kecap, mirin.",
+        "Tuang telur sampai agak setengah matang, jangan diaduk rata.",
+        "Taruh di atas nasi hangat dan sajikan."
+      ]
+    }
+  },
+  {
+    "nama": "Unagi-Kabayaki",
+    "foto": "img/makanan/UnagiKabayaki.jpg",
+    "deskripsi": "Unagi kabayaki adalah belut bakar yang dilumuri saus manis asin (kecap, mirin, sake, gula), lalu disajikan di atas nasi (unadon). Teksturnya lembut dengan rasa kaya.",
+    "sejarah": "Tradisi makan unagi di musim panas (kabayaki) sudah ada sejak periode Edo; dipercaya menambah stamina menghadapi panas.",
+    "resep": {
+      "bahan": [
+        "1 ekor belut (unagi), belah dan bersihkan",
+        "2 sdm kecap asin, 2 sdm mirin, 2 sdm sake, 1 sdm gula",
+        "2 mangkuk nasi hangat"
+      ],
+      "cara_membuat": [
+        "Bakar belut setengah matang di atas bara.",
+        "Campur saus lalu oles saat membakar hingga lapisannya mengkilap.",
+        "Sajikan di atas nasi hangat."
+      ]
+    }
+  },
+  {
+    "nama": "Chawanmushi",
+    "foto": "img/makanan/Chawanmushi.jpg",
+    "deskripsi": "Chawanmushi adalah puding telur savory yang dikukus dalam cangkir kecil berisi dashi, telur, jamur, daging ayam, dan ebi. Teksturnya lembut seperti custard.",
+    "sejarah": "Hidangan klasik Jepang yang sering disajikan sebagai bagian dari kaiseki; terkenal sejak periode Meiji.",
+    "resep": {
+      "bahan": [
+        "3 telur, kocok lepas",
+        "300 ml dashi",
+        "Potongan kecil ayam, jamur shiitake, ebi, kamaboko",
+        "Garam, mirin sedikit"
+      ],
+      "cara_membuat": [
+        "Campur telur, dashi, garam, mirin, saring.",
+        "Tuang ke dalam cangkir, tambahkan isian.",
+        "Kukus dengan api kecil selama 15–20 menit."
+      ]
+    }
+  },
+  {
+    "nama": "Yosenabe",
+    "foto": "img/makanan/Yosenabe.jpg",
+    "deskripsi": "Yosenabe adalah hot pot Jepang campur (nabe) yang berisi berbagai bahan seperti daging, seafood, sayuran, tahu, dan mi yang dimasak bersama di kuah berbasis dashi.",
+    "sejarah": "Nabe populer sebagai makanan keluarga musim dingin; yosenabe berarti “dicampur”, karena variasi bahan sangat fleksibel.",
+    "resep": {
+      "bahan": [
+        "150 g daging ayam/ikan/seafood",
+        "Kubis, bayam, wortel, jamur, tahu",
+        "Mi udon atau shirataki",
+        "800 ml kaldu dashi",
+        "Saus ponzu dan goma untuk cocolan"
+      ],
+      "cara_membuat": [
+        "Rebus dashi dan sayuran keras dulu.",
+        "Tambahkan daging, seafood, tahu, mi, masak hingga semua matang.",
+        "Sajikan langsung di meja dengan saus cocolan."
+      ]
+    }
+  },
+  {
+    "nama": "Nikujaga",
+    "foto": "img/makanan/Nikujaga.jpg",
+    "deskripsi": "Nikujaga adalah rebusan daging sapi dan kentang dalam kuah berbasis kecap, mirin, gula, dan dashi. Termasuk dalam makanan rumahan Jepang, lezat dan menghangatkan.",
+    "sejarah": "Diciptakan pada akhir abad ke‑19 oleh angkatan laut Jepang agar masakan ala barat lebih mudah diterima rakyat; nikujaga menjadi comfort food keluarga.",
+    "resep": {
+      "bahan": [
+        "200 g irisan daging sapi",
+        "2 kentang potong besar, 1 wortel, 1 bawang bombay",
+        "2 sdm kecap asin, 2 sdm mirin, 1 sdm gula, 200 ml dashi"
+      ],
+      "cara_membuat": [
+        "Tumis daging sebentar, masukkan kentang, wortel, bawang.",
+        "Tuang dashi dan bumbu, masak hingga kentang empuk dan bumbu meresap."
+      ]
+    }
+  },
+  {
+    "nama": "Miso-Soup",
+    "foto": "img/makanan/MisoSoup.jpg",
+    "deskripsi": "Misoshiru adalah sup ringan khas Jepang berbahan dasar dashi dan pasta miso, biasanya berisi tahu, daun bawang, dan wakame (rumput laut kering).",
+    "sejarah": "Sup tradisional Jepang yang sudah ada sejak periode Nara; menjadi bagian utama dalam sarapan dan makan sehari‑hari.",
+    "resep": {
+      "bahan": [
+        "500 ml dashi",
+        "2 sdm pasta miso",
+        "Potongan tahu sutra, wakame, irisan daun bawang"
+      ],
+      "cara_membuat": [
+        "Panaskan dashi, matikan api.",
+        "Larutkan miso terpisah, tuang ke sup (jangan sampai mendidih).",
+        "Masukkan tahu, wakame, daun bawang, sajikan hangat."
+      ]
+    }
+  }
 ]
