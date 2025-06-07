@@ -32,13 +32,44 @@
         </ul>
     </header>
 
+    <div id="background">
+        
+    </div>
+
+    <div id="popup">
+        <div id="popup_img" grid-area="popup_img">
+
+        </div>
+        <div grid-area="popup_konten">
+            <div id="popup_judul">
+                <h1 id="popup_title"></h1>
+                <div id="popup_sub">
+                    <button id="button-favorite">Favorite ♡</button>
+                    <div id="cancel">
+                    <h1>X</h1>
+                </div>
+                </div>
+                
+            </div>
+            <div id="popup_konten">
+                <select name="" id="dropdown">
+                    <option value="deskripsi">Deskripsi</option>
+                    <option value="sejarah">Sejarah</option>
+                    <option value="resep">Resep</option>
+                </select>
+                <div id="popup_text">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <h1 class="welcome">Menu Favorit Kamu</h1>
     <div class="container">
         <table id="favorites" cellspacing="0">
             <tr>
-                <th class="favorites-action" id="favorites-action-th">#</th>
-                <th class="favorites-item" id="favorites-item-th">Item</th>
-                <th class="favorites-category" id="favorites-category-th">Category</th>
+                <th class="favorite-action" id="favorites-action-th">#</th>
+                <th class="favorite-item" id="favorites-item-th">Item</th>
+                <th class="favorite-category" id="favorites-category-th">Category</th>
             </tr>
 
             <tbody id="favorites-content">
