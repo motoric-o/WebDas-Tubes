@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div onclick="toggleMenu()" id="three-bar">
+            <div class="red-bar"></div>
+            <div class="red-bar"></div>
+            <div class="red-bar"></div>
+        </div>
+        <h1>Japan</h1>
+        <ul type="none" id="header-list">
+            <li><a class="header-list-content" href="index.html">HOME</a></li>
+            <li><a class="header-list-content" href="foods.html">FOOD</a></li>
+            <li><a class="header-list-content" href="beverages.html">BEVERAGES</a></li>
+            <li><a class="header-list-content" href="snacks.html">SNACKS</a></li>
+            <li><a class="header-list-content" href="aboutus.html">ABOUT US</a></li>
+            <li id="header-list-close" onclick="toggleMenu()"><div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px" alt=""></div></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="aboutus">
+            <div class="aboutus-content-avatar">
+                <div id="img-avatar">
+                </div>
+                <div class="avatar-data">
+                    
+                </div>
+            </div>
+
+            <div class="aboutus-content-avatar">
+                <div id="img-avatar">
+                </div>
+                <div class="avatar-data">
+                    
+                </div>
+            </div>
+
+            <div class="aboutus-content-avatar">
+                <div id="img-avatar">
+                </div>
+                <div class="avatar-data">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h1>Kontak Kami</h1>
+            <div class="contact-in">
+                <div class="contact-us">
+                    <h3>Silakan hubungi kami untuk informasi lebih lanjut</h3>
+                    <p class="padanan">Ingin tahu lebih lanjut tentang kami atau layanan kami? Mari jalin komunikasi — kami siap membantu Anda</p>
+                    <div class="us">
+                        <img src="img/contact/mail.svg" alt="">
+                        <div class="text">
+                            <h4>Email</h4>
+                            <p>24720..@maranatha.ac.id</p>
+                        </div>
+                        <img src="img/contact/phone.svg" alt="">
+                        <div class="text">
+                            <h4>Nomor</h4>
+                            <p>08</p>
+                        </div>
+                        <img src="img/contact/map-pin.svg" alt="">
+                        <div class="text">
+                            <h4>Lokasi</h4>
+                            <p>Jl. Prof. drg. Soeria Soemantri No.65,
+                                Sukawarna, Kec. Sukajadi, Kota Bandung,
+                                Jawa Barat 40164
+                            </p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Kontak</h3>
+                    <form>
+                        <div class="contact-input-group">
+                            <label for="nama">Nama</label>
+                            <hr style="height: 3px;width: 45px;border:1px white;background-color: white;">
+                            <input type="text" placeholder="Nama" id="nama">
+                            <div class="error-txt">Nama tidak boleh kosong!</div>
+                        </div>
+                        <div class="contact-input-group">
+                            <label for="nama">Email</label>
+                            <hr style="height: 3px;width: 40px;border:1px white;background-color: white;">
+                            <input type="text" placeholder="Email" id="email">
+                            <div class="error-txt">Email tidak boleh kosong!</div>
+                        </div>
+                        <div class="contact-input-group">
+                            <label for="nama">Subjek</label>
+                            <hr style="height: 3px;width: 50px;border:1px white;background-color: white;">
+                            <input type="text" placeholder="Subjek" id="subjek">
+                            <div class="error-txt">Subjek tidak boleh kosong!</div>
+                        </div>
+                        <div class="contact-input-group">
+                            <label for="nama">Pesan</label>
+                            <hr style="height: 3px;width: 45px;border:1px white;background-color: white;">
+                            <textarea placeholder="Pesan" id="pesan"></textarea>
+                            <div class="error-txt">Pesan tidak boleh kosong!</div>
+                        </div>    
+                        <button type="submit" class="btn">Kirim</button>
+                    </form>
+                </div>
+                <div class="maps">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/header.js"></script>
+<script src="js/contactus.js"></script>
+</html>
