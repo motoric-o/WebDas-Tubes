@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const reveals = document.querySelectorAll('.reveal');
     const avatars = document.querySelectorAll('.aboutus-content-avatar');
-    const vms = document.querySelectorAll('#vm')
+    const vms = document.querySelectorAll('.vm')
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
