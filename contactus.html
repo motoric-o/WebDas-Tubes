@@ -38,8 +38,17 @@
     </header>
 
     
-    <h1>Kontak Kami</h1>
+    
     <div class="contact">
+        <div class="contact-omotenashi">
+            <h1>Kontak Kami</h1>
+            <p>
+                Dalam semangat omotenashi, kami selalu berusaha memberikan pelayanan terbaik dengan penuh perhatian dan ketulusan. 
+                Jika Anda memiliki pertanyaan, saran, atau hanya ingin menyapa, kami akan dengan senang hati menerimanya. 
+                Kami berkomitmen untuk memberikan pelayanan terbaik dan menjawab setiap pertanyaan Anda secara profesional dan tepat waktu. 
+                Setiap pesan Anda sangat berarti bagi kami, dan kami siap membantu Anda dengan solusi terbaik.
+            </p>
+        </div>
         <div class="contact-in">
             <div class="contact-us">
                 <h3>Silakan hubungi kami untuk informasi lebih lanjut</h3>
@@ -49,11 +58,13 @@
                     <div class="text">
                         <h4>Email</h4>
                         <p>24720..@maranatha.ac.id</p>
+                        <p>24720..@maranatha.ac.id</p>
+                        <p>2472060@maranatha.ac.id</p>
                     </div>
                     <img src="img/contact/phone.svg" alt="">
                     <div class="text">
                         <h4>Nomor</h4>
-                        <p>08</p>
+                        <p>085559630210</p>
                     </div>
                     <img src="img/contact/map-pin.svg" alt="">
                     <div class="text">
@@ -70,25 +81,25 @@
                 <form onsubmit="mail(event)">
                     <div class="contact-input-group">
                         <label for="nama">Nama</label>
-                        <hr style="height: 3px;width: 45px;border:1px white;background-color: white;">
+                        <hr style="height: 8px;width: 45px;border:1px white;background-color: white;">
                         <input type="text" placeholder="Nama" id="name">
                         <div class="error-txt">Nama tidak boleh kosong!</div>
                     </div>
                     <div class="contact-input-group">
                         <label for="nama">Email</label>
-                        <hr style="height: 3px;width: 40px;border:1px white;background-color: white;">
+                        <hr style="height: 8px;width: 40px;border:1px white;background-color: white;">
                         <input type="text" placeholder="Email" id="email">
                         <div class="error-txt">Email tidak boleh kosong!</div>
                     </div>
                     <div class="contact-input-group">
                         <label for="nama">Subjek</label>
-                        <hr style="height: 3px;width: 50px;border:1px white;background-color: white;">
+                        <hr style="height: 8px;width: 50px;border:1px white;background-color: white;">
                         <input type="text" placeholder="Subjek" id="subject">
                         <div class="error-txt">Subjek tidak boleh kosong!</div>
                     </div>
                     <div class="contact-input-group">
                         <label for="nama">Pesan</label>
-                        <hr style="height: 3px;width: 45px;border:1px white;background-color: white;">
+                        <hr style="height: 8px;width: 45px;border:1px white;background-color: white;">
                         <textarea placeholder="Pesan" id="message"></textarea>
                         <div class="error-txt">Pesan tidak boleh kosong!</div>
                     </div>    
@@ -104,6 +115,14 @@
         </div>
     </div>
 
+    <div class="pop-up" id="pop-up">
+        <div class="pop-up-content" id="pop-up-content">
+            <h3 id="title"></h3>
+            <p id="message-pop"></p>
+            <p id="icon-pop"></p>
+            <button onclick="tutup()">OK</button>
+        </div>
+    </div>
 </body>
 <script src="js/header.js"></script>
 </html>

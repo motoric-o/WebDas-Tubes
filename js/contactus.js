@@ -3,39 +3,33 @@ function mail(event) {
 
     let check = true;
 
+    document.querySelectorAll(".error-txt").forEach(e => e.classList.remove("active"));
+
     if (document.getElementById("name").value.trim() === "") {
         document.getElementById("name").nextElementSibling.classList.add("active");
         check = false
-    }
-    else {
-        document.getElementById("name").nextElementSibling.classList.remove("active");
     }
 
     if (document.getElementById("email").value.trim() === "") {
         document.getElementById("email").nextElementSibling.classList.add("active");
         check = false
     }
-    else {
-        document.getElementById("email").nextElementSibling.classList.remove("active");
-    }
 
     if (document.getElementById("subject").value.trim() === "") {
         document.getElementById("subject").nextElementSibling.classList.add("active");
         check = false
-    }
-    else {
-        document.getElementById("subject").nextElementSibling.classList.remove("active");
     }
 
     if (document.getElementById("message").value.trim() === "") {
         document.getElementById("message").nextElementSibling.classList.add("active");
         check = false
     }
-    else {
-        document.getElementById("message").nextElementSibling.classList.remove("active");
+
+    if (!check) {
+        document.querySelector(".contact-form").scrollIntoView({ behavior: "smooth" });
+        return;
     }
 
-    if (!check) return;
 
     var contact = {
         name : document.getElementById("name").value,
@@ -48,14 +42,13 @@ function mail(event) {
     const templateId = 'template_9m3lcja';
 
     emailjs.send(serviceId, templateId, contact)
-    .then(function(){
-        alert("Email terkirim.");
+    .then(() => {
+        popUp("Berhasil", "Email Anda sudah terkirim.", "success");
         document.querySelector("form").reset();
-        document.querySelectorAll(".error-txt").forEach(e => e.classList.remove("active"));
     })
     .catch(function(error){
         console.error("Gagal mengirim email:", error);
-        alert("Terjadi kesalahan saat mengirim email.");
+        popUp("Gagal", "Terjadi kesalahan saat mengirim email.", "error");
     });
 }
 
@@ -71,3 +64,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+function popUp(title, message, tipe = "success") {
+    const pop = document.getElementById("pop-up");
+    const content = document.getElementById("pop-up-content");
+    const sub = document.getElementById("title");
+    const pesan = document.getElementById("message-pop");
+    const ipop =document.getElementById("icon-pop");
+
+    pop.classList.add("active");
+    pop.style.display = "flex";
+    content.className = `pop-up-content ${tipe}`;
+    sub.textContent = title;
+    pesan.textContent = message;
+    ipop.textContent = tipe === "success" ? "✅ " + title : "❌ " + title;
+}
+
+function tutup() {
+    const pop = document.getElementById("pop-up");
+    pop.style.display = "none";
+}
