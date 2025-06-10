@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -13,20 +15,104 @@
             <div class="red-bar"></div>
             <div class="red-bar"></div>
         </div>
-        <h1>Japan</h1>
+        <a href="index.html"><h1>Japan</h1></a>
         <ul type="none" id="header-list">
-            <li><a class="header-list-content" href="index.html">BERANDA</a></li>
             <li><a class="header-list-content" href="foods.html">MAKANAN</a></li>
             <li><a class="header-list-content" href="beverages.html">MINUMAN</a></li>
             <li><a class="header-list-content" href="snacks.html">CAMILAN</a></li>
             <li><a class="header-list-content" href="favorite.html">FAVORIT</a></li>
-            <li><a class="header-list-content" href="aboutus.html">KONTAK</a></li>
+            <li><a class="header-list-content" href="contactus.html">KONTAK</a></li>
+            <li><a class="header-list-content" href="aboutus.html">TENTANG</a></li>
             <li id="header-list-close" onclick="toggleMenu()">
                 <div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px" alt="">
                 </div>
             </li>
         </ul>
     </header>
+
+    <section class="about-section">
+        <div class="about-section-container reveal">
+            <h2>Tentang Kami</h2>
+            <p>
+                Kami bertujuan untuk memperkenalkan berbagai kuliner khas Jepang kepada masyarakat Indonesia.
+                Omotenashi adalah konsep keramahtamahan atau pelayanan yang tulus dan sepenuh hati dalam budaya Jepang.
+                Konsep ini menekankan pada memberikan pelayanan yang terbaik kepada orang lain, bahkan melebihi ekspektasi, 
+                dengan tujuannya adalah untuk membuat tamu atau orang lain merasa nyaman dan bahagia
+                Dengan semangat "Omotenashi", kami berkomitmen menyajikan informasi akurat dan menarik mengenai makanan, minuman, dan camilan Jepang.
+            </p>
+        </div>
+    </section>
+
+    <section class="visi-misi">
+        <div class="visi-misi-container reveal">
+            <div class="vm" id="visi">
+                <h2>Visi</h2>
+                <p>
+                    Menjadi platform terdepan dalam memperkenalkan
+                    budaya kuliner Jepang di Indonesia dengan menyajikan informasi
+                    yang autentik, menarik, dan mudah diakses oleh semua kalangan.
+                </p>
+            </div>
+
+            <div class="vm" id="misi">
+                <h2>Misi</h2>
+                <p>
+                    Menyediakan konten berkualitas tinggi tentang
+                    makanan, minuman, dan camilan Jepang yang informatif dan mengedukasi.
+                    Meningkatkan apresiasi terhadap keberagaman makanan Jepang melalui konten visual dan narasi menarik.
+                    Menyajikan informasi kuliner Jepang yang autentik dan terpercaya.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="data-us">
+        <div class="data-us-container reveal">
+            <h2>Tim Kami</h2>
+            <div class="aboutus">
+                <div class="aboutus-content-avatar">
+                    <img src="img/aboutus/avatar1.jpeg" alt="Team member">
+                    <div class="avatar-data">
+                        <h3>Javier Leander Wijaya</h3>
+                        <h5>2472013</h5>
+                        <p>
+                            "Sedang menempuh studi di jurusan Teknik Informatika Universitas Kristen Maranatha.
+                            Memiliki minat besar dalam dunia teknologi.
+                            Aktif dalam memperdalam keahlian teknis dan berkomitmen terhadap pembelajaran berkelanjutan di bidang teknologi."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutus-content-avatar">
+                    <img src="img/aboutus/avatar2.jpeg" alt="Team member">
+                    <div class="avatar-data">
+                        <h3>Rico Dharmawan</h3>
+                        <h5>2472041</h5>
+                        <p>
+                            "Seorang yang antusias dengan hal yang bersangkutan dengan komputer.
+                            Sedang menjalankan studinya sebagai mahasiswa Universitas Kristen Maranatha angkatan 2024 mengambil jurusan Teknik Informatika.
+                            Tertarik dengan pemrograman game dan AI/Machine Learning."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutus-content-avatar">
+                    <img src="img/aboutus/avatar3.jpeg" alt="Team member">
+                    <div class="avatar-data">
+                        <h3>Regiana</h3>
+                        <h5>2472060</h5>
+                        <p>
+                            "Mahasiswa Teknik Informatika Universitas Kristen Maranatha
+                            yang memiliki ketertarikan pada pengembangan perangkat lunak dan kecerdasan buatan.
+                            Memiliki komitmen tinggi untuk terus berkembang dalam dunia teknologi."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 <script src="js/header.js"></script>
+<script src="js/aboutus.js"></script>
 </html>

@@ -172,7 +172,7 @@ footer {
     transform: translateX(-50%);
     width: 90%;
     z-index: 3;
-    transition: top 0.5s ease-in-out;
+    transition: top 0.75s ease-in-out;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 40% 60%;
@@ -227,6 +227,54 @@ footer {
     overflow-y: auto;
     line-height: 20px;
     font-size: 15px;
+}
+
+#background {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0%;
+    z-index: -1;
+    position: fixed;
+    transition: opacity 0.75s ease-in-out;
+}
+
+#dropdown {
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid red;
+    padding-left: 10px;
+    background-color: white;
+    font-family: Futura-Medium;
+    font-size: 1rem;
+}
+
+#cancel,
+.konten_isi {
+    cursor: pointer;
+}
+
+#button-favorite {
+    width: 130px;
+    height: 35px;
+    color: white;
+    background-color: red;
+    border-radius: 9999px;
+    border: none;
+    font-size: 1rem;
+    font-family: Futura-Medium;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+#button-favorite:hover {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
 }
 
 @media (min-width: 768px) {
@@ -357,55 +405,19 @@ footer {
         line-height: 20px;
         font-size: 15px;
     }
-}
 
-#background {
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0%;
-    backdrop-filter: blur(3px);
-    z-index: -1;
-    position: fixed;
-    transition: all 0.4s ease-in-out;
-}
+        #dropdown {
+        width: 140px;
+    }
 
-#dropdown {
-    margin: 0;
-    padding: 0;
-    width: 110px;
-    height: 35px;
-    border-radius: 10px;
-    border: 2px solid red;
-    padding-left: 10px;
-    background-color: white;
-    font-family: Futura-Medium;
-    font-size: 1rem;
-}
+    #cancel {
+        margin: 0 10px;
+    }
 
-#cancel,
-.konten_isi {
-    cursor: pointer;
-}
-
-#button-favorite {
-    width: 130px;
-    height: 35px;
-    color: white;
-    background-color: red;
-    border-radius: 9999px;
-    border: none;
-    font-size: 1rem;
-    font-family: Futura-Medium;
-    font-weight: bolder;
-    margin-left: 15px;
-}
-
-#button-favorite:hover {
-    color: red;
-    background-color: white;
-    border: 1px solid red;
+    #cancel,
+    .konten_isi {
+        cursor: pointer;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -427,18 +439,5 @@ footer {
     #contacts {
         grid-column: 3;
         text-align: right;
-    }
-
-    #dropdown {
-        width: 140px;
-    }
-
-    #cancel {
-        margin: 0 10px;
-    }
-
-    #cancel,
-    .konten_isi {
-        cursor: pointer;
     }
 }

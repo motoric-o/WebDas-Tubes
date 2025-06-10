@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "ebbGHZ7XpKqSPXCjE",
+        });
+    })();
+    </script>
+    <script src="js/contactus.js"></script>
+</head>
+<body>
+    <header>
+        <div onclick="toggleMenu()" id="three-bar">
+            <div class="red-bar"></div>
+            <div class="red-bar"></div>
+            <div class="red-bar"></div>
+        </div>
+        <a href="index.html"><h1>Japan</h1></a>
+        <ul type="none" id="header-list">
+            <li><a class="header-list-content" href="foods.html">MAKANAN</a></li>
+            <li><a class="header-list-content" href="beverages.html">MINUMAN</a></li>
+            <li><a class="header-list-content" href="snacks.html">CAMILAN</a></li>
+            <li><a class="header-list-content" href="favorite.html">FAVORIT</a></li>
+            <li><a class="header-list-content" href="contactus.html">KONTAK</a></li>
+            <li><a class="header-list-content" href="aboutus.html">TENTANG</a></li>
+            <li id="header-list-close" onclick="toggleMenu()">
+                <div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px" alt="">
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    
+    
+    <div class="contact">
+        <div class="contact-omotenashi">
+            <h1>Kontak Kami</h1>
+            <p>
+                Dalam semangat omotenashi, kami selalu berusaha memberikan pelayanan terbaik dengan penuh perhatian dan ketulusan. 
+                Jika Anda memiliki pertanyaan, saran, atau hanya ingin menyapa, kami akan dengan senang hati menerimanya. 
+                Kami berkomitmen untuk memberikan pelayanan terbaik dan menjawab setiap pertanyaan Anda secara profesional dan tepat waktu. 
+                Setiap pesan Anda sangat berarti bagi kami, dan kami siap membantu Anda dengan solusi terbaik.
+            </p>
+        </div>
+        <div class="contact-in">
+            <div class="contact-us">
+                <h3>Silakan hubungi kami untuk informasi lebih lanjut</h3>
+                <p class="padanan">Ingin tahu lebih lanjut tentang kami atau layanan kami? Mari jalin komunikasi — kami siap membantu Anda</p>
+                <div class="us">
+                    <img src="img/contact/mail.svg" alt="">
+                    <div class="text">
+                        <h4>Email</h4>
+                        <p>2472013@maranatha.ac.id</p>
+                        <p>2472041@maranatha.ac.id</p>
+                        <p>2472060@maranatha.ac.id</p>
+                    </div>
+                    <img src="img/contact/phone.svg" alt="">
+                    <div class="text">
+                        <h4>Nomor</h4>
+                        <p>085559630210</p>
+                    </div>
+                    <img src="img/contact/map-pin.svg" alt="">
+                    <div class="text">
+                        <h4>Lokasi</h4>
+                        <p>Jl. Prof. drg. Soeria Soemantri No.65,
+                            Sukawarna, Kec. Sukajadi, Kota Bandung,
+                            Jawa Barat 40164
+                        </p>
+                    </div>                        
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Kontak</h3>
+                <form onsubmit="mail(event)">
+                    <div class="contact-input-group">
+                        <label for="nama">Nama</label>
+                        <hr style="height: 8px;width: 45px;border:1px white;background-color: white;">
+                        <input type="text" placeholder="Nama" id="name">
+                        <div class="error-txt">Nama tidak boleh kosong!</div>
+                    </div>
+                    <div class="contact-input-group">
+                        <label for="nama">Email</label>
+                        <hr style="height: 8px;width: 40px;border:1px white;background-color: white;">
+                        <input type="text" placeholder="Email" id="email">
+                        <div class="error-txt">Email tidak boleh kosong!</div>
+                    </div>
+                    <div class="contact-input-group">
+                        <label for="nama">Subjek</label>
+                        <hr style="height: 8px;width: 50px;border:1px white;background-color: white;">
+                        <input type="text" placeholder="Subjek" id="subject">
+                        <div class="error-txt">Subjek tidak boleh kosong!</div>
+                    </div>
+                    <div class="contact-input-group">
+                        <label for="nama">Pesan</label>
+                        <hr style="height: 8px;width: 45px;border:1px white;background-color: white;">
+                        <textarea placeholder="Pesan" id="message"></textarea>
+                        <div class="error-txt">Pesan tidak boleh kosong!</div>
+                    </div>    
+                    <button type="submit" id="btn">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="maps">
+        <h2>Lokasi kami dapat ditemukan melalui peta berikut:</h2>
+        <div class="coordinate">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.319492258615!2d107.56866754960767!3d-6.885819937291258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6873a8cf5a7%3A0xf8f474dec4efb56!2sUniversitas%20Kristen%20Maranatha!5e0!3m2!1sen!2sid!4v1749323462675!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="pop-up" id="pop-up">
+        <div class="pop-up-content" id="pop-up-content">
+            <h3 id="title"></h3>
+            <p id="message-pop"></p>
+            <p id="icon-pop"></p>
+            <button onclick="tutup()">OK</button>
+        </div>
+    </div>
+</body>
+<script src="js/header.js"></script>
+</html>

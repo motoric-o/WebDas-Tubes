@@ -130,6 +130,7 @@ $(document).ready(function () {
         });
         $('#dropdown').on('change', function () {
             let popup_select = $('#dropdown').val();
+            $('#popup_text').hide();
             if (popup_select === "sejarah") {
                 $("#popup_text").text(data[add].sejarah);
             } else if (popup_select === "resep") {
@@ -148,18 +149,22 @@ $(document).ready(function () {
             } else {
                 $("#popup_text").text(data[add].deskripsi);
             }
+            $('#popup_text').show(250);
         });
 
         $('#cancel').click(function () {
             $('#popup').css({ "top": "-100%" });
-            $('#background').css({ "opacity": "0%", "z-index": "-1" });
+            $('#background').css({ "opacity": "0%" });
             setTimeout(() => {
                 $('#popup_img').empty();
                 $('#popup_text').empty();
                 $('#popup_title').empty();
                 document.body.style.overflow = ''
                 $('#dropdown').val('deskripsi');
-            }, 200)
+            }, 200);
+            setTimeout(() => {
+                $('#background').css({ "z-index": "-1" });
+            }, 750);
         });
 
         $(window).on("resize", function () {
@@ -260,7 +265,7 @@ $(document).ready(function () {
         }
 
         if (check == false) {
-            displayed["kategori"] = category;            
+            displayed["kategori"] = category;
             favorites.push(displayed);
             $(this).text("✔");
         }
