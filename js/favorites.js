@@ -51,7 +51,7 @@ function appendFavorites() {
                         add = i;
                         displayed = favorites[i];
                         $('#background').css({ "opacity": "60%", "z-index": "2" });
-                        $('#popup').css({ "top": "15%" });
+                        $('#popup').css({ "top": "15vh" });
                         $('#popup_img').css({
                             "background-image": `url(${favorites[i].foto})`,
                             "background-size": "cover",

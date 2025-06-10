@@ -1,28 +1,30 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const reveals = document.querySelectorAll('.reveal');
-    const avatars = document.querySelectorAll('.aboutus-content-avatar');
-    const vms = document.querySelectorAll('.vm')
+$(document).ready(function () {
+    const $reveals = $('.reveal');
+    const $avatars = $('.aboutus-content-avatar');
+    const $vms = $('.vm');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+                $(entry.target).addClass('visible');
                 observer.unobserve(entry.target);
             }
         });
     });
 
-    reveals.forEach(reveal => {
-        observer.observe(reveal);
+    $reveals.each(function () {
+        observer.observe(this);
     });
 
-    vms.forEach((vm, index) => {
+    $vms.each(function (index) {
+        const vm = this;
         setTimeout(() => {
             observer.observe(vm);
         }, index * 100);
     });
 
-    avatars.forEach((avatar, index) => {
+    $avatars.each(function (index) {
+        const avatar = this;
         setTimeout(() => {
             observer.observe(avatar);
         }, index * 100);

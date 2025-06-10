@@ -324,6 +324,21 @@ hero {
     vertical-align: middle;
 }
 
+.reveal-content {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transform: translateY(80px);
+    opacity: 0%;
+}
+
+.img-collection.reveal-content {
+    transform: translateY(-80px);
+}
+
+.revealed {
+    transform: translateY(0px);
+    opacity: 100%;
+}
+
 @media (min-width: 768px) {
     hero {
         flex-direction: row;

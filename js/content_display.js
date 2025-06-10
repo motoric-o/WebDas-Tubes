@@ -102,7 +102,7 @@ $(document).ready(function () {
                     add = i;
                     displayed = data[i];
                     $('#background').css({ "opacity": "60%", "z-index": "2" });
-                    $('#popup').css({ "top": "15%" });
+                    $('#popup').css({ "top": "15vh" });
                     $('#popup_img').css({
                         "background-image": `url(${data[i].foto})`,
                         "background-size": "cover",

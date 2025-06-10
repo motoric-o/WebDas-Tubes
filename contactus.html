@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/contactus.css">
     <script src="js/jquery.min.js"></script>
 </head>
+
 <body>
     <header>
         <div onclick="toggleMenu()" id="three-bar">
@@ -15,7 +17,9 @@
             <div class="red-bar"></div>
             <div class="red-bar"></div>
         </div>
-        <a href="index.html"><h1>Japan</h1></a>
+        <a href="index.html">
+            <h1>Japan</h1>
+        </a>
         <ul type="none" id="header-list">
             <li><a class="header-list-content" href="foods.html">MAKANAN</a></li>
             <li><a class="header-list-content" href="beverages.html">MINUMAN</a></li>
@@ -30,22 +34,26 @@
         </ul>
     </header>
 
-    
-    
+
+
     <div class="contact">
         <div class="contact-omotenashi">
             <h1>Kontak Kami</h1>
             <p>
-                Dalam semangat omotenashi, kami selalu berusaha memberikan pelayanan terbaik dengan penuh perhatian dan ketulusan. 
-                Jika Anda memiliki pertanyaan, saran, atau hanya ingin menyapa, kami akan dengan senang hati menerimanya. 
-                Kami berkomitmen untuk memberikan pelayanan terbaik dan menjawab setiap pertanyaan Anda secara profesional dan tepat waktu. 
+                Dalam semangat omotenashi, kami selalu berusaha memberikan pelayanan terbaik dengan penuh perhatian dan
+                ketulusan.
+                Jika Anda memiliki pertanyaan, saran, atau hanya ingin menyapa, kami akan dengan senang hati
+                menerimanya.
+                Kami berkomitmen untuk memberikan pelayanan terbaik dan menjawab setiap pertanyaan Anda secara
+                profesional dan tepat waktu.
                 Setiap pesan Anda sangat berarti bagi kami, dan kami siap membantu Anda dengan solusi terbaik.
             </p>
         </div>
         <div class="contact-in">
             <div class="contact-us">
                 <h3>Silakan hubungi kami untuk informasi lebih lanjut</h3>
-                <p class="padanan">Ingin tahu lebih lanjut tentang kami atau layanan kami? Mari jalin komunikasi — kami siap membantu Anda</p>
+                <p class="padanan">Ingin tahu lebih lanjut tentang kami atau layanan kami? Mari jalin komunikasi — kami
+                    siap membantu Anda</p>
                 <div class="us">
                     <img src="img/contact/mail.svg" alt="">
                     <div class="text">
@@ -66,11 +74,11 @@
                             Sukawarna, Kec. Sukajadi, Kota Bandung,
                             Jawa Barat 40164
                         </p>
-                    </div>                        
+                    </div>
                 </div>
             </div>
             <div class="contact-form">
-                <h3>Kontak</h3>
+                <h3>Email Kami</h3>
                 <form onsubmit="mail(event)">
                     <div class="contact-input-group">
                         <label for="nama">Nama</label>
@@ -95,7 +103,7 @@
                         <hr style="height: 8px;width: 45px;border:1px white;background-color: white;">
                         <textarea placeholder="Pesan" id="message"></textarea>
                         <div class="error-txt">Pesan tidak boleh kosong!</div>
-                    </div>    
+                    </div>
                     <button type="submit" id="btn">Kirim</button>
                 </form>
             </div>
@@ -104,7 +112,9 @@
     <div class="maps">
         <h2>Lokasi kami dapat ditemukan melalui peta berikut:</h2>
         <div class="coordinate">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.319492258615!2d107.56866754960767!3d-6.885819937291258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6873a8cf5a7%3A0xf8f474dec4efb56!2sUniversitas%20Kristen%20Maranatha!5e0!3m2!1sen!2sid!4v1749323462675!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.319492258615!2d107.56866754960767!3d-6.885819937291258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6873a8cf5a7%3A0xf8f474dec4efb56!2sUniversitas%20Kristen%20Maranatha!5e0!3m2!1sen!2sid!4v1749323462675!5m2!1sen!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
@@ -118,15 +128,6 @@
     </div>
 </body>
 <script src="js/header.js"></script>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "ebbGHZ7XpKqSPXCjE",
-        });
-    })();
-    </script>
-    <script src="js/contactus.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/contactus.js"></script>
 </html>

@@ -36,7 +36,7 @@
     border: 1px solid rgb(49, 49, 49);
     border-radius: 5px;
     box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .contact-us,
@@ -243,6 +243,10 @@
     display: block;
     margin: 0;
     padding: 0;
+}
+
+textarea {
+    font-family: Futura-Light;
 }
 
 @media (max-width: 768px) {

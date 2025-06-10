@@ -167,7 +167,7 @@ footer {
     position: fixed;
     border-radius: 20px;
     border: none;
-    height: 60%;
+    height: 550px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -203,23 +203,25 @@ footer {
     width: 90%;
     margin: 0;
     margin-left: 20px;
+    height: 85%;
 }
 
 #popup_title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 #popup_judul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 20px;
 }
 
 #popup_text {
     margin-top: 15px;
     width: 100%;
-    max-height: 150px;
+    max-height: 65%;
     font-size: 14px;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -342,7 +344,7 @@ footer {
         background-color: white;
         position: fixed;
         border: none;
-        height: 65%;
+        height: 600px;
         max-width: 1000px;
         transition: top 0.5s ease-in-out;
         display: grid;
@@ -368,10 +370,11 @@ footer {
         width: 90%;
         margin: 0 auto;
         margin-top: 20px;
+        height: 80%;
     }
 
     #popup_title {
-        font-weight: bold;
+        font-size: 2rem;
     }
 
     #popup_judul {
@@ -396,7 +399,6 @@ footer {
     }
 
     #popup_text {
-        max-height: 350px;
         font-size: 14px;
         word-wrap: break-word;
         overflow-wrap: break-word;
@@ -404,6 +406,7 @@ footer {
         overflow-y: auto;
         line-height: 20px;
         font-size: 15px;
+        max-height: 85%;
     }
 
         #dropdown {
