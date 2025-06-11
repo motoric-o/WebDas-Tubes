@@ -51,29 +51,45 @@
         </div>
         <div class="contact-in">
             <div class="contact-us">
-                <h3>Silakan hubungi kami untuk informasi lebih lanjut</h3>
+                <h3>Hubungi kami untuk informasi lebih lanjut</h3>
                 <p class="padanan">Ingin tahu lebih lanjut tentang kami atau layanan kami? Mari jalin komunikasi — kami
                     siap membantu Anda</p>
                 <div class="us">
-                    <img src="img/contact/mail.svg" alt="">
-                    <div class="text">
-                        <h4>Email</h4>
-                        <p>2472013@maranatha.ac.id</p>
-                        <p>2472041@maranatha.ac.id</p>
-                        <p>2472060@maranatha.ac.id</p>
+                    <div class="us-content">
+                        <div class="text">
+                            <div class="text-title"><img src="img/contact/mail.svg" alt="" class="us-img">
+                                <h4>Email</h4>
+                            </div>
+                            <p>2472013@maranatha.ac.id</p>
+                            <p>2472041@maranatha.ac.id</p>
+                            <p>2472060@maranatha.ac.id</p>
+                        </div>
                     </div>
-                    <img src="img/contact/phone.svg" alt="">
-                    <div class="text">
-                        <h4>Nomor</h4>
-                        <p>085559630210</p>
+                    <div class="us-content">
+                        <div class="text">
+                            <div class="text-title"><img src="img/contact/phone.svg" alt="" class="us-img">
+                                <h4>Nomor</h4>
+                            </div>
+                            <p>085559630210</p>
+                        </div>
                     </div>
-                    <img src="img/contact/map-pin.svg" alt="">
-                    <div class="text">
-                        <h4>Lokasi</h4>
-                        <p>Jl. Prof. drg. Soeria Soemantri No.65,
-                            Sukawarna, Kec. Sukajadi, Kota Bandung,
-                            Jawa Barat 40164
-                        </p>
+                    <div class="us-content">
+
+                        <div class="text">
+                            <div class="text-title"><img src="img/contact/map-pin.svg" alt="" class="us-img">
+                                <h4>Lokasi</h4>
+                            </div>
+                            <p>Jl. Prof. drg. Soeria Soemantri No.65,
+                                Sukawarna, Kec. Sukajadi, Kota Bandung,
+                                Jawa Barat 40164
+                            <div class="coordinate">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.319492258615!2d107.56866754960767!3d-6.885819937291258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6873a8cf5a7%3A0xf8f474dec4efb56!2sUniversitas%20Kristen%20Maranatha!5e0!3m2!1sen!2sid!4v1749323462675!5m2!1sen!2sid"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,39 +98,31 @@
                 <form onsubmit="mail(event)">
                     <div class="contact-input-group">
                         <label for="nama">Nama</label>
-                        <hr style="height: 8px;width: 45px;border:1px white;background-color: white;">
+                        <hr class="label-hr">
                         <input type="text" placeholder="Nama" id="name">
                         <div class="error-txt">Nama tidak boleh kosong!</div>
                     </div>
                     <div class="contact-input-group">
                         <label for="nama">Email</label>
-                        <hr style="height: 8px;width: 40px;border:1px white;background-color: white;">
+                        <hr class="label-hr">
                         <input type="text" placeholder="Email" id="email">
                         <div class="error-txt">Email tidak boleh kosong!</div>
                     </div>
                     <div class="contact-input-group">
                         <label for="nama">Subjek</label>
-                        <hr style="height: 8px;width: 50px;border:1px white;background-color: white;">
+                        <hr class="label-hr">
                         <input type="text" placeholder="Subjek" id="subject">
                         <div class="error-txt">Subjek tidak boleh kosong!</div>
                     </div>
                     <div class="contact-input-group">
                         <label for="nama">Pesan</label>
-                        <hr style="height: 8px;width: 45px;border:1px white;background-color: white;">
+                        <hr class="label-hr">
                         <textarea placeholder="Pesan" id="message"></textarea>
                         <div class="error-txt">Pesan tidak boleh kosong!</div>
                     </div>
                     <button type="submit" id="btn">Kirim</button>
                 </form>
             </div>
-        </div>
-    </div>
-    <div class="maps">
-        <h2>Lokasi kami dapat ditemukan melalui peta berikut:</h2>
-        <div class="coordinate">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.319492258615!2d107.56866754960767!3d-6.885819937291258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6873a8cf5a7%3A0xf8f474dec4efb56!2sUniversitas%20Kristen%20Maranatha!5e0!3m2!1sen!2sid!4v1749323462675!5m2!1sen!2sid"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
@@ -126,8 +134,55 @@
             <button onclick="tutup()">OK</button>
         </div>
     </div>
+
+    <footer>
+        <div id="footer-grid">
+            <div id="web-desc">
+                <h2>What is this website about?</h2>
+                <p>This website is built just for those who are culinary enthusiasts. Specifically Japanese
+                    Culinaries.
+                    We want the world to know what's special and what's unique about Japanese Culinary. This website
+                    can
+                    also
+                    be a good source for those who are trying to find a good recipe to cook Japanese cuisine. We
+                    tell
+                    backstories about the food too, for those who are intrigued towards food history.
+                </p>
+            </div>
+            <div id="social-media">
+                <h2>Social Medias</h2>
+                <div id="social-media-inner">
+                    <a href=""><img src="img/footer/instagram.png" alt=""></a>
+                    <a href=""><img src="img/footer/yt.png" alt=""></a>
+                    <a href=""><img src="img/footer/x.png" alt=""></a>
+                </div>
+            </div>
+            <div id="contacts">
+                <h2>Contacts</h2>
+                <div id="contacts-inner">
+                    <div>
+                        <p>Email:</p>
+                        <ul type="none">
+                            <li>2472013@maranatha.ac.id</li>
+                            <li>2472041@maranatha.ac.id</li>
+                            <li>2472060@maranatha.ac.id</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Phones:</p>
+                        <ul type="none">
+                            <li>085559630210</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="creator">Created by Japan Team. 2025 All rights reserved.</p>
+    </footer>
 </body>
 <script src="js/header.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="js/contactus.js"></script>
+
 </html>

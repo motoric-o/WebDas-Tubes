@@ -1,24 +1,25 @@
 .contact {
-    margin-top: 5px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 40px;
-    background: linear-gradient(180deg,#ffffff, #feacac, #ffffff);
+    gap: 100px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    /* background: linear-gradient(180deg,#ffffff, #feacac, #ffffff); */
 }
 
 .contact-omotenashi {
-    padding: 25px 50px;
+    width: 100%;
     margin: 80px 20px;
-    text-align: end;
+    text-align: start;
 }
 
 .contact-omotenashi h1 {
     font-size: 3rem;
     margin-bottom: 15px;
-    color: #a12525;
 }
 
 .contact-omotenashi p {
@@ -31,10 +32,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    min-width: 670px;
     max-width: 950px;
     margin-top: 20px;
     border: 1px solid rgb(49, 49, 49);
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.1);
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
@@ -42,16 +44,21 @@
 .contact-us,
 .contact-form {
     max-width: 50%;
-    flex: 50%;
     padding: 20px 25px;
+    height: auto;
+    flex: 50%;
 }
 
 .contact-us {
     background-color: lightgray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .contact-form {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-us h3,
@@ -61,16 +68,19 @@
 
 .us {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     text-align: left;
+    gap: 10px;
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-.us img {
+.us-img {
     width: 25px;
     height: 25px;
-    margin: 5px;
-    margin-top: 13px;
-    margin-left: 25px;
 }
 
 .text {
@@ -115,7 +125,7 @@
     border: 1px solid rgb(49, 49, 49);
     box-sizing: border-box;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     z-index: 1;
     transition: border 0.3s ease, box-shadow 0.3s ease;
 }
@@ -139,6 +149,7 @@
     margin-top: -2.5px;
     margin-left: 25px;
 }
+
 .contact-input-group label {
     font-size: 13.7px;
     text-align: left;
@@ -154,17 +165,23 @@
     margin-right: 15px;
     margin-bottom: 15px;
     padding: 10px 20px;
-    background: linear-gradient(280deg,#ff3838,#a12525) ;
+    background-color: red;
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 10px;
     border-radius: 4px;
+    width: 100px;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
 }
 
 #btn:hover {
-    background: linear-gradient(280deg, #a12525, #ff3838);
-    transform: scale(1.05);
+    scale: 105%;
+}
+
+#btn:active {
+    background-color: #a12525;
 }
 
 .pop-up {
@@ -173,7 +190,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     display: none;
     align-items: center;
     justify-content: center;
@@ -186,17 +203,9 @@
     border-radius: 10px;
     max-width: 400px;
     width: 90%;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     text-align: center;
     animation: 0.3s ease;
-}
-
-.pop-up-content.success {
-    border: 6px solid #2ecc71;
-}
-
-.pop-up-content.error {
-    border: 6px solid #e74c3c;
 }
 
 .pop-up-content h3 {
@@ -210,7 +219,7 @@
 }
 
 .pop-up-content button {
-    background-color: #3498db;
+    background-color: red;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -220,14 +229,7 @@
 }
 
 .pop-up-content button:hover {
-    background-color: #2980b9;
-}
-
-.maps {
-    width: 100vw;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    text-align: center;
+    background-color: #a12525;
 }
 
 .coordinate {
@@ -238,29 +240,55 @@
 
 .coordinate iframe {
     width: 100%;
-    height: 400px;
+    height: 200px;
     border: none;
-    display: block;
     margin: 0;
     padding: 0;
+    border-radius: 10px;
+}
+
+input {
+    font-family: Futura-Light;
+    height: 35px;
 }
 
 textarea {
     font-family: Futura-Light;
 }
 
-@media (max-width: 768px) {
-    .aboutus {
-        flex-direction: column;
-    }
+.label-hr {
+    height: 8px;
+    width: 45px;
+    border: 1px white;
+    background-color: white;
+}
 
-    .aboutus-content-avatar {
-        width: 90%;
+.us-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.text-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 0px;
     }
 
     .contact-in {
         flex-direction: column;
-        width: 88%;
+        width: 80%;
+        min-width: none;
+        max-width: 500px;
     }
 
     .contact-us,
@@ -270,6 +298,7 @@ textarea {
         flex: none;
         min-height: 500px;
     }
+
     .contact-us {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -279,38 +308,14 @@ textarea {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-}
 
-@media (min-width: 768px) {
-    .aboutus-content-avatar {
-        width: 40%;
+    .contact-omotenashi {
+        text-align: center;
+        width: 85%;
     }
 
-    .contact-in {
-        flex-direction: row;
-        width: 89%;
-    }
-
-    .contact-us,
-    .contact-form {
-        height: auto;
-        flex: 50%;
-    }
-
-    .contact-us {
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-    }
-
-    .contact-form {
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .contact-us,
-    .contact-form {
-        height: auto;
+    .us {
+        width: 100%;
+        grid-template-rows: auto auto auto;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/aboutus.css">
     <script src="js/jquery.min.js"></script>
 </head>
+
 <body>
     <header>
         <div onclick="toggleMenu()" id="three-bar">
@@ -15,7 +17,9 @@
             <div class="red-bar"></div>
             <div class="red-bar"></div>
         </div>
-        <a href="index.html"><h1>Japan</h1></a>
+        <a href="index.html">
+            <h1>Japan</h1>
+        </a>
         <ul type="none" id="header-list">
             <li><a class="header-list-content" href="foods.html">MAKANAN</a></li>
             <li><a class="header-list-content" href="beverages.html">MINUMAN</a></li>
@@ -32,18 +36,17 @@
 
     <section class="about-section">
         <div class="about-section-container reveal">
-            <h2>Tentang Kami</h2>
+            <h1>Tentang Kami</h1>
             <p>
                 Kami bertujuan untuk memperkenalkan berbagai kuliner khas Jepang kepada masyarakat Indonesia.
                 Omotenashi adalah konsep keramahtamahan atau pelayanan yang tulus dan sepenuh hati dalam budaya Jepang.
-                Konsep ini menekankan pada memberikan pelayanan yang terbaik kepada orang lain, bahkan melebihi ekspektasi, 
+                Konsep ini menekankan pada memberikan pelayanan yang terbaik kepada orang lain, bahkan melebihi
+                ekspektasi,
                 dengan tujuannya adalah untuk membuat tamu atau orang lain merasa nyaman dan bahagia
-                Dengan semangat "Omotenashi", kami berkomitmen menyajikan informasi akurat dan menarik mengenai makanan, minuman, dan camilan Jepang.
+                Dengan semangat "Omotenashi", kami berkomitmen menyajikan informasi akurat dan menarik mengenai makanan,
+                minuman, dan camilan Jepang.
             </p>
         </div>
-    </section>
-
-    <section class="visi-misi">
         <div class="visi-misi-container reveal">
             <div class="vm" id="visi">
                 <h2>Visi</h2>
@@ -68,51 +71,107 @@
 
     <section class="data-us">
         <div class="data-us-container reveal">
-            <h2>Tim Kami</h2>
+            <h1>Tim Kami</h1>
             <div class="aboutus">
                 <div class="aboutus-content-avatar">
-                    <img src="img/aboutus/avatar1.jpeg" alt="Team member">
-                    <div class="avatar-data">
-                        <h3>Javier Leander Wijaya</h3>
-                        <h5>2472013</h5>
-                        <p>
-                            "Sedang menempuh studi di jurusan Teknik Informatika Universitas Kristen Maranatha.
-                            Memiliki minat besar dalam dunia teknologi.
-                            Aktif dalam memperdalam keahlian teknis dan berkomitmen terhadap pembelajaran berkelanjutan di bidang teknologi."
-                        </p>
+                    <div>
+                        <img src="img/aboutus/avatar1.jpeg" alt="Team member">
+                        <div class="avatar-data">
+                            <h3>Javier Leander Wijaya</h3>
+                            <h5>2472013</h5>
+                            <p>
+                                "Sedang menempuh studi di jurusan Teknik Informatika Universitas Kristen Maranatha.
+                                Memiliki minat besar dalam dunia teknologi.
+                                Aktif dalam memperdalam keahlian teknis dan berkomitmen terhadap pembelajaran
+                                berkelanjutan di bidang teknologi."
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="aboutus-content-avatar">
-                    <img src="img/aboutus/avatar2.jpeg" alt="Team member">
-                    <div class="avatar-data">
-                        <h3>Rico Dharmawan</h3>
-                        <h5>2472041</h5>
-                        <p>
-                            "Seorang yang antusias dengan hal yang bersangkutan dengan komputer.
-                            Sedang menjalankan studinya sebagai mahasiswa Universitas Kristen Maranatha angkatan 2024 mengambil jurusan Teknik Informatika.
-                            Tertarik dengan pemrograman game dan AI/Machine Learning."
-                        </p>
+                    <div>
+                        <img src="img/aboutus/avatar2.jpeg" alt="Team member">
+                        <div class="avatar-data">
+                            <h3>Rico Dharmawan</h3>
+                            <h5>2472041</h5>
+                            <p>
+                                "Seorang yang antusias dengan hal yang bersangkutan dengan komputer.
+                                Sedang menjalankan studinya sebagai mahasiswa Universitas Kristen Maranatha angkatan
+                                2024
+                                mengambil jurusan Teknik Informatika.
+                                Tertarik dengan pemrograman game dan AI/Machine Learning."
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="aboutus-content-avatar">
-                    <img src="img/aboutus/avatar3.jpeg" alt="Team member">
-                    <div class="avatar-data">
-                        <h3>Regiana</h3>
-                        <h5>2472060</h5>
-                        <p>
-                            "Mahasiswa Teknik Informatika Universitas Kristen Maranatha
-                            yang memiliki ketertarikan pada pengembangan perangkat lunak dan kecerdasan buatan.
-                            Memiliki komitmen tinggi untuk terus berkembang dalam dunia teknologi."
-                        </p>
+                    <div>
+                        <img src="img/aboutus/avatar3.jpeg" alt="Team member">
+                        <div class="avatar-data">
+                            <h3>Regiana</h3>
+                            <h5>2472060</h5>
+                            <p>
+                                "Mahasiswa Teknik Informatika Universitas Kristen Maranatha
+                                yang memiliki ketertarikan pada pengembangan perangkat lunak dan kecerdasan buatan.
+                                Memiliki komitmen tinggi untuk terus berkembang dalam dunia teknologi."
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="avatar-scroll"></div>
     </section>
 
+    <footer>
+        <div id="footer-grid">
+            <div id="web-desc">
+                <h2>What is this website about?</h2>
+                <p>This website is built just for those who are culinary enthusiasts. Specifically Japanese
+                    Culinaries.
+                    We want the world to know what's special and what's unique about Japanese Culinary. This website
+                    can
+                    also
+                    be a good source for those who are trying to find a good recipe to cook Japanese cuisine. We
+                    tell
+                    backstories about the food too, for those who are intrigued towards food history.
+                </p>
+            </div>
+            <div id="social-media">
+                <h2>Social Medias</h2>
+                <div id="social-media-inner">
+                    <a href=""><img src="img/footer/instagram.png" alt=""></a>
+                    <a href=""><img src="img/footer/yt.png" alt=""></a>
+                    <a href=""><img src="img/footer/x.png" alt=""></a>
+                </div>
+            </div>
+            <div id="contacts">
+                <h2>Contacts</h2>
+                <div id="contacts-inner">
+                    <div>
+                        <p>Email:</p>
+                        <ul type="none">
+                            <li>2472013@maranatha.ac.id</li>
+                            <li>2472041@maranatha.ac.id</li>
+                            <li>2472060@maranatha.ac.id</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Phones:</p>
+                        <ul type="none">
+                            <li>085559630210</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="creator">Created by Japan Team. 2025 All rights reserved.</p>
+    </footer>
 </body>
 <script src="js/header.js"></script>
 <script src="js/aboutus.js"></script>
+
 </html>

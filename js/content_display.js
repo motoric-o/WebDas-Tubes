@@ -18,7 +18,6 @@ $(document).ready(function () {
 
     $.getJSON(dataPath, function (data) {
         let add = 0
-        var timeout = 100
 
         for (let i = 0; i < data.length; i++) {
             $('#konten').append(
@@ -83,15 +82,14 @@ $(document).ready(function () {
                     "opacity": "100%",
                     "transform": "translateY(0px)"
                 });
-            }, timeout);
+            }, i * 200);
 
             setTimeout(() => {
                 $(`#${data[i].nama}`).css({
                     "transition": "all 0.25s ease-in-out"
                 });
-            }, timeout + 750);
+            }, i * 200 + 750);
 
-            timeout += 200;
         }
 
         $('.konten_isi').click(function () {

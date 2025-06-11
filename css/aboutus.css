@@ -1,44 +1,52 @@
-.about-section-container h2 {
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 200px;
+    gap: 20px;
+}
+
+.about-section-container h1 {
     font-size: 2.8rem;
     text-align: start;
     margin: 30px 0 10px;
-    color: #a12525;
 }
 
 .about-section-container {
-    width: auto;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    padding: 6.25rem;
+    width: 60%;
+    padding: 5rem 3rem;
     text-align: start;
-}
-
-.visi-misi {
-    background: linear-gradient(180deg, lightgray, #feacac);
+    background: lightgray;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: translateX(-80px);
 }
 
 .visi-misi-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 6.25rem 1.25rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4.5rem 0;
     margin: 0 auto;
+    width: 70%;
+    height: auto;
+    gap: 10px;
 }
 
 #visi,
 #misi {
-    flex: 1 1 45%;
-    max-width: 45%;
-    margin: 50px auto;
-    padding: 20px;
+    max-width: 400px;
+    width: auto;
     text-align: center;
+    padding: 10px 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(80px);
+    transition: opacity 1s ease, transform 1s ease;
+    height: auto;
 }
 
 #visi.visible,
@@ -53,17 +61,13 @@
 }
 
 .data-us {
-  background: linear-gradient(180deg, #feacac, white);
+    margin-top: 20px;
+    margin-bottom: 200px;
 }
 
-.data-us h2 {
+.data-us h1 {
     text-align: center;
-    font-size: 2.5rem;
-    color: #a12525;
-}
-
-.data-us-container {
-  padding: 40px 20px;
+    font-size: 4rem;
 }
 
 .aboutus {
@@ -72,26 +76,30 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    flex-direction: row;
 }
 
 .aboutus-content-avatar {
     background-color: white;
-    max-width: 250px;
-    flex: 1 1 200px;
-    border: 1px solid #3a3535;
+    max-width: 350px;
+    width: 30%;
+    height: auto;
     text-align: center;
-    padding: 35px;
     border-radius: 8px;
+    gap: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateX(-50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: all 1s ease;
+}
+
+.aboutus-content-avatar div {
+    margin: 25px;
 }
 
 .aboutus-content-avatar:hover {
-    transform: translateY(-5px) scale(1.05);
+    scale: 105%;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    border: 1px solid #a82d2d;
 }
 
 .aboutus-content-avatar.visible {
@@ -129,8 +137,7 @@
 
 .reveal {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .reveal.visible {
@@ -138,49 +145,56 @@
     transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-    .visi-misi-container {
+
+@media (max-width: 1024px) {
+    .about-section {
         flex-direction: column;
-        align-items: center;
+        margin-top: 100px;
     }
 
-    .visi,
-    .misi {
-        flex: 1 1 100%;
-        max-width: 100%;
-        margin: 25px 0;
+    .about-section-container {
+        background-color: lightgray;
+        border-radius: 0px;
+        width: 100vw;
+        padding: 0;
     }
 
-    .aboutus-content-avatar {
-        width: auto;
-        min-height: 350px;
+    .about-section-container h1 {
+        margin: 20px 30px;
     }
-}
 
-@media (min-width: 768px) {
+    .about-section-container p {
+        margin: 0px 30px;
+        margin-bottom: 30px;
+    }
+
     .visi-misi-container {
-        flex-direction: row;
+        padding-top: 0;
+        align-items: center;
+        flex-direction: auto;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .visi,
-    .misi {
-        height: fit-content;
-        flex: 50%;
+    #visi,
+    #misi {
+        height: 280px;
     }
 
     .aboutus {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .aboutus-content-avatar {
-        width: 200px;
+        max-width: none;
+        width: 90%;
+        max-width: 450px;
         min-height: 350px;
     }
-}
 
-@media (min-width: 1024px) {
-    .aboutus-content-avatar {
-        width: 250px;
+    .aboutus-content-avatar div {
+        margin: 25px;
     }
 }

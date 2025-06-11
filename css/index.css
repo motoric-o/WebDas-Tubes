@@ -1,3 +1,7 @@
+body {
+    overflow-y: hidden;
+}
+
 hero {
     display: flex;
     flex-direction: column;
@@ -25,10 +29,17 @@ hero {
     background-color: lightgray;
 }
 
+#hero-container.reveal-content {
+    transform: translateX(-80px);
+}
+
+#hero-container.revealed {
+    transform: translateX(0px);
+}
+
 #img-collection-hero {
     width: 100%;
     height: 100%;
-    background-color: white;
 }
 
 #img-collection-content-hero {
@@ -44,7 +55,6 @@ hero {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
 }
 
 .img-collection-content div {
@@ -78,6 +88,21 @@ hero {
     margin-left: auto;
     margin-right: auto;
     margin-top: 110px;
+}
+
+#intro.reveal-content {
+    transform: translateY(80px);
+}
+
+#intro.revealed {
+    transform: translateY(0px);
+}
+
+#intro.disappear {
+    transform: translateY(-20px);
+    margin-top: 0;
+    height: 0;
+    opacity: 0%;
 }
 
 #sub-intro {
@@ -174,6 +199,14 @@ hero {
 
 #culinary-container {
     background-color: lightgray;
+}
+
+#culinary-container.reveal-content {
+    transform: translateX(80px);
+}
+
+#culinary-container.revealed {
+    transform: translateX(0px);
 }
 
 #culinary-container h2 {
@@ -325,13 +358,18 @@ hero {
 }
 
 .reveal-content {
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
     transform: translateY(80px);
     opacity: 0%;
+    transition: all 1s ease-in-out;
 }
 
 .img-collection.reveal-content {
     transform: translateY(-80px);
+    transition: all 1.5s ease-in-out;
+}
+
+.img-collection.revealed {
+    transform: translateY(0px);
 }
 
 .revealed {
@@ -364,7 +402,7 @@ hero {
     }
 
     #welcome {
-        margin-top: 50px;
+        margin: 50px 0;
         font-size: 3rem;
         margin-right: 50px;
     }
