@@ -1,20 +1,20 @@
 @font-face {
     font-family: Futura-Light;
-    src: local('futura light bt');
+    src: url('../fonts/futura\ light\ bt.ttf');
 }
 
 @font-face {
     font-family: Futura-Medium;
-    src: local('futura medium bt');
+    src: url('../fonts/futura\ medium\ bt.ttf');
 }
 
 ::-webkit-scrollbar {
-  width: 3px;
+    width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 9999px;
+    background: #888;
+    border-radius: 9999px;
 }
 
 body {
@@ -40,6 +40,10 @@ h1 {
     font-family: Futura-Medium;
     font-size: 1.5rem;
     color: red;
+}
+
+header h1 {
+    font-size: 1rem;
 }
 
 a {
@@ -71,6 +75,7 @@ a {
     color: white;
     transition: top 0.75s ease-in-out;
     z-index: 2;
+
     &.open {
         top: 0;
     }
@@ -83,6 +88,7 @@ a {
     min-width: 100px;
     width: auto;
     margin-top: 5px;
+    font-size: 1rem;
 }
 
 #header-list #header-list-close {
@@ -193,11 +199,12 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     width: 60%;
-    gap: 15px;
+    gap: 10px;
     max-width: 170px;
     height: 100%;
+    margin-left: 5px;
 }
 
 #popup_konten {
@@ -208,7 +215,7 @@ footer {
 }
 
 #popup_title {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -262,16 +269,15 @@ footer {
 }
 
 #button-favorite {
-    width: 100px;
-    height: 35px;
+    width: 80px;
+    height: 30px;
     color: white;
     background-color: red;
     border-radius: 9999px;
     border: none;
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-family: Futura-Medium;
     font-weight: bolder;
-    margin-left: 15px;
 }
 
 #button-favorite:hover {
@@ -291,6 +297,7 @@ footer {
     h1 {
         font-size: 2.25rem;
     }
+
 
     #three-bar {
         display: none;
@@ -312,6 +319,7 @@ footer {
         display: inline-block;
         width: 130px;
         color: black;
+        font-size: 0.75rem;
     }
 
     .header-list-content {
@@ -378,27 +386,28 @@ footer {
         height: 80%;
     }
 
-    #popup_title {
-        font-size: 2rem;
-    }
-
     #popup_judul {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
+        gap: 10px;
         height: 80px;
         margin: 0 auto;
         margin-top: 15px;
         width: 90%;
     }
 
+    #popup_title {
+        font-size: 1.5rem;
+    }
+
+
     #popup_sub {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: end;
         width: 60%;
         height: 100%;
     }
@@ -414,7 +423,7 @@ footer {
         max-height: 85%;
     }
 
-        #dropdown {
+    #dropdown {
         width: 140px;
     }
 
@@ -426,9 +435,23 @@ footer {
     .konten_isi {
         cursor: pointer;
     }
+
+    #button-favorite {
+        height: 35px;
+        width: 100px;
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 1024px) {
+    #header-list li {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
     footer {
         min-height: 350px;
         height: auto;

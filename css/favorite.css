@@ -21,7 +21,7 @@
 }
 
 .favorite-action {
-    width: auto;
+    width: 5%;
     text-align: center;
 }
 
@@ -83,10 +83,10 @@
     font-family: Futura-Medium;
     color: white;
     font-weight: bolder;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 5px;
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     transition: all 0.15s ease-in-out;
 }
 
@@ -116,10 +116,6 @@ footer {
 
     .container {
         width: 90%;
-    }
-
-    .favorite-action {
-        width: 5%;
     }
 
     #favorites tr th {
