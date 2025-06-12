@@ -48,6 +48,7 @@
 #hero-paragraph {
     width: 90%;
     margin: 0 auto;
+    font-size: 0.8rem;
 }
 
 #konten {
@@ -155,6 +156,7 @@
         width: 90%;
         max-width: 1000px;
         margin: auto;
+        font-size: 1rem;
     }
 
     #konten {
