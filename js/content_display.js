@@ -6,10 +6,10 @@ var favorites = JSON.parse(localStorage.getItem("favorites"));
 
 $(document).ready(function () {
     var category = 'Makanan';
-
-    if (window.location.pathname == '/beverages.html') {
+    
+    if (window.location.pathname == '/beverages.html' || window.location.pathname == '/beverages') {
         category = 'Minuman';
-    } else if (window.location.pathname == '/snacks.html') {
+    } else if (window.location.pathname == '/snacks.html' || window.location.pathname == '/snacks') {
         category = 'Snack';
     }
 
