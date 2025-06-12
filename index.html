@@ -17,14 +17,14 @@
             <div class="red-bar"></div>
             <div class="red-bar"></div>
         </div>
-        <h1>Japan</h1>
+        <a href="index.html"><h1>Japan</h1></a>
         <ul type="none" id="header-list">
-            <li><a class="header-list-content" href="index.html">BERANDA</a></li>
             <li><a class="header-list-content" href="foods.html">MAKANAN</a></li>
             <li><a class="header-list-content" href="beverages.html">MINUMAN</a></li>
             <li><a class="header-list-content" href="snacks.html">CAMILAN</a></li>
             <li><a class="header-list-content" href="favorite.html">FAVORIT</a></li>
-            <li><a class="header-list-content" href="aboutus.html">KONTAK</a></li>
+            <li><a class="header-list-content" href="contactus.html">KONTAK</a></li>
+            <li><a class="header-list-content" href="aboutus.html">TENTANG</a></li>
             <li id="header-list-close" onclick="toggleMenu()">
                 <div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px" alt="">
                 </div>
@@ -33,7 +33,7 @@
     </header>
 
     <hero>
-        <div id="hero-container">
+        <div id="hero-container" class="reveal reveal-content">
             <h1 id="welcome">Welcome to Japan!</h1>
             <p id="hero-paragraph" class="paragraph">
                 Selamat datang di Jepang — negeri matahari terbit yang memadukan tradisi kuno dan
@@ -41,7 +41,7 @@
                 dan temukan budaya yang kaya dan penuh pesona. Siap untuk petualangan tak terlupakan? Mari mulai
                 perjalanan Anda sekarang.</p>
         </div>
-        <div id="img-collection-hero">
+        <div id="img-collection-hero" class="img-collection reveal reveal-content">
             <div id="img-collection-content-hero" class="img-collection-content">
                 <div id="img-hero-1"></div>
                 <div id="img-hero-2"></div>
@@ -50,18 +50,19 @@
         </div>
     </hero>
 
-    <h1 id="intro">Apa yang ada di Jepang?</h1>
+    <h1 id="intro" class="reveal reveal-content">Apa yang ada di Jepang?</h1>
 
-    <div id="sub-intro" class="container">
+    <section id="sub-intro" class="container reveal-content">
         <h1 class="center">Kuliner!</h1>
         <p class="center">
             Mari eksplor kuliner yang luar biasa di Jepang!
         </p>
-    </div>
+        <div id="sub-intro-scroll" class="reveal"></div>
+    </section>
 
-    <div id="culinary" class="container">
-        <div id="culinary-scroll"></div>
-        <div id="img-collection-culinary" class="img-collection-content">
+    <section id="culinary" class="container">
+        <div id="culinary-scroll" class="reveal"></div>
+        <div id="img-collection-culinary" class="img-collection reveal-content">
             <div id="img-collection-content-culinary" class="img-collection-content">
                 <div id="img-culinary-1"></div>
                 <div id="img-culinary-2"></div>
@@ -71,7 +72,7 @@
                 <div id="img-culinary-6"></div>
             </div>
         </div>
-        <div id="culinary-container">
+        <div id="culinary-container" class="reveal-content">
             <h2 id="culinary-header">Kenapa kuliner <u>Jepang</u>?</h2>
             <p id="culinary-paragraph" class="paragraph">
                 Kuliner Jepang adalah perpaduan rasa, estetika, dan tradisi yang telah diwariskan selama
@@ -81,11 +82,11 @@
                 menjelajahi dunia rasa yang unik, penuh kejutan, dan tentunya menggoda lidah.
             </p>
         </div>
-    </div>
+    </section>
 
-    <div id="explore" class="container">
+    <section id="explore" class="container reveal-content">
         <h1 id="explore-title">Eksplor!</h1>
-        <div id="explore-scroll"></div>
+        <div id="explore-scroll" class="reveal"></div>
         <div id="explore-inner">
             <div id="to-foods">
                 <div><a class="to-links">Makanan</a></div>
@@ -97,7 +98,7 @@
                 <div><a class="to-links">Camilan</a></div>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer>
         <div id="footer-grid">

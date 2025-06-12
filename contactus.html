@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div onclick="toggleMenu()" id="three-bar">
+            <div class="red-bar"></div>
+            <div class="red-bar"></div>
+            <div class="red-bar"></div>
+        </div>
+        <a href="index.html">
+            <h1>Japan</h1>
+        </a>
+        <ul type="none" id="header-list">
+            <li><a class="header-list-content" href="foods.html">MAKANAN</a></li>
+            <li><a class="header-list-content" href="beverages.html">MINUMAN</a></li>
+            <li><a class="header-list-content" href="snacks.html">CAMILAN</a></li>
+            <li><a class="header-list-content" href="favorite.html">FAVORIT</a></li>
+            <li><a class="header-list-content" href="contactus.html">KONTAK</a></li>
+            <li><a class="header-list-content" href="aboutus.html">TENTANG</a></li>
+            <li id="header-list-close" onclick="toggleMenu()">
+                <div class="header-list-content"><img src="img/header/arrow_up.webp" height="20px" width="20px" alt="">
+                </div>
+            </li>
+        </ul>
+    </header>
+
+
+
+    <div class="contact">
+        <div class="contact-omotenashi">
+            <h1>Kontak Kami</h1>
+            <p>
+                Dalam semangat omotenashi, kami selalu berusaha memberikan pelayanan terbaik dengan penuh perhatian dan
+                ketulusan.
+                Jika Anda memiliki pertanyaan, saran, atau hanya ingin menyapa, kami akan dengan senang hati
+                menerimanya.
+                Kami berkomitmen untuk memberikan pelayanan terbaik dan menjawab setiap pertanyaan Anda secara
+                profesional dan tepat waktu.
+                Setiap pesan Anda sangat berarti bagi kami, dan kami siap membantu Anda dengan solusi terbaik.
+            </p>
+        </div>
+        <div class="contact-in">
+            <div class="contact-us">
+                <h3>Hubungi kami untuk informasi lebih lanjut</h3>
+                <p class="padanan">Ingin tahu lebih lanjut tentang kami atau layanan kami? Mari jalin komunikasi — kami
+                    siap membantu Anda</p>
+                <div class="us">
+                    <div class="us-content">
+                        <div class="text">
+                            <div class="text-title"><img src="img/contact/mail.svg" alt="" class="us-img">
+                                <h4>Email</h4>
+                            </div>
+                            <p>2472013@maranatha.ac.id</p>
+                            <p>2472041@maranatha.ac.id</p>
+                            <p>2472060@maranatha.ac.id</p>
+                        </div>
+                    </div>
+                    <div class="us-content">
+                        <div class="text">
+                            <div class="text-title"><img src="img/contact/phone.svg" alt="" class="us-img">
+                                <h4>Nomor</h4>
+                            </div>
+                            <p>085559630210</p>
+                        </div>
+                    </div>
+                    <div class="us-content">
+
+                        <div class="text">
+                            <div class="text-title"><img src="img/contact/map-pin.svg" alt="" class="us-img">
+                                <h4>Lokasi</h4>
+                            </div>
+                            <p>Jl. Prof. drg. Soeria Soemantri No.65,
+                                Sukawarna, Kec. Sukajadi, Kota Bandung,
+                                Jawa Barat 40164
+                            <div class="coordinate">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.319492258615!2d107.56866754960767!3d-6.885819937291258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6873a8cf5a7%3A0xf8f474dec4efb56!2sUniversitas%20Kristen%20Maranatha!5e0!3m2!1sen!2sid!4v1749323462675!5m2!1sen!2sid"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Email Kami</h3>
+                <form onsubmit="mail(event)">
+                    <div class="contact-input-group">
+                        <label for="nama">Nama</label>
+                        <hr class="label-hr">
+                        <input type="text" placeholder="Nama" id="name">
+                        <div class="error-txt">Nama tidak boleh kosong!</div>
+                    </div>
+                    <div class="contact-input-group">
+                        <label for="nama">Email</label>
+                        <hr class="label-hr">
+                        <input type="text" placeholder="Email" id="email">
+                        <div class="error-txt">Email tidak boleh kosong!</div>
+                    </div>
+                    <div class="contact-input-group">
+                        <label for="nama">Subjek</label>
+                        <hr class="label-hr">
+                        <input type="text" placeholder="Subjek" id="subject">
+                        <div class="error-txt">Subjek tidak boleh kosong!</div>
+                    </div>
+                    <div class="contact-input-group">
+                        <label for="nama">Pesan</label>
+                        <hr class="label-hr">
+                        <textarea placeholder="Pesan" id="message"></textarea>
+                        <div class="error-txt">Pesan tidak boleh kosong!</div>
+                    </div>
+                    <button type="submit" id="btn">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop-up" id="pop-up">
+        <div class="pop-up-content" id="pop-up-content">
+            <h3 id="title"></h3>
+            <p id="message-pop"></p>
+            <p id="icon-pop"></p>
+            <button onclick="tutup()">OK</button>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-grid">
+            <div id="web-desc">
+                <h2>What is this website about?</h2>
+                <p>This website is built just for those who are culinary enthusiasts. Specifically Japanese
+                    Culinaries.
+                    We want the world to know what's special and what's unique about Japanese Culinary. This website
+                    can
+                    also
+                    be a good source for those who are trying to find a good recipe to cook Japanese cuisine. We
+                    tell
+                    backstories about the food too, for those who are intrigued towards food history.
+                </p>
+            </div>
+            <div id="social-media">
+                <h2>Social Medias</h2>
+                <div id="social-media-inner">
+                    <a href=""><img src="img/footer/instagram.png" alt=""></a>
+                    <a href=""><img src="img/footer/yt.png" alt=""></a>
+                    <a href=""><img src="img/footer/x.png" alt=""></a>
+                </div>
+            </div>
+            <div id="contacts">
+                <h2>Contacts</h2>
+                <div id="contacts-inner">
+                    <div>
+                        <p>Email:</p>
+                        <ul type="none">
+                            <li>2472013@maranatha.ac.id</li>
+                            <li>2472041@maranatha.ac.id</li>
+                            <li>2472060@maranatha.ac.id</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Phones:</p>
+                        <ul type="none">
+                            <li>085559630210</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="creator">Created by Japan Team. 2025 All rights reserved.</p>
+    </footer>
+</body>
+<script src="js/header.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/contactus.js"></script>
+
+</html>
