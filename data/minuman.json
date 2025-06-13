@@ -1,7 +1,7 @@
 [
     {
         "nama": "Ocha",
-        "foto":"img/minuman/Ocha.jpg",
+        "foto": "img/minuman/Ocha.jpg",
         "deskripsi": "Ocha adalah teh hijau Jepang yang biasanya disajikan panas tanpa gula. Disajikan gratis di banyak restoran dan sering diminum sehari-hari. Jenisnya meliputi sencha, genmaicha (dengan beras panggang), dan hojicha (teh panggang).",
         "sejarah": "Teh diperkenalkan ke Jepang dari Tiongkok pada abad ke-8. Pada abad ke-12, biksu Eisai membawa bubuk matcha dan budaya minum teh berkembang melalui upacara chanoyu. Kini, teh hijau adalah bagian penting dari budaya Jepang, dari rumah tangga sehari-hari hingga acara formal.",
         "resep": {
@@ -18,7 +18,7 @@
     },
     {
         "nama": "Matcha",
-        "foto":"img/minuman/Matcha.jpg",
+        "foto": "img/minuman/Matcha.jpg",
         "deskripsi": "Matcha adalah bubuk teh hijau berkualitas tinggi yang diseduh dengan air panas dan diaduk dengan chasen (pengocok bambu) hingga berbusa. Matcha juga banyak digunakan untuk membuat dessert seperti es krim, kue, dan latte.",
         "sejarah": "Matcha diperkenalkan oleh biksu Eisai dari Tiongkok pada abad ke-12 dan menjadi pusat budaya upacara teh Jepang (chanoyu). Matcha melambangkan kesederhanaan, keharmonisan, dan fokus. Kini, selain untuk upacara, matcha juga populer dalam makanan dan minuman modern di seluruh dunia.",
         "resep": {
@@ -35,7 +35,7 @@
     },
     {
         "nama": "Sake",
-        "foto":"img/minuman/Sake.jpg",
+        "foto": "img/minuman/Sake.jpg",
         "deskripsi": "Sake adalah minuman beralkohol Jepang yang dibuat dari fermentasi beras. Disajikan panas atau dingin, tergantung jenis dan musim. Rasanya bisa manis, kering, atau umami, dengan aroma khas beras.",
         "sejarah": "Sake telah ada di Jepang lebih dari 1.000 tahun, awalnya dibuat di kuil-kuil Shinto. Proses pembuatan modern berkembang abad ke-16 dengan penggunaan ragi khusus (koji). Sake jadi bagian penting dari ritual keagamaan hingga perayaan, dan kini juga populer di restoran Jepang di seluruh dunia.",
         "resep": {
@@ -50,7 +50,7 @@
     },
     {
         "nama": "Umeshu",
-        "foto":"img/minuman/Umeshu.jpg",
+        "foto": "img/minuman/Umeshu.jpg",
         "deskripsi": "Umeshu adalah minuman beralkohol manis khas Jepang yang dibuat dari fermentasi buah ume (plum Jepang) dengan gula dan shochu atau sake. Rasanya manis dan menyegarkan, sering disajikan dingin atau dengan es.",
         "sejarah": "Umeshu mulai dibuat di Jepang sejak abad ke-17, awalnya sebagai minuman rumahan. Rasanya yang manis membuatnya populer di kalangan wanita dan peminum ringan. Kini banyak produsen sake memproduksi umeshu botolan dengan berbagai varian rasa.",
         "resep": {
@@ -69,7 +69,7 @@
     },
     {
         "nama": "Ramune",
-        "foto":"img/minuman/Ramune.jpg",
+        "foto": "img/minuman/Ramune.jpg",
         "deskripsi": "Ramune adalah minuman bersoda khas Jepang dengan botol unik bertutup kelereng. Rasanya ringan, biasanya lemon-lime, tapi ada juga varian buah lain. Identik dengan musim panas dan festival Jepang.",
         "sejarah": "Ramune diperkenalkan pada abad ke-19 oleh pedagang Inggris di pelabuhan Kobe. Nama 'ramune' berasal dari 'lemonade'. Botol kaca khasnya dengan kelereng sebagai penutup jadi ciri ikonik. Hingga kini, ramune tetap populer terutama di kalangan anak-anak dan saat festival musim panas.",
         "resep": {
@@ -84,7 +84,7 @@
     },
     {
         "nama": "Calpis",
-        "foto":"img/minuman/Calpis.jpg",
+        "foto": "img/minuman/Calpis.jpg",
         "deskripsi": "Calpis adalah minuman fermentasi susu dengan rasa asam manis mirip yogurt cair. Biasanya disajikan dengan air dingin atau soda. Rasanya ringan dan menyegarkan.",
         "sejarah": "Calpis diperkenalkan pada tahun 1919 oleh Kaiun Mishima, terinspirasi dari yogurt Mongolia. Produk ini menjadi populer sebagai minuman musim panas. Kini Calpis hadir dalam bentuk konsentrat, botol siap minum, dan berbagai rasa varian buah.",
         "resep": {
@@ -100,7 +100,7 @@
     },
     {
         "nama": "Mugicha",
-        "foto":"img/minuman/Mugicha.jpg",
+        "foto": "img/minuman/Mugicha.jpg",
         "deskripsi": "Mugicha adalah teh barley panggang tanpa kafein, biasanya disajikan dingin di musim panas. Rasanya ringan, agak pahit, dan menyegarkan. Populer sebagai minuman keluarga di Jepang.",
         "sejarah": "Mugicha sudah diminum sejak periode Heian, awalnya sebagai minuman herbal. Di era modern, mugicha menjadi populer sebagai pengganti minuman berkafein di musim panas. Dijual dalam bentuk kantong teh siap seduh di supermarket Jepang.",
         "resep": {
@@ -116,7 +116,7 @@
     },
     {
         "nama": "Canned-Coffee",
-        "foto":"img/minuman/Canned-Coffee.jpg",
+        "foto": "img/minuman/Canned-Coffee.jpg",
         "deskripsi": "Canned coffee adalah kopi siap minum dalam kaleng yang dijual di vending machine di Jepang. Ada yang panas, ada yang dingin, dengan berbagai rasa: kopi hitam, kopi susu, kopi manis. Praktis untuk dinikmati kapan saja.",
         "sejarah": "Canned coffee diperkenalkan pertama kali oleh UCC pada tahun 1969. Sejak itu, minuman ini merevolusi pasar kopi Jepang. Dengan vending machine di mana-mana, canned coffee menjadi teman harian pekerja Jepang, terutama di pagi hari atau saat istirahat kerja.",
         "resep": {
@@ -127,6 +127,114 @@
                 "Seduh kopi, campur dengan susu dan gula (jika diinginkan).",
                 "Dinginkan atau hangatkan sesuai selera, masukkan ke botol atau kaleng tertutup.",
                 "Sajikan seperti canned coffee."
+            ]
+        }
+    },
+    {
+        "nama": "Amazake",
+        "foto": "img/minuman/Amazake.jpg",
+        "deskripsi": "Amazake adalah minuman manis tradisional Jepang yang dibuat dari fermentasi beras. Meskipun namanya berarti 'sake manis', biasanya tidak mengandung alkohol. Rasanya lembut dan kaya akan umami, sering disajikan hangat di musim dingin.",
+        "sejarah": "Amazake telah dikonsumsi sejak periode Kofun (abad ke-3 hingga ke-7). Dulu populer sebagai minuman energi untuk rakyat dan digunakan dalam festival-festival musim dingin. Kini tersedia secara komersial dalam versi tanpa alkohol dan juga digunakan dalam kuliner sehat modern.",
+        "resep": {
+            "bahan": [
+                "1 cangkir nasi putih matang",
+                "2 sdm koji (fermentasi beras)",
+                "400 ml air hangat (sekitar 60°C)"
+            ],
+            "cara_membuat": [
+                "Campur nasi matang dengan koji dan air hangat.",
+                "Simpan dalam wadah tertutup di tempat hangat (sekitar 60°C) selama 8–10 jam.",
+                "Aduk sesekali. Setelah selesai, sajikan hangat atau dingin."
+            ]
+        }
+    },
+    {
+        "nama": "Yuzucha",
+        "foto": "img/minuman/Yuzucha.jpg",
+        "deskripsi": "Yuzucha adalah minuman teh manis yang dibuat dari buah yuzu (jeruk Jepang). Biasanya hadir dalam bentuk selai yuzu yang dicampur air panas. Rasanya segar, manis, dan sedikit asam.",
+        "sejarah": "Yuzucha berasal dari kebiasaan tradisional Jepang menggunakan yuzu dalam pengobatan rumahan. Buah yuzu dianggap membantu meredakan flu dan memperkuat sistem imun. Kini sering dikonsumsi saat musim dingin sebagai minuman hangat yang menyegarkan.",
+        "resep": {
+            "bahan": [
+                "2 sdm selai yuzu (yuzu marmalade)",
+                "200 ml air panas"
+            ],
+            "cara_membuat": [
+                "Masukkan selai yuzu ke dalam cangkir.",
+                "Tuang air panas, aduk rata hingga larut.",
+                "Sajikan selagi hangat."
+            ]
+        }
+    },
+    {
+        "nama": "Doburoku",
+        "foto": "img/minuman/Doburoku.jpg",
+        "deskripsi": "Doburoku adalah bentuk sake rumahan yang masih kasar dan belum disaring. Teksturnya kental dan berwarna putih susu dengan rasa manis dan asam yang khas.",
+        "sejarah": "Doburoku adalah bentuk paling awal dari sake di Jepang dan telah dibuat sejak zaman kuno, terutama di daerah pedesaan dan kuil Shinto. Tradisi membuat dan meminum doburoku masih dilestarikan dalam festival seperti Doburoku Matsuri.",
+        "resep": {
+            "bahan": [
+                "500 g beras putih",
+                "500 ml air",
+                "50 g koji (jamur beras fermentasi)",
+                "Ragi sake (optional)"
+            ],
+            "cara_membuat": [
+                "Masak nasi hingga matang dan dinginkan.",
+                "Campur nasi, koji, air, dan ragi ke dalam wadah steril.",
+                "Simpan di tempat hangat selama 7–10 hari, aduk setiap hari.",
+                "Saring jika diinginkan, atau sajikan langsung sebagai doburoku."
+            ]
+        }
+    },
+    {
+        "nama": "Shiso-Juice",
+        "foto": "img/minuman/Shiso-Juice.jpg",
+        "deskripsi": "Shiso juice adalah minuman menyegarkan berwarna merah muda cerah yang dibuat dari daun shiso merah (perilla). Rasanya asam-manis dan sering dicampur dengan cuka dan gula.",
+        "sejarah": "Daun shiso telah digunakan dalam pengobatan tradisional Jepang. Shiso juice populer sebagai minuman musim panas yang menyegarkan dan dipercaya membantu pencernaan serta daya tahan tubuh.",
+        "resep": {
+            "bahan": [
+                "30 lembar daun shiso merah",
+                "500 ml air",
+                "100 g gula",
+                "2 sdm cuka apel atau cuka beras"
+            ],
+            "cara_membuat": [
+                "Rebus daun shiso dalam air selama 10 menit.",
+                "Saring dan buang daun, tambahkan gula ke air rebusan, aduk hingga larut.",
+                "Setelah dingin, tambahkan cuka dan simpan dalam botol.",
+                "Sajikan dengan es atau air soda."
+            ]
+        }
+    },
+    {
+        "nama": "Sakurayu",
+        "foto": "img/minuman/Sakurayu.jpg",
+        "deskripsi": "Sakurayu adalah minuman khas yang disajikan dari bunga sakura asin yang dikeringkan, diseduh dengan air panas. Minuman ini biasanya dihidangkan dalam upacara pernikahan atau momen spesial.",
+        "sejarah": "Sakurayu telah menjadi simbol keberuntungan dan harapan baru sejak zaman Edo. Biasanya menggantikan teh hijau pada acara-acara bahagia karena teh sering dikaitkan dengan duka.",
+        "resep": {
+            "bahan": [
+                "1–2 bunga sakura kering asin",
+                "200 ml air panas"
+            ],
+            "cara_membuat": [
+                "Rendam bunga sakura dalam air hangat selama 1 menit untuk menghilangkan keasinan.",
+                "Pindahkan ke cangkir, lalu tuang air panas baru.",
+                "Sajikan selagi hangat dan nikmati keindahan bunganya mengembang."
+            ]
+        }
+    },
+    {
+        "nama": "Nigori-Sake",
+        "foto": "img/minuman/NigoriSake.jpg",
+        "deskripsi": "Nigori sake adalah sake yang tidak sepenuhnya disaring, sehingga tampilannya keruh dengan rasa manis dan creamy. Biasanya memiliki kadar alkohol yang sama dengan sake biasa.",
+        "sejarah": "Nigori sake adalah salah satu bentuk awal dari sake sebelum metode penyaringan modern ditemukan. Kini, nigori dianggap sebagai variasi premium dan unik yang menonjolkan tekstur dan rasa beras fermentasi.",
+        "resep": {
+            "bahan": [
+                "Tidak dibuat di rumah karena melibatkan proses fermentasi khusus seperti sake biasa."
+            ],
+            "cara_membuat": [
+                "Dapat dibeli dari produsen sake resmi.",
+                "Kocok ringan sebelum disajikan agar endapan tercampur merata.",
+                "Sajikan dingin."
             ]
         }
     }
