@@ -208,5 +208,23 @@
                 "Untuk versi panggang, oven hingga kering dan renyah."
             ]
         }
+    },
+    {
+    "nama": "Dango",
+    "foto": "img/snack/Dango.jpg",
+    "deskripsi": "Dango adalah bola-bola kecil dari tepung beras yang ditusuk seperti sate, biasanya disajikan dengan saus manis gurih berbasis kecap (mitarashi), atau dengan bubuk kacang kedelai panggang (kinako).",
+    "sejarah": "Dango telah menjadi bagian dari tradisi Jepang sejak zaman Heian. Biasanya disantap saat festival atau upacara musim semi seperti Hanami.",
+    "resep": {
+      "bahan": [
+        "100 g tepung shiratamako atau tepung beras",
+        "90 ml air hangat",
+        "Saus: 2 sdm kecap asin, 2 sdm gula, 2 sdm mirin, 1 sdm tepung maizena, 100 ml air"
+      ],
+      "cara_membuat": [
+        "Campur tepung dan air hingga kalis, bentuk bola-bola kecil.",
+        "Rebus hingga mengapung, lalu tusuk dengan tusuk sate.",
+        "Masak bahan saus sampai mengental, tuang di atas dango atau celupkan."
+      ]
     }
+  }
 ]
