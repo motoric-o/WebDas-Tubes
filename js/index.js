@@ -54,7 +54,7 @@ $(document).ready(function () {
     });
 
     setTimeout(() => {
-        $('body').css({ "overflow-y": "auto" });
+        $('body').css({ "overflow-y": "scroll", "overflow-x": "hidden" });
     }, 2000);
 
     $('#to-foods').click(function () {

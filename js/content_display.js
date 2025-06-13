@@ -6,10 +6,10 @@ var favorites = JSON.parse(localStorage.getItem("favorites"));
 
 $(document).ready(function () {
     var category = 'Makanan';
-
-    if (window.location.pathname == '/beverages.html') {
+    
+    if (window.location.pathname == '/beverages.html' || window.location.pathname == '/beverages') {
         category = 'Minuman';
-    } else if (window.location.pathname == '/snacks.html') {
+    } else if (window.location.pathname == '/snacks.html' || window.location.pathname == '/snacks') {
         category = 'Snack';
     }
 
@@ -82,13 +82,13 @@ $(document).ready(function () {
                     "opacity": "100%",
                     "transform": "translateY(0px)"
                 });
-            }, i * 200);
+            }, i * 200 + 100);
 
             setTimeout(() => {
                 $(`#${data[i].nama}`).css({
                     "transition": "all 0.25s ease-in-out"
                 });
-            }, i * 200 + 750);
+            }, i * 200 + 850);
 
         }
 
@@ -216,6 +216,12 @@ $(document).ready(function () {
                 $(this).toggle(isMatch);
                 if (isMatch) visibleCount++;
             });
+
+            if (visibleCount == 0) {
+                $('#not-found').css({ "display": "block" });
+            } else {
+                $('#not-found').css({ "display": "none" });
+            }
 
             if (screen.width >= 768 || window.innerWidth >= 768) {
                 let s = '';
